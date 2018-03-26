@@ -41,7 +41,7 @@ class Nav extends React.Component {
       >
         <div className='container Nav--OuterWrap'>
           <div className='Flex alignCenter justifyBetween relative'>
-            <Link style={{ color: 'currentColor' }} to='/'>
+            <Link className='Logo' style={{ color: 'currentColor' }} to='/'>
               <Logo />
             </Link>
             <div className='nav Flex alignCenter justifyStart mainNav'>
@@ -50,7 +50,7 @@ class Nav extends React.Component {
               </NavLink>
               <div className='NavLink--DropDown'>
                 <div className='NavLink NavLink--Parent'>
-                  Services <div className='hover'>•</div>
+                  Services
                   <div className='NavLink--Children'>
                     {_sortBy(services, ['order']).map(servicePod => (
                       <NavLink
@@ -73,8 +73,8 @@ class Nav extends React.Component {
               <NavLink to='/contact/' exact>
                 Contact
               </NavLink>
-              <NavLink to='/client-area/' exact className='login'>
-                Login
+              <NavLink to='https://eventbright.com/' exact className='book-now'>
+                Book now
               </NavLink>
             </div>
           </div>

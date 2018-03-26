@@ -11,25 +11,11 @@ body,
   left: 0;
   z-index: 1;
   width: 100%;
-  background: var(--bodyColor);
-  color: var(--primary);
+  background: var(--secondary);
+  color: white;
   opacity: 0.9;
 }
 .Nav--OuterWrap {
-  min-height: 74px;
-}
-
-.isHome.Nav {
-  background-color: transparent;
-  position: fixed;
-  color: white;
-  transition: all 0.2s ease-in-out;
-}
-
-body.scrolled .isHome.Nav {
-  color: var(--primary);
-  background: var(--bodyColor);
-  border-bottom: 2px solid var(--lightGrey);
 }
 
 /* body.fixed .Nav {
@@ -50,11 +36,18 @@ body.scrolled .isHome.Nav {
 
 .NavLink--Children {
   overflow: hidden;
-  height: 0;
+  max-height: 0;
+  width: 200px;
   position: absolute;
   top: 6rem;
-  left: 2rem;
+  left: 0;
+  background: var(--secondary);
+  border: 1px solid var(--secondary);
+  border-top: none;
+  color: white;
   transition: all 0.3s ease-out;
+  opacity: 0;
+  padding: 0 1rem;
 }
 .NavLink--Children .NavLink {
   padding: 1rem;
@@ -62,34 +55,12 @@ body.scrolled .isHome.Nav {
   font-size: 1.2rem;
 }
 
-.NavLink--Children .NavLink .hover {
-  display: none;
-}
-
 .NavLink--Parent:hover .NavLink--Children {
-  opacity: 1 !important;
-  height: auto;
+  max-height: 600px;
   width: 200px;
-  color: var(--primary);
-  background: var(--bodyColor);
-  border: 1px solid var(--lightGrey);
-  border-top: none;
-  padding: 0 2rem;
+  padding: 0 1rem 1rem 1rem;
   visibility: visible;
-}
-
-body .isHome.Nav .NavLink--Parent:hover .NavLink--Children {
-  color: white;
-  background: transparent;
-  border: 1px solid var(--midGrey);
-  border-top: none;
-}
-
-body.scrolled .isHome.Nav .NavLink--Parent:hover .NavLink--Children {
-  color: var(--primary);
-  background: var(--bodyColor);
-  border: 1px solid var(--lightGrey);
-  border-top: none;
+  opacity: 1;
 }
 
 .Nav--MenuButton {

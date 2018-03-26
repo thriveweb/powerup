@@ -30,15 +30,6 @@ const Home = ({ page, projects, posts, services }) => {
         <title>{page.title}</title>
       </Helmet>
 
-      <WelcomeAnimation waitForImages={homeGalleryImages.slice(0, 2)} />
-
-      {page.welcomeGalleryImages && (
-        <GalleryHome
-          images={homeGalleryImages}
-          flickityOptions={{ autoPlay: 30000 }}
-        />
-      )}
-
       {page.title && (
         <section className='section HomeTitle'>
           <div className='container'>

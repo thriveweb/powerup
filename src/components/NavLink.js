@@ -5,6 +5,6 @@ import './NavLink.css'
 
 export default ({ className, children, ...props }) => (
   <NavLink {...props} className={`NavLink ${className || ''}`}>
-    {children} <div className='hover'>•</div>
+    {children}
   </NavLink>
 )
