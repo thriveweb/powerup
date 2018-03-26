@@ -1,0 +1,26 @@
+.Contact h1 {
+  display: block;
+  width: 40%;
+  margin: 0;
+}
+.Contact h4 {
+  display: block;
+}
+.Contact .thirds .pods {
+  width: 33.33%;
+  padding: 0 4rem 0 0;
+}
+
+.contactForm {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .Contact h1,
+  .Contact .thirds,
+  .Contact .thirds .pods {
+    width: 90%;
+    margin: 1rem auto;
+    max-width: 500px;
+  }
+}

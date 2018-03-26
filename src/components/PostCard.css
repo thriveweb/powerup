@@ -1,0 +1,22 @@
+.PostCard {
+  text-decoration: none;
+  margin: 4rem 2rem;
+}
+.PostCard--Image {
+  margin: 0 0 2rem 0;
+  width: 100%;
+  height: 350px;
+}
+
+.PostCard--Category {
+  font-size: 1rem;
+  text-align: right;
+}
+
+.PostCard--Content {
+  margin: 0 auto;
+  width: 90%;
+}
+.PostCard--Title {
+  margin: 2rem 0;
+}

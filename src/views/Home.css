@@ -1,0 +1,75 @@
+.Home {
+}
+
+.section.HomeTitle {
+  padding: 15rem 0 5rem 0;
+}
+.HomeTitle .container {
+  max-width: 600px;
+  text-align: center;
+}
+.HomeTitle h1 {
+  line-height: 1.2;
+}
+
+.AboutSection small {
+  margin: 2rem 0;
+  display: block;
+}
+
+.AboutSection .LazyImage {
+  width: 40%;
+}
+
+.AboutSection--Info {
+  width: 50%;
+}
+
+.HomeNews {
+  background: white;
+  padding: 0 !important;
+}
+
+.HomeNews--Info {
+  display: block;
+  width: 40%;
+  background: #f8f8f8;
+  padding: 4rem 8rem;
+}
+
+.HomeNews--Posts {
+  display: block;
+  width: calc(60% - 4rem);
+  padding: 4rem 0;
+}
+
+.HomeNews--Post {
+  display: block;
+  width: 45%;
+  margin: 0;
+}
+
+.HomeProjectSection {
+  padding: 8rem 0 !important;
+}
+
+@media screen and (max-width: 750px) {
+  .AboutSection .LazyImage {
+    width: 100%;
+  }
+
+  .AboutSection--Info,
+  .HomeNews--Posts {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .HomeNews--Post {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .HomeNews--Info {
+    width: 100%;
+    padding: 2rem;
+  }
+}

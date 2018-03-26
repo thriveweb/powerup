@@ -1,0 +1,26 @@
+.Logo {
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 15rem;
+  width: 15rem;
+  margin: 1rem;
+  color: currentColor;
+}
+
+body.scrolled .Logo {
+  transform: scale(0.5);
+  position: absolute;
+  top: -4.5rem;
+  left: -4rem;
+}
+
+@media screen and (max-width: 1000px) {
+  body .Logo {
+    transform: scale(0.5);
+    position: absolute;
+    top: -4.5rem;
+    left: -4rem;
+  }
+}

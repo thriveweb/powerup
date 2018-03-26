@@ -1,0 +1,25 @@
+.PageHeader {
+  line-height: 1em;
+  color: var(--primary);
+  text-align: center;
+}
+
+.PageHeader--Title {
+  font-size: 8rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1000px) {
+  .PageHeader--Title {
+    font-size: 5.5rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .PageHeader--Title {
+    font-size: 4rem;
+  }
+}
+
+.PageHeader--Subtitle {
+  font-weight: 200;
+}

@@ -1,0 +1,47 @@
+.Footer {
+  padding: 4rem 0;
+}
+
+.mainFooter {
+  padding: 4rem 0 0 0;
+  border-top: 1px solid #bababa;
+}
+
+.Footer .Logo {
+  width: 8rem;
+  height: 8rem;
+}
+
+.Footer a {
+  color: inherit;
+}
+
+.Footer .halfs {
+  width: 60%;
+}
+
+.Footer .halfs .pods {
+  width: 49%;
+}
+
+.Footer--Copyright.container {
+  padding: 2rem 0;
+  margin: 2rem auto;
+  border-top: 2px solid white;
+}
+
+@media screen and (max-width: 750px) {
+  .Footer {
+    padding: 0 0 4rem 0;
+    text-align: center;
+  }
+  .Footer .halfs {
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  .Footer .halfs .pods {
+    width: 100%;
+    margin: 1rem 0 0 0;
+  }
+}

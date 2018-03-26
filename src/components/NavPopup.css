@@ -1,0 +1,96 @@
+.NavPopup {
+  display: block;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  color: white;
+  width: 100%;
+  height: 100%;
+  background: var(--primary);
+  padding: 2rem;
+  font-size: 3rem;
+  transition: all 0.3s ease;
+  opacity: 0;
+  overflow: hidden;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.NavPopup.active {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.NavPopup .flex {
+}
+
+.NavPopup .NavLink {
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+.NavPopup .NavLink .hover {
+  display: none;
+}
+
+.NavLink--Children--Mobile .NavLink {
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .mainNav {
+    display: none !important;
+  }
+
+  .NavPopup .flex {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .NavPopup .flex .inner {
+    width: 100%;
+  }
+}
+
+.NavPopup--CloseButton {
+  background: none;
+  border: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.NavPopup--CloseButton svg {
+  width: 28px;
+  height: 28px;
+}
+
+.NavPopup--CloseButton:focus {
+  outline: none;
+}
+
+.NavPopup--IconLink {
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 3rem 0;
+}
+.NavPopup--IconLink--Icon {
+  max-height: 3rem;
+  max-width: 3rem;
+  width: auto;
+  display: inline-block;
+  margin-right: 2rem;
+  position: relative;
+  top: -2px;
+}
