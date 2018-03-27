@@ -32,6 +32,24 @@ sections:
           and athletic shoes will suffice.
         accordiontitle: Attire
     title: Preparation
+  - Image: /images/uploads/gym.jpg
+    accordionSections:
+      - accordionContent: >-
+          Nothing too tricky here, just be ready to sweat! An athletic shirt or
+          tank top with form-fitting leggings, shorts or other athletic bottom
+          and athletic shoes will suffice.
+        accordiontitle: Hydrate
+      - accordionContent: >-
+          Nothing too tricky here, just be ready to sweat! An athletic shirt or
+          tank top with form-fitting leggings, shorts or other athletic bottom
+          and athletic shoes will suffice.
+        accordiontitle: Fuel Up
+      - accordionContent: >-
+          Nothing too tricky here, just be ready to sweat! An athletic shirt or
+          tank top with form-fitting leggings, shorts or other athletic bottom
+          and athletic shoes will suffice.
+        accordiontitle: Attire
+    title: Preparation
   - Image: /images/uploads/gym2.jpg
     accordionSections:
       - accordionContent: test
@@ -41,4 +59,3 @@ sections:
       - accordionContent: test
     title: test
 ---
-
