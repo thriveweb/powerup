@@ -1,28 +1,26 @@
 .About {
 }
 
-.welcome--image {
+.welcome--info {
+  padding: 4rem;
   width: 55%;
+}
+
+.welcome--image {
+  width: 45%;
   height: 550px;
   position: relative;
 }
 
-.welcome--info {
-  padding: 4rem;
-  width: 45%;
-}
-
 .welcome--info blockquote {
-  font-size: 4rem;
-  line-height: 1.1;
+  font-size: 2rem;
+  line-height: 1;
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
 }
 .welcome--info blockquote p {
   margin: 0 0 1.5rem 0;
-}
-.welcome--content {
-  padding: 0 0 0 4rem;
 }
 
 @media screen and (max-width: 1000px) {

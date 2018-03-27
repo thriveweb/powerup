@@ -5,7 +5,7 @@ import './PageHeader.css'
 
 const PageHeader = ({ title, bannerImage, className = '', ...props }) => (
   <div className={`section PageHeader thick relative ${className}`} {...props}>
-    <BackgroundImage src={bannerImage} lazy opacity='0.5' />
+    <BackgroundImage src={bannerImage} lazy opacity='0.3' />
     <div className='container relative'>
       <h1 className='PageHeader--Title'>{title}</h1>
     </div>

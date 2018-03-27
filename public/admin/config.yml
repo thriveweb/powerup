@@ -86,6 +86,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Banner Image, name: bannerImage, widget: image}
+          - {label: Welcome Title, name: welcomeTitle, widget: string}
           - {label: Welcome Quote, name: welcomeQuote, widget: text}
           - {label: Welcome Section, name: welcomeSection, widget: markdown}
           - {label: Featured Image, name: featuredImage, widget: image}
