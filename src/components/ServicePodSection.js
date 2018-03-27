@@ -9,7 +9,7 @@ const ServicePodSection = ({ title, services, ...props }) => {
     <section className='section'>
       <div className='container'>
         {title && <h2 className='section-title'>{title}</h2>}
-        <div className='servicesGrid Flex alignStart justifyCenter flexWrap'>
+        <div className='servicesGrid Flex alignStart justifyBettwen flexWrap'>
           {_sortBy(services, ['order']).map(servicePod => (
             <div key={servicePod.title} className='ServicePod'>
               {servicePod.icon && (
