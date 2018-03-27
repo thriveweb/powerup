@@ -57,5 +57,6 @@ sections:
       - accordionContent: test
         accordiontitle: test
       - accordionContent: test
+        accordiontitle: 
     title: test
 ---
