@@ -15,12 +15,12 @@ export default ({ page, staff, services }) => (
     <Helmet>
       <title>{page.title}</title>
     </Helmet>
-    <PageHeader title={page.title} />
+    <PageHeader
+      title={page.title}
+      bannerImage='https://source.unsplash.com/random'
+    />
     <section className='section thin welcome'>
       <div className='container Flex alignCenter justifyBettwen'>
-        <div className='welcome--image'>
-          <BackgroundImage src={page.featuredImage} lazy />
-        </div>
         <div className='welcome--info'>
           <blockquote>
             <Content source={page.welcomeQuote} />
@@ -28,6 +28,9 @@ export default ({ page, staff, services }) => (
           <div className='welcome--content'>
             <Content source={page.welcomeSection} />
           </div>
+        </div>
+        <div className='welcome--image'>
+          <BackgroundImage src={page.featuredImage} lazy />
         </div>
       </div>
     </section>

@@ -85,9 +85,10 @@ collections: # A list of collections the CMS should be able to edit
         name: "about-page"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Featured Image, name: featuredImage, widget: image}
+          - {label: Banner Image, name: bannerImage, widget: image}
           - {label: Welcome Quote, name: welcomeQuote, widget: text}
           - {label: Welcome Section, name: welcomeSection, widget: markdown}
+          - {label: Featured Image, name: featuredImage, widget: image}
           - {label: History Title, name: historyTitle, widget: string}
           - {label: History Section, name: historySection, widget: markdown}
           - {label: Services Title, name: servicesTitle, widget: string}

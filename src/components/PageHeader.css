@@ -1,17 +1,22 @@
 .PageHeader {
   line-height: 1em;
-  color: var(--primary);
+  color: white;
   text-align: center;
+  text-transform: uppercase;
+  background: var(--secondary);
 }
 
 .PageHeader--Title {
-  font-size: 8rem;
+  font-size: 15rem;
   font-weight: 400;
+  opacity: 0.2;
+  text-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.5);
+  color: var(--lightGrey);
 }
 
 @media screen and (max-width: 1000px) {
   .PageHeader--Title {
-    font-size: 5.5rem;
+    font-size: 8rem;
   }
 }
 @media screen and (max-width: 750px) {

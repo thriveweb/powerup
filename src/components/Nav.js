@@ -73,7 +73,11 @@ class Nav extends React.Component {
               <NavLink to='/contact/' exact>
                 Contact
               </NavLink>
-              <NavLink to='https://eventbright.com/' exact className='book-now'>
+              <NavLink
+                to='https://eventbright.com/'
+                exact
+                className='book-now button'
+              >
                 Book now
               </NavLink>
             </div>

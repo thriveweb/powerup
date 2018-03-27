@@ -84,6 +84,7 @@ class App extends Component {
     const projects = this.getDocuments('projects')
     const posts = this.getDocuments('posts')
     const services = this.getDocuments('services')
+    const footerPages = this.getDocuments('services')
     const postCategories = this.getDocuments('postCategories')
     // const postCategories = getCollectionTerms(posts, 'category', 'asc')
 
@@ -91,7 +92,7 @@ class App extends Component {
       <div className='RouteWithFooter' {...props}>
         {children}
         {scrollToTop && <ScrollToTopOnMount />}
-        <Footer globalSettings={globalSettings} />
+        <Footer globalSettings={globalSettings} footerPages={footerPages} />
       </div>
     )
 

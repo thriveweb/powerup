@@ -1,10 +1,12 @@
 .Footer {
-  padding: 4rem 0;
+  padding: 4rem 0 1rem 0;
+  background: var(--secondary) url(/images/footer-bolt.svg) left center
+    no-repeat;
 }
 
 .mainFooter {
   padding: 4rem 0 0 0;
-  border-top: 1px solid #bababa;
+  color: white;
 }
 
 .Footer .Logo {
@@ -12,8 +14,18 @@
   height: 8rem;
 }
 
+.Footer h3 {
+  text-transform: uppercase;
+  margin: 0 0 2rem 0;
+}
+
 .Footer a {
   color: inherit;
+  font-weight: 400;
+}
+
+.Footer a:hover {
+  color: var(--primary);
 }
 
 .Footer .halfs {
@@ -21,13 +33,20 @@
 }
 
 .Footer .halfs .pods {
-  width: 49%;
+  width: 45%;
+}
+
+.Footer .halfs .pods .NavLink {
+  padding: 0 0 0.5rem 0;
+  display: block;
+  text-align: left;
+  font-size: 1.5rem;
 }
 
 .Footer--Copyright.container {
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
   margin: 2rem auto;
-  border-top: 2px solid white;
+  color: var(--midGrey);
 }
 
 @media screen and (max-width: 750px) {
