@@ -89,10 +89,20 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Welcome Title, name: welcomeTitle, widget: string}
           - {label: Welcome Quote, name: welcomeQuote, widget: text}
           - {label: Welcome Section, name: welcomeSection, widget: markdown}
-          - {label: Featured Image, name: featuredImage, widget: image}
-          - {label: History Title, name: historyTitle, widget: string}
-          - {label: History Section, name: historySection, widget: markdown}
-          - {label: Services Title, name: servicesTitle, widget: string}
+          - {label: Edit Icons Title and Description in Services menu, name: aboutMessage, widget: message, required: false}
+          - {label: Workout Title, name: workoutTitle, widget: string}
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - {label: Image, name: Image, widget: image}
+              - {label: Title, name: title, widget: string}
+              - label: "Accordion Sections"
+                name: "accordionSections"
+                widget: "list"
+                fields:
+                  - {label: Accordion Title, name: accordiontitle, widget: string, required: false}
+                  - {label: Accordion Content, name: accordionContent, widget: text, required: false}
       - file: "content/pages/home.md"
         label: "Home Page"
         name: "home-page"

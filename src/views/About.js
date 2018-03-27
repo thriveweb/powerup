@@ -33,32 +33,6 @@ export default ({ page, staff, services }) => (
       </div>
     </section>
 
-    {services && (
-      <ServicePodSection title={page.servicesTitle} services={services} />
-    )}
-
-    {page.historyTitle && (
-      <section className='section thin history'>
-        <div className='container'>
-          <h2 className='section-title'>{page.historyTitle}</h2>
-          <Content source={page.historySection} className='threeColumn' />
-        </div>
-      </section>
-    )}
-
-    {staff && (
-      <section className='section thin StaffSection' data-aos='fade-up'>
-        <div className='container'>
-          <div className='StaffSection--Grid Flex alignStart justifyBetween flexWrap'>
-            {_sortBy(staff, ['order']).map(staffMember => (
-              <StaffMemberCard
-                key={staffMember.title}
-                staffMember={staffMember}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-    )}
+    {services && <ServicePodSection services={services} />}
   </main>
 )
