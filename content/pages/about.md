@@ -1,6 +1,7 @@
 ---
 title: About
 bannerImage: /images/uploads/aboutbanner.png
+welcomeTitle: How it works
 welcomeQuote: 'Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. '
 welcomeSection: >-
   Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
