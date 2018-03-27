@@ -6,9 +6,9 @@ import './ServicePodSection.css'
 
 const ServicePodSection = ({ title, services, ...props }) => {
   return (
-    <section className='section '>
+    <section className='section'>
       <div className='container'>
-        <h2 className='section-title'>{title}</h2>
+        {title && <h2 className='section-title'>{title}</h2>}
         <div className='servicesGrid Flex alignStart justifyCenter flexWrap'>
           {_sortBy(services, ['order']).map(servicePod => (
             <div key={servicePod.title} className='ServicePod'>
@@ -23,18 +23,12 @@ const ServicePodSection = ({ title, services, ...props }) => {
               <div className='ServicePod--Info' data-aos='fade-left'>
                 {servicePod.title && (
                   <h3 className='Service--Title Coloured'>
-                    <div
-                      className='Coloured--Dot--small'
-                      style={{
-                        background: `${servicePod.color}`
-                      }}
-                    />
                     {servicePod.title}
                   </h3>
                 )}
-                {servicePod.galleryDescription && (
+                {servicePod.description && (
                   <div className='ServicePod--Description'>
-                    {_truncate(servicePod.galleryDescription, {
+                    {_truncate(servicePod.description, {
                       length: 111
                     })}
                   </div>

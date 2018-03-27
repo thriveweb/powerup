@@ -19,6 +19,7 @@ export default ({ page, staff, services }) => (
     <section className='section thin welcome'>
       <div className='container Flex alignCenter justifyBettwen'>
         <div className='welcome--info'>
+          <h2 className='welcome-title'>{page.welcomeTitle}</h2>
           <blockquote>
             <Content source={page.welcomeQuote} />
           </blockquote>
@@ -31,6 +32,11 @@ export default ({ page, staff, services }) => (
         </div>
       </div>
     </section>
+
+    {services && (
+      <ServicePodSection title={page.servicesTitle} services={services} />
+    )}
+
     {page.historyTitle && (
       <section className='section thin history'>
         <div className='container'>
@@ -39,9 +45,7 @@ export default ({ page, staff, services }) => (
         </div>
       </section>
     )}
-    {services && (
-      <ServicePodSection title={page.servicesTitle} services={services} />
-    )}
+
     {staff && (
       <section className='section thin StaffSection' data-aos='fade-up'>
         <div className='container'>
