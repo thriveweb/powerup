@@ -15,10 +15,7 @@ export default ({ page, staff, services }) => (
     <Helmet>
       <title>{page.title}</title>
     </Helmet>
-    <PageHeader
-      title={page.title}
-      bannerImage='https://source.unsplash.com/random'
-    />
+    <PageHeader title={page.title} bannerImage={page.bannerImage} />
     <section className='section thin welcome'>
       <div className='container Flex alignCenter justifyBettwen'>
         <div className='welcome--info'>
@@ -30,7 +27,7 @@ export default ({ page, staff, services }) => (
           </div>
         </div>
         <div className='welcome--image'>
-          <BackgroundImage src={page.featuredImage} lazy />
+          <BackgroundImage src={page.featuredImage} contain lazy />
         </div>
       </div>
     </section>
