@@ -32,5 +32,13 @@ sections:
           and athletic shoes will suffice.
         accordiontitle: Attire
     title: Preparation
-
+  - Image: /images/uploads/gym2.jpg
+    accordionSections:
+      - accordionContent: test
+        accordiontitle: test
+      - accordionContent: test
+        accordiontitle: test
+      - accordionContent: test
+    title: test
 ---
+
