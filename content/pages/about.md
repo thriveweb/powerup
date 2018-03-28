@@ -50,4 +50,22 @@ sections:
           and athletic shoes will suffice.
         accordiontitle: Waiver
     title: Arrival
+  - Image: /images/uploads/gym3.jpg
+    accordionSections:
+      - accordionContent: >-
+          Nothing too tricky here, just be ready to sweat! An athletic shirt or
+          tank top with form-fitting leggings, shorts or other athletic bottom
+          and athletic shoes will suffice.
+        accordiontitle: The Class
+      - accordionContent: >-
+          Nothing too tricky here, just be ready to sweat! An athletic shirt or
+          tank top with form-fitting leggings, shorts or other athletic bottom
+          and athletic shoes will suffice.
+        accordiontitle: Acclimation Period
+      - accordionContent: >-
+          Nothing too tricky here, just be ready to sweat! An athletic shirt or
+          tank top with form-fitting leggings, shorts or other athletic bottom
+          and athletic shoes will suffice.
+        accordiontitle: The Atmosphere
+    title: What to Expect
 ---
