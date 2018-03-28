@@ -1,16 +1,15 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import _sortBy from 'lodash/sortBy'
 
 import PageHeader from '../components/PageHeader'
 import BackgroundImage from '../components/BackgroundImage'
 import Content from '../components/Content.js'
 import ServicePodSection from '../components/ServicePodSection'
-import StaffMemberCard from '../components/StaffMemberCard'
+import AboutSection from '../components/AboutSection'
 
 import './About.css'
 
-export default ({ page, staff, services }) => (
+export default ({ page, services }) => (
   <main className='About' data-aos='fade-up'>
     <Helmet>
       <title>{page.title}</title>
@@ -28,11 +27,19 @@ export default ({ page, staff, services }) => (
           </div>
         </div>
         <div className='welcome--image'>
-          <BackgroundImage src={page.featuredImage} contain lazy />
+          <BackgroundImage src={page.welcomeImage} contain='contain' lazy />
         </div>
       </div>
     </section>
 
     {services && <ServicePodSection services={services} />}
+
+    <section className='section nopad workoutTitle'>
+      <div className='container skinny'>
+        <h2 className='taCenter'>{page.workoutTitle}</h2>
+      </div>
+    </section>
+
+    {page.sections && <AboutSection accordionSections={page.sections} />}
   </main>
 )

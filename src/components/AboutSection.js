@@ -1,16 +1,19 @@
 import React from 'react'
-import _sortBy from 'lodash/sortBy'
 
 import AboutCard from '../components/AboutCard'
 import './AboutSection.css'
 
-const AboutSection = ({ projects = [], title, limit = 9999 }) => {
+const AboutSection = ({ accordionSections = [] }) => {
   return (
-    <div className='section thin AboutSection'>
-      <div className='container'>
-        <AboutCard />
-      </div>
-    </div>
+    <main>
+      {accordionSections.map((card, index) => (
+        <AboutCard
+          key={index + `card`}
+          className={index % 2 ? `even` : `odd`}
+          card={card}
+        />
+      ))}
+    </main>
   )
 }
 export default AboutSection

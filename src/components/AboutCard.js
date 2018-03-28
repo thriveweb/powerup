@@ -1,43 +1,29 @@
 import React from 'react'
-import _sortBy from 'lodash/sortBy'
-import Flickity from './Flickity'
 
-import TestimonialCard from '../components/TestimonialCard'
-import './TestimonialsSection.css'
+import BackgroundImage from '../components/BackgroundImage'
+import './AboutCard.css'
 
-const TestimonialsSection = ({ projects = [], title, limit = 9999 }) => {
-  const flickityOptions = {
-    initialIndex: 1,
-    autoPlay: 3500,
-    wrapAround: true,
-    prevNextbuttons: true,
-    pageDots: false
-  }
-
+const AboutCard = ({ card, className, ...props }) => {
+  console.log(card)
   return (
-    <div className='section thin TestimonialSection'>
-      <div className='container'>
-        {title && <h2 className='taCenter'>{title}</h2>}
-        {projects.length && (
-          <Flickity
-            className={'carousel'} // default ''
-            elementType={'div'} // default 'div'
-            options={flickityOptions} // takes flickity options {}
-            disableImagesLoaded={false} // default false
-            reloadOnUpdate // default false
-          >
-            {_sortBy(projects, ['order'])
-              .slice(0, limit)
-              .map((projectItem, index) => (
-                <TestimonialCard
-                  key={projectItem.title + index}
-                  projectItem={projectItem}
-                />
-              ))}
-          </Flickity>
-        )}
+    <div className={`section thin AboutCard-${className}`}>
+      <div className='container AboutCard--container'>
+        <div className='AboutCard--image'>
+          <BackgroundImage src={card.Image} />
+        </div>
+        <div className='AboutCard--content'>
+          {card.title && (
+            <h2 className='AboutCard--content-title'>{card.title}</h2>
+          )}
+          {card.accordionSections.map((items, index) => (
+            <div key={index}>
+              <h2>{items.accordiontitle}</h2>
+              <p>{items.accordionContent}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )
 }
-export default TestimonialsSection
+export default AboutCard

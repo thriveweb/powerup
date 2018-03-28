@@ -1,0 +1,31 @@
+.AboutCard-odd {
+  background: linear-gradient(to left, var(--midGrey) 60%, white 40%);
+  margin-bottom: 4rem;
+}
+
+.AboutCard-even {
+  background: linear-gradient(to right, var(--midGrey) 60%, white 40%);
+  margin-bottom: 4rem;
+}
+
+.AboutCard--container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
+
+.AboutCard-even .AboutCard--container {
+  flex-direction: row-reverse;
+}
+
+.AboutCard--image {
+  width: 60%;
+  min-height: 450px;
+  position: relative;
+}
+
+.AboutCard--content {
+  width: 35%;
+  padding: 4rem;
+}
