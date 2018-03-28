@@ -11,8 +11,8 @@
   align-items: center;
   justify-content: center;
   animation: 1s ease-in-out infinite alternate InstagramFeed--EmptyPost;
-  width: calc(33.333% - 0.4rem);
-  padding-bottom: calc(33.333% - 0.4rem);
+  width: calc(20% - 0.4rem);
+  padding-bottom: calc(20% - 0.4rem);
   margin: 0.2rem;
 }
 
@@ -32,11 +32,11 @@
 
 @media (min-width: 1000px) {
   .InstagramFeed--EmptyPost {
-    width: calc(25% - 0.4rem);
-    padding-bottom: calc(25% - 0.4rem);
+    width: calc(16.666% - 0.4rem);
+    padding-bottom: calc(16.666% - 0.4rem);
   }
 
-  .InstagramFeed--EmptyPost:nth-child(1n + 5) {
+  .InstagramFeed--EmptyPost:nth-child(1n + 7) {
     display: none;
   }
 }

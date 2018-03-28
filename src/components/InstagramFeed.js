@@ -79,6 +79,6 @@ const Post = ({ src, code, caption }) => (
     target='_blank'
     aria-label='Instagram Post Link'
   >
-    <BackgroundImage contain src={src} lazy />
+    <BackgroundImage contain='contain' src={src} lazy />
   </a>
 )

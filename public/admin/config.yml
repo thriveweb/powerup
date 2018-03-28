@@ -39,10 +39,8 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Latitude, name: lat, widget: number, required: false}
               - {label: Longitude, name: lng, widget: number, required: false}
           - {label: Office Address, name: officeAddress, widget: text, required: false}
-          - {label: Postal Address, name: postalAddress, widget: text, required: false}
           - {label: Phone, name: phone, widget: string, required: false}
           - {label: Email, name: email, widget: string, required: false, pattern: ['^([A-Z|a-z|0-9](\.|_){0,1})+[A-Z|a-z|0-9]\@([A-Z|a-z|0-9])+((\.){0,1}[A-Z|a-z|0-9]){2}\.[a-z]{2,3}$', 'Email address required']}
-          - {label: Client Area Password, name: clientAreaPassword, widget: encode, required: false}
           - {label: Header Meta / Scripts, name: headerScripts, widget: text, required: false}
           - {label: Enable Service Worker Pre-Cache, name: enableServiceWorker, widget: boolean, required: false}
   - name: "pages"
@@ -51,36 +49,15 @@ collections: # A list of collections the CMS should be able to edit
     editor:
       preview: false
     files:
-      - file: "content/pages/clientArea.md"
-        label: "Client Area"
-        name: "clientArea-page"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Meassage, name: message, widget: message}
-          - {label: Content Section, name: contentSection, widget: markdown}
-          - label: "Accordion"
-            name: "accordion"
-            widget: "list"
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Description, name: description, widget: markdown}
-              - {label: Link Title, name: linkTitle, widget: string}
-              - {label: Link, name: link, widget: file}
       - file: "content/pages/contact.md"
         label: "Contact Page"
         name: "contact-page"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Meassage, name: message, widget: message}
-      - file: "content/pages/blog.md"
-        label: "Blog Page"
-        name: "blog-page"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Meassage, name: message, widget: message}
-      - file: "content/pages/project.md"
-        label: "Project Page"
-        name: "project-page"
+      - file: "content/pages/locations.md"
+        label: "Locations Page"
+        name: "locations-page"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Meassage, name: message, widget: message}
@@ -138,46 +115,42 @@ collections: # A list of collections the CMS should be able to edit
           - {label: News link text, name: newsLinkText, widget: string}
           - {label: Project Section Title, name: projectSectionTitle, widget: string}
           - {label: Testimonial Section Title, name: testimonialSectionTitle, widget: string}
-  - name: staff
-    label: Staff
+  - name: locations
+    label: Locations
     editor:
       preview: false
-    folder: content/staff
+    folder: content/locations
     slug: "{{slug}}"
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
+      - {label: Featured thumbnail, name: featuredThumbnail, widget: image}
+      - {label: Banner image, name: bannerImage, widget: image}
       - {label: Title, name: title, widget: string}
-      - {label: Subtitle, name: subtitle, widget: string}
-      - {label: Image, name: image, widget: image}
-      - {label: Content, name: body, widget: markdown}
-      - {label: Instagram, name: instagram, widget: string, required: false}
-      - {label: Twitter, name: twitter, widget: string, required: false}
-      - {label: Linked In, name: linkedin, widget: string, required: false}
-      - {label: Order, name: order, widget: number, required: false}
-  - name: projects
-    label: Projects
-    editor:
-      preview: false
-    folder: content/projects
-    slug: "{{slug}}"
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: Project Featured Image, name: projectFeaturedImage, widget: image}
-      - {label: Title, name: title, widget: string}
-      - {label: Year, name: year, widget: number, required: false}
-      - {label: Type Of Project, name: typeofproject, widget: string, required: false}
-      - {label: Client, name: client, widget: string, required: false}
-      - {label: Order, name: order, widget: number}
-      - {label: Content, name: body, widget: markdown}
-      - {label: Testimonial, name: testimonial, widget: markdown, required: false }
-      - {label: Name, name: name, widget: string, required: false}
-      - {label: Role, name: role, widget: string, required: false}
-      - label: "Project Gallery Images"
-        name: "projectGalleryImages"
+      - {label: Sub Title, name: subTitle, widget: string}
+      - label: Location
+        name: location
+        widget: object
+        fields:
+          - {label: Address, name: address, widget: text}
+          - {label: Latitude, name: lat, widget: number, required: false}
+          - {label: Longitude, name: lng, widget: number, required: false}
+      - {label: Class info, name: classInfo, widget: markdown}
+      - {label: Booking link, name: bookingLink , widget: string, required: false}
+      - {label: Twitter URL, name: twitterURL, widget: string, required: false}
+      - {label: Facebook URL, name: facebookURL, widget: string, required: false}
+      - {label: Linkedin URL, name: linkedinURL, widget: string, required: false}
+      - {label: Instagram URL, name: instagramURL, widget: string, required: false}
+      - {label: Phone, name: phone, widget: string, required: false}
+      - {label: Email, name: email, widget: string, required: false, pattern: ['^([A-Z|a-z|0-9](\.|_){0,1})+[A-Z|a-z|0-9]\@([A-Z|a-z|0-9])+((\.){0,1}[A-Z|a-z|0-9]){2}\.[a-z]{2,3}$', 'Email address required']}
+      - label: "Staff"
+        name: "staff"
         widget: "list"
         fields:
-          - {label: Image, name: galleryimage, widget: image}
-
+          - {label: Image, name: image, widget: image}
+          - {label: Name, name: name, widget: string}
+      - {label: Shedule URL, name: sheduleURL, widget: string, required: false}
+      - {label: Package URL, name: packageURL, widget: string, required: false}
+      - {label: Order, name: order, widget: number}
   - name: serrvices
     label: Services
     editor:
@@ -190,46 +163,3 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Title, name: title, widget: string}
       - {label: Description, name: description, widget: markdown}
       - {label: Order, name: order, widget: number}
-  - name: posts
-    label: Posts
-    editor:
-      preview: false
-    folder: content/posts
-    slug: "{{slug}}"
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: Title, name: title, widget: string}
-      - label: 'Status'
-        name: 'status'
-        widget: 'select'
-        options: ["Published", "Featured / Published", "Draft / Hidden"]
-        default: 'Published'
-      - label: "Categories"
-        name: "categories"
-        widget: "list"
-        fields:
-          - label: "Category"
-            name: "category"
-            widget: "relation"
-            collection: "postCategories"
-            searchFields: ["title"]
-            valueField: "title"
-      - {label: Date / Order, name: date, widget: date}
-      - {label: Post Featured Image, name: postFeaturedImage, widget: image}
-      - {label: Excerpt, name: excerpt, widget: text}
-      - {label: Content, name: body, widget: markdown}
-      - label: "Gallery Images"
-        name: "galleryImages"
-        widget: "list"
-        fields:
-          - {label: Image, name: galleryimage, widget: image}
-        required: false
-  - name: postCategories
-    label: Post Categoreies
-    editor:
-      preview: false
-    folder: content/postCategories
-    slug: "{{slug}}"
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: Title, name: title, widget: string}
