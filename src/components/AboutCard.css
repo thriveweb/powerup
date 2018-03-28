@@ -20,12 +20,21 @@
 }
 
 .AboutCard--image {
-  width: 60%;
+  width: 55%;
   min-height: 450px;
   position: relative;
 }
 
 .AboutCard--content {
-  width: 35%;
+  width: 45%;
   padding: 4rem;
+}
+
+.AboutCard--content-title {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.AboutCard--content--single {
+  padding: 4rem;
+  background: white;
 }

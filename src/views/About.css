@@ -49,3 +49,13 @@
   font-weight: 600;
   text-transform: uppercase;
 }
+
+.AboutButtons--links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.AboutButtons--links .button {
+  margin: 0 1rem;
+}

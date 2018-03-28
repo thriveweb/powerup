@@ -1,17 +1,22 @@
 .Accordion {
-  margin: 8rem auto;
   width: 100%;
   max-width: 600px;
-  border-bottom: 1px solid var(--midGrey);
 }
 
 .Accordion--item {
-  padding: 2rem;
-  border-top: 1px solid var(--midGrey);
+  padding: 1rem;
+  background: white;
+  margin: 0 0 1rem 0;
+  padding: 1.5rem;
 }
 
 .Accordion--item h2 {
   cursor: pointer;
+  font-weight: 600;
+  font-size: 1.6rem;
+  display: block;
+  margin: 0;
+  padding: 1rem;
 }
 
 .Accordion--item h2:after {
@@ -21,19 +26,35 @@
   color: var(--midGrey);
   line-height: 1;
   font-weight: 300;
+  position: relative;
+  top: -1rem;
 }
 
+.Accordion--item.active h2 {
+  color: var(--primary);
+}
 .Accordion--item.active h2:after {
   content: '-';
   float: right;
   font-size: 4rem;
-  color: var(--midGrey);
+  color: var(--darkGrey);
   line-height: 1;
   font-weight: 300;
+  top: -1.5rem;
+}
+
+.Accordion--item.active .description:before {
+  content: '';
+  background: var(--primary);
+  height: 2px;
+  width: 33.33%;
+  display: block;
+  margin: 1rem 0;
 }
 
 .Accordion--item.active .description {
   animation: sildeDescription 0.4s ease-out;
+  padding: 0rem 1rem 1rem 1rem;
 }
 
 @keyframes sildeDescription {

@@ -6,11 +6,13 @@ import BackgroundImage from '../components/BackgroundImage'
 import Content from '../components/Content.js'
 import ServicePodSection from '../components/ServicePodSection'
 import AboutSection from '../components/AboutSection'
+import Buttons from '../components/Buttons'
 
 import './About.css'
 
 export default ({ page, services }) => (
   <main className='About' data-aos='fade-up'>
+    {console.log(page.buttons)}
     <Helmet>
       <title>{page.title}</title>
     </Helmet>
@@ -41,5 +43,13 @@ export default ({ page, services }) => (
     </section>
 
     {page.sections && <AboutSection accordionSections={page.sections} />}
+
+    {page.buttons && (
+      <section className='section AboutButtons'>
+        <div className='container skinny'>
+          <Buttons buttons={page.buttons} className='AboutButtons--links' />
+        </div>
+      </section>
+    )}
   </main>
 )
