@@ -76,7 +76,11 @@ sections:
     accordionSections:
       - accordionContent: >-
           Our classes are high-intensity and will get your heart pumping, so
-          make sure to consult your doctor before climbing with us.  If you are vulnerable in any way to flashing lights and loud music, Rise Nation is probably not a good fit for you.  Please make sure that your handlebars are securely fastened and that your feet are firmly and evenly placed on the pedals before class begins.
+          make sure to consult your doctor before climbing with us.  If you are
+          vulnerable in any way to flashing lights and loud music, Rise Nation
+          is probably not a good fit for you.  Please make sure that your
+          handlebars are securely fastened and that your feet are firmly and
+          evenly placed on the pedals before class begins.
 
           Our Studios are dimly lit for the majority of the class and our
           climbers have hand rails and vertical posts that can obstruct your
@@ -85,4 +89,10 @@ sections:
           deliberately, and also, keep the walkways free of any objects that
           another person may trip over.
     title: Safety
+buttons:
+  - label: See FAQ
+    link: Contact
+  - label: Choose your location
+    link: Contact
 ---
+
