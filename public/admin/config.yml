@@ -103,6 +103,17 @@ collections: # A list of collections the CMS should be able to edit
                 fields:
                   - {label: Accordion Title, name: accordiontitle, widget: string, required: false}
                   - {label: Accordion Content, name: accordionContent, widget: text, required: false}
+          - label: "Buttons"
+            name: "buttons"
+            widget: "list"
+            fields:
+              - {label: Label, name: label, widget: string}
+              - label: "Link"
+                name: "link"
+                widget: "relation"
+                collection: "pages"
+                searchFields: ["title"]
+                valueField: "title"
       - file: "content/pages/home.md"
         label: "Home Page"
         name: "home-page"
