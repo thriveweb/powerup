@@ -1,0 +1,18 @@
+.LocationCard {
+  text-decoration: none;
+}
+
+.LocationCard .LocationCard--Image {
+  margin: 0 0 2rem 0;
+}
+.LocationCard h3 {
+  margin: 0 0 0 4rem;
+}
+.LocationCard .button {
+  margin: 2rem 6rem;
+}
+@media screen and (max-width: 750px) {
+  .LocationCard .button {
+    margin: 2rem 0;
+  }
+}
