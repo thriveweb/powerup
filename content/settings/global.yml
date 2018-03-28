@@ -2,7 +2,10 @@ siteTitle: Power up
 siteUrl: 'https://powerup.netlify.com'
 siteDescription: Power up
 socialMediaCard:
+  facebookURL: 'https://www.facebook.com/'
   image: /images/uploads/card-og.png
+  instagramURL: 'https://www.instagram.com/'
+  linkedinURL: 'https://www.linkedin.com/feed/'
   twitterCreatorAccount: Power up
   twitterSiteAccount: '@Powerup'
 location:
