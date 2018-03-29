@@ -30,7 +30,7 @@ class Nav extends React.Component {
 
   render () {
     const isHome = this.props.location.pathname === '/'
-    const services = this.props.services
+    const locations = this.props.locations
     const handleNavPopupOpen = this.props.handleNavPopupOpen
     return (
       <nav
@@ -50,15 +50,15 @@ class Nav extends React.Component {
               </NavLink>
               <div className='NavLink--DropDown'>
                 <div className='NavLink NavLink--Parent'>
-                  Services
+                  Locations
                   <div className='NavLink--Children'>
-                    {_sortBy(services, ['order']).map(servicePod => (
+                    {_sortBy(locations, ['order']).map(locationPod => (
                       <NavLink
-                        key={_kebabCase(servicePod.title)}
-                        to={`/services/${_kebabCase(servicePod.title)}/`}
+                        key={_kebabCase(locationPod.title)}
+                        to={`/locations/${_kebabCase(locationPod.title)}/`}
                         exact
                       >
-                        {servicePod.title}
+                        {locationPod.title}
                       </NavLink>
                     ))}
                   </div>

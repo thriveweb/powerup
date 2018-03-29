@@ -114,11 +114,11 @@ class App extends Component {
             headerScripts={headerScripts}
           />
           <Nav
-            services={services}
+            locations={locations}
             handleNavPopupOpen={this.handleNavPopupOpen}
           />
           <NavPopup
-            services={services}
+            locations={services}
             active={this.state.navPopup}
             handleClose={this.handleNavPopupClose}
           />
@@ -167,7 +167,7 @@ class App extends Component {
               path='/locations/:slug/'
               render={props => {
                 const slug = props.match.params.slug
-                const singleLocation = Locations.find(
+                const singleLocation = locations.find(
                   item => _kebabCase(item.title) === slug
                 )
                 return (
