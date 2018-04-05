@@ -231,6 +231,22 @@ pre code:after {
   column-gap: 2rem;
 }
 
+.square {
+  position: relative;
+}
+
+.square:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.square--content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (max-width: 750px) {
   .twoColumn {
     column-count: 1;

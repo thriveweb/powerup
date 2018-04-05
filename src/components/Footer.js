@@ -10,7 +10,6 @@ import './Footer.css'
 
 export default ({ globalSettings, navLinks, footerPages }) => (
   <main>
-    {console.log(globalSettings.socialMediaCard)}
     <div className='section'>
       <div className='container skinny Flex justifyBetween center'>
         {globalSettings.socialMediaCard.twitterSiteAccount && (

@@ -60,11 +60,13 @@ collections: # A list of collections the CMS should be able to edit
         name: "locations-page"
         fields:
           - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Banner Image, name: bannerImage, widget: image}
           - {label: Meassage, name: message, widget: message}
           - label: "Thumbnail Locations"
             name: "thumbnailLocations"
             widget: "list"
-            field:
+            fields:
               - {label: Featured thumbnail, name: featuredThumbnail, widget: image}
               - {label: Title, name: title, widget: string}
               - {label: Sub Title, name: subTitle, widget: string}

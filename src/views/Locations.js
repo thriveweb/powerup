@@ -2,15 +2,26 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import PageHeader from '../components/PageHeader'
-import LocationSection from '../components/LocationSection'
+import LocationItem from '../components/LocationItem'
 import './Locations.css'
 
-export default ({ page, locations }) => (
+export default ({ page }) => (
   <main className='Location' data-aos='fade-up'>
     <Helmet>
       <title>{page.title}</title>
     </Helmet>
-    <PageHeader title={page.title} />
-    <LocationSection locations={locations} />
+    <PageHeader title={page.title} bannerImage={page.bannerImage} />
+    <section className='section'>
+      <div className='container'>
+        {page.subtitle && <h2 className='Locations--title'>{page.subtitle}</h2>}
+        {page.thumbnailLocations && (
+          <div className='Locations--Grid'>
+            {page.thumbnailLocations.map((locationItem, index) => (
+              <LocationItem key={index} locationItem={locationItem} />
+            ))}
+          </div>
+        )}
+      </div>
+    </section>
   </main>
 )

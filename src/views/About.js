@@ -12,7 +12,6 @@ import './About.css'
 
 export default ({ page, services }) => (
   <main className='About' data-aos='fade-up'>
-    {console.log(page.buttons)}
     <Helmet>
       <title>{page.title}</title>
     </Helmet>

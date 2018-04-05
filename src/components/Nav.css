@@ -28,7 +28,6 @@ body,
 
 .NavLink--Parent {
   position: relative;
-  cursor: default;
 }
 .NavLink--Parent:hover {
   opacity: 1;
