@@ -1,5 +1,6 @@
 ---
 title: Locations
+subtitle: Choose your location
 bannerImage: /images/uploads/aboutbanner.png
 message: Go to Locations to edit the content on this page.
 thumbnailLocations:
