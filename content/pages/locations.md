@@ -1,4 +1,10 @@
 ---
 title: Locations
-message: 'Go to Locations to edit the content on this page.'
+message: Go to Locations to edit the content on this page.
+thumbnailLocations:
+  - featuredThumbnail: /images/uploads/tyler-gebhart-329964.jpg
+    locationLink: Gold Coast
+    subTitle: Robina
+    title: Gold coast
 ---
+
