@@ -6,5 +6,11 @@ thumbnailLocations:
     locationLink: Gold Coast
     subTitle: Robina
     title: Gold coast
+  - featuredThumbnail: /images/uploads/tyler-gebhart-329964.jpg
+    subTitle: coming soon
+    title: Brisbane
+  - featuredThumbnail: /images/uploads/tyler-gebhart-329964.jpg
+    subTitle: coming soon
+    title: Sydney
 ---
 
