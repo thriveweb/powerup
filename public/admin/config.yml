@@ -61,6 +61,19 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Meassage, name: message, widget: message}
+          - label: "Thumbnail Locations"
+            name: "thumbnailLocations"
+            widget: "list"
+            field:
+              - {label: Featured thumbnail, name: featuredThumbnail, widget: image}
+              - {label: Title, name: title, widget: string}
+              - {label: Sub Title, name: subTitle, widget: string}
+              - label: "Location link"
+                name: "locationLink"
+                widget: "relation"
+                collection: "locations"
+                searchFields: ["title"]
+                valueField: "title"
       - file: "content/pages/about.md"
         label: "About Page"
         name: "about-page"

@@ -157,7 +157,6 @@ class App extends Component {
                 <RouteWithFooter>
                   <Locations
                     page={this.getDocument('pages', 'locations')}
-                    locations={locations}
                     {...props}
                   />
                 </RouteWithFooter>

@@ -7,22 +7,22 @@ import './LocationCard.css'
 
 export default class LocationCard extends React.Component {
   render () {
-    const { projectItem } = this.props
+    const { locations } = this.props
     return (
       <Link
-        to={`/projects/${_kebabCase(projectItem.title)}/`}
+        to={`/projects/${_kebabCase(locations.title)}/`}
         className='LocationCard'
       >
-        {projectItem.projectFeaturedImage && (
+        {locations.projectFeaturedImage && (
           <div className='LocationCard--Image'>
             <LazyImage
-              src={projectItem.projectFeaturedImage}
-              alt={projectItem.title}
+              src={locations.projectFeaturedImage}
+              alt={locations.title}
             />
           </div>
         )}
-        {projectItem.title && (
-          <h3 className='LocationCard--Title'>{projectItem.title}</h3>
+        {locations.title && (
+          <h3 className='LocationCard--Title'>{locations.title}</h3>
         )}
         <div className='button'>See more</div>
       </Link>

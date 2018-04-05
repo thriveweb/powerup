@@ -49,7 +49,7 @@ class Nav extends React.Component {
                 About
               </NavLink>
               <div className='NavLink--DropDown'>
-                <div className='NavLink NavLink--Parent'>
+                <NavLink className='NavLink--Parent' to='/locations/' exact>
                   Locations
                   <div className='NavLink--Children'>
                     {_sortBy(locations, ['order']).map(locationPod => (
@@ -62,7 +62,7 @@ class Nav extends React.Component {
                       </NavLink>
                     ))}
                   </div>
-                </div>
+                </NavLink>
               </div>
               <NavLink to='/project/' exact>
                 Projects
