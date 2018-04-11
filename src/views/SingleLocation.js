@@ -109,25 +109,44 @@ const SingleLocation = ({ singleLocation, ...props }) => {
       )}
       {singleLocation.staff && (
         <section className='section Staff'>
-          <div className='container'>
-            {singleLocation.staff.map((member, index) => (
-              <div key={member.name + index} className='Staff--Menber square'>
-                <div className='square'>
+          <div className='containee'>
+            <h2 className='taCenter'>meet instructors</h2>
+            <div className='Staff--wraper'>
+              {singleLocation.staff.map((member, index) => (
+                <div key={member.name + index} className='Staff--Menber square'>
                   <BackgroundImage
                     className='square-content'
                     src={member.image}
                   />
                   <div className='Staff--Menber--name'>{member.name}</div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </section>
       )}
-
-      <section className='section Banner'>
-        <div className='container'>banner</div>
-      </section>
+      {singleLocation.bannerImage && (
+        <section className='section Banner'>
+          <div className='container'>
+            <div className='bannerImage'>bannerImage</div>
+            {singleLocation.bannerTitle && (
+              <div className='bannerTitle'>bannerTitle</div>
+            )}
+            {singleLocation.bannerSubtitle && (
+              <div className='bannerSubtitle'>bannerSubtitle</div>
+            )}
+            {singleLocation.bannerContent && (
+              <div className='bannerContent'>bannerContent</div>
+            )}
+            {singleLocation.bannerSheduleURL && (
+              <div className='bannerSheduleURL'>bannerSheduleURL</div>
+            )}
+            {singleLocation.bannerPackageURL && (
+              <div className='bannerPackageURL'>bannerPackageURL</div>
+            )}
+          </div>
+        </section>
+      )}
     </article>
   )
 }

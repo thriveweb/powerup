@@ -163,8 +163,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Image, name: image, widget: image}
           - {label: Name, name: name, widget: string}
-      - {label: Shedule URL, name: sheduleURL, widget: string, required: false}
-      - {label: Package URL, name: packageURL, widget: string, required: false}
+      - {label: Banner image, name: bannerImage, widget: image, required: false}
+      - {label: Banner Title, name: bannerTitle, widget: string, required: false}
+      - {label: Banner Subtitle, name: bannerSubtitle, widget: string, required: false}
+      - {label: Banner Content, name: bannerContent, widget: markdown, required: false}
+      - {label: Banner Shedule URL, name: bannerSheduleURL, widget: string, required: false}
+      - {label: Banner Package URL, name: bannerPackageURL, widget: string, required: false}
       - {label: Order, name: order, widget: number}
   - name: serrvices
     label: Services
