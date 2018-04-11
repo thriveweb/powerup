@@ -14,6 +14,7 @@ import About from './views/About'
 import Locations from './views/Locations'
 import SingleLocation from './views/SingleLocation'
 import Contact from './views/Contact'
+import Iframe from './views/Iframe'
 import NoMatch from './views/NoMatch'
 import Nav from './components/Nav'
 import NavPopup from './components/NavPopup'
@@ -195,6 +196,42 @@ class App extends Component {
                     globalSettings={globalSettings}
                     siteTitle={siteTitle}
                     locations={locations}
+                    {...props}
+                  />
+                </RouteWithFooter>
+              )}
+            />
+            <Route
+              path='/book-now/'
+              exact
+              render={props => (
+                <RouteWithFooter>
+                  <Iframe
+                    page={this.getDocument('pages', 'bookNow')}
+                    {...props}
+                  />
+                </RouteWithFooter>
+              )}
+            />
+            <Route
+              path='/class-packages/'
+              exact
+              render={props => (
+                <RouteWithFooter>
+                  <Iframe
+                    page={this.getDocument('pages', 'classPackages')}
+                    {...props}
+                  />
+                </RouteWithFooter>
+              )}
+            />
+            <Route
+              path='/book-a-class/'
+              exact
+              render={props => (
+                <RouteWithFooter>
+                  <Iframe
+                    page={this.getDocument('pages', 'bookAClass')}
                     {...props}
                   />
                 </RouteWithFooter>
