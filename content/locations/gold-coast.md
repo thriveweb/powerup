@@ -19,7 +19,9 @@ phone: '040404040404'
 email: gym@goldcaost.com
 staff:
   - image: /images/uploads/gym.jpg
-    name: Amanda Hugnkiss
+    name: Amanda Hugo
+  - image: /images/uploads/gym3.jpg
+    name: Jane Dona
 sheduleURL: 'http://instagram.com'
 packageURL: 'http://instagram.com'
 order: '1'
