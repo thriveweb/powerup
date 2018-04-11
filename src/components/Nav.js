@@ -64,20 +64,16 @@ class Nav extends React.Component {
                   </div>
                 </NavLink>
               </div>
-              <NavLink to='/project/' exact>
-                Projects
+              <NavLink to='/class-packages/' exact>
+                Class Packages
               </NavLink>
-              <NavLink to='/blog/' exact>
-                Blog
+              <NavLink to='/book-a-class/' exact>
+                Book A Class
               </NavLink>
               <NavLink to='/contact/' exact>
                 Contact
               </NavLink>
-              <NavLink
-                to='https://eventbright.com/'
-                exact
-                className='book-now button'
-              >
+              <NavLink to='/book-now/' exact className='book-now button'>
                 Book now
               </NavLink>
             </div>
