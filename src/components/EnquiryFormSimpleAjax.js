@@ -69,44 +69,27 @@ class Form extends React.Component {
         {this.state.alert && (
           <div className='EnquiryForm--Alert'>{this.state.alert}</div>
         )}
-        <div className='Flex alignStart justifyBetween flexWrap'>
-          <label className='EnquiryForm--Label'>
-            <input
-              className='EnquiryForm--Input'
-              type='text'
-              placeholder='First Name'
-              name='first-name'
-              required
-            />
-          </label>
-          <label className='EnquiryForm--Label'>
-            <input
-              className='EnquiryForm--Input'
-              type='text'
-              placeholder='Last Name'
-              name='last-name'
-              required
-            />
-          </label>
-          <label className='EnquiryForm--Label'>
-            <input
-              className='EnquiryForm--Input'
-              type='email'
-              placeholder='Email'
-              name='email'
-              required
-            />
-          </label>
-          <label className='EnquiryForm--Label'>
-            <input
-              className='EnquiryForm--Input'
-              type='text'
-              placeholder='Phone'
-              name='phone'
-              required
-            />
-          </label>
-        </div>
+
+        <label className='EnquiryForm--Label'>
+          <input
+            className='EnquiryForm--Input'
+            type='text'
+            placeholder='Name'
+            name='name'
+            required
+          />
+        </label>
+
+        <label className='EnquiryForm--Label'>
+          <input
+            className='EnquiryForm--Input'
+            type='email'
+            placeholder='Email'
+            name='email'
+            required
+          />
+        </label>
+
         <label className='EnquiryForm--Label'>
           <textarea
             className='EnquiryForm--Input EnquiryForm--Textarea'
@@ -122,7 +105,7 @@ class Form extends React.Component {
         <input
           className='button EnquiryForm--SubmitButton'
           type='submit'
-          value='Enquire'
+          value='Contact us'
           disabled={this.state.disabled}
         />
       </form>

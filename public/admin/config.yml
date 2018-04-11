@@ -49,12 +49,34 @@ collections: # A list of collections the CMS should be able to edit
     editor:
       preview: false
     files:
+      - file: "content/pages/bookNow.md"
+        label: "Book Now Page"
+        name: "booknow-page"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Banner Image, name: bannerImage, widget: image}
+          - {label: Iframe, name: iframe, widget: text}
+
       - file: "content/pages/contact.md"
         label: "Contact Page"
         name: "contact-page"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Meassage, name: message, widget: message}
+          - {label: Banner Image, name: bannerImage, widget: image}
+      - file: "content/pages/bookAClass.md"
+        label: "Book A Class Page"
+        name: "bookaclass-page"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Banner Image, name: bannerImage, widget: image}
+          - {label: Iframe, name: iframe, widget: text}
+      - file: "content/pages/classPackages.md"
+        label: "Class Packages Page"
+        name: "classpackages-page"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Banner Image, name: bannerImage, widget: image}
+          - {label: Iframe, name: iframe, widget: text}
       - file: "content/pages/locations.md"
         label: "Locations Page"
         name: "locations-page"

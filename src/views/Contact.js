@@ -1,8 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import { Link } from 'react-router-dom'
 
+import PageHeader from '../components/PageHeader'
 import EnquiryFormSimpleAjax from '../components/EnquiryFormSimpleAjax'
-import MapBanner from '../components/MapBanner'
+
 import './Contact.css'
 
 export default ({ page, siteTitle, globalSettings }) => (
@@ -10,43 +12,37 @@ export default ({ page, siteTitle, globalSettings }) => (
     <Helmet>
       <title>{page.title}</title>
     </Helmet>
-    {globalSettings && (
-      <div className='section thin'>
-        <div className='container'>
-          <MapBanner
-            apiKey='AIzaSyCcfv8L8FmeieABBF2u1dZxeB3NlULe_Nw'
-            lat={globalSettings.location.lat}
-            lng={globalSettings.location.lng}
-          />
-        </div>
-      </div>
-    )}
+    <PageHeader title={page.title} bannerImage={page.bannerImage} />
+
     <section className='section thick'>
-      <div className='container'>
-        <div className='Flex alignStart justifyBetween'>
-          <h1>{page.title}</h1>
-          <div className='Flex alignStart justifyBetween flexWrap thirds'>
-            <div className='address pods'>
-              <h4>Office Address</h4>
-              {globalSettings.officeAddress}
-            </div>
-            <div className='email pods'>
-              <h4>Email</h4>
-              <a href={`mailto:${globalSettings.email}`}>
+      <div className='container Flex'>
+        <div className='one-half'>
+          <h2>Contact Details</h2>
+          <h3>Let's talk</h3>
+          {globalSettings.officeAddress}
+          <div className='Contact-links'>
+            {globalSettings.phone && (
+              <Link className='Contact-link' to={`tel:${globalSettings.phone}`}>
+                <img src='/images/call.svg' alt='instagram' /> Call studio
+              </Link>
+            )}
+            {globalSettings.email && (
+              <Link
+                className='Contact-link'
+                to={`mailto:${globalSettings.email}`}
+              >
+                <img src='/images/email.svg' alt='instagram' />{' '}
                 {globalSettings.email}
-              </a>
-            </div>
-            <div className='phone pods'>
-              <h4>Phone</h4>
-              <a className='tel' href={`tel:${globalSettings.phone}`}>
-                {globalSettings.phone}
-              </a>
-            </div>
-            <EnquiryFormSimpleAjax
-              className='contactForm'
-              name='Simple Form Ajax'
-            />
+              </Link>
+            )}
           </div>
+        </div>
+        <div className='Contact-form one-half'>
+          <h3>send a message</h3>
+          <EnquiryFormSimpleAjax
+            className='contactForm'
+            name='Simple Form Ajax'
+          />
         </div>
       </div>
     </section>
