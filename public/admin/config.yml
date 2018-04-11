@@ -56,7 +56,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Banner Image, name: bannerImage, widget: image}
           - {label: Iframe, name: iframe, widget: text}
-
       - file: "content/pages/contact.md"
         label: "Contact Page"
         name: "contact-page"
@@ -203,4 +202,28 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Icon, name: icon, widget: image}
       - {label: Title, name: title, widget: string}
       - {label: Description, name: description, widget: markdown}
+      - {label: Order, name: order, widget: number}
+  - name: footerPages
+    label: Footer Pages
+    editor:
+      preview: false
+    folder: content/footerPages
+    slug: "{{slug}}"
+    create: true # Allow users to create new documents in this collection
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Banner Image, name: bannerImage, widget: image}
+      - {label: Content, name: content, widget: markdown}
+      - {label: Order, name: order, widget: number}
+  - name: coprightPages
+    label: Copyright Pages
+    editor:
+      preview: false
+    folder: content/coprightPages
+    slug: "{{slug}}"
+    create: true # Allow users to create new documents in this collection
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Banner Image, name: bannerImage, widget: image}
+      - {label: Content, name: content, widget: markdown}
       - {label: Order, name: order, widget: number}

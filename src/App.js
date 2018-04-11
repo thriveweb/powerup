@@ -15,6 +15,7 @@ import Locations from './views/Locations'
 import SingleLocation from './views/SingleLocation'
 import Contact from './views/Contact'
 import Iframe from './views/Iframe'
+import Default from './views/Default'
 import NoMatch from './views/NoMatch'
 import Nav from './components/Nav'
 import NavPopup from './components/NavPopup'
@@ -80,8 +81,8 @@ class App extends Component {
 
     const locations = this.getDocuments('locations')
     const services = this.getDocuments('services')
-    const footerPages = this.getDocuments('services')
-    const copyrightPages = this.getDocuments('services')
+    const footerPages = this.getDocuments('footerPages')
+    const copyrightPages = this.getDocuments('copyrightPages')
 
     const RouteWithFooter = ({ children, scrollToTop = true, ...props }) => (
       <div className='RouteWithFooter' {...props}>
@@ -155,7 +156,6 @@ class App extends Component {
                 </RouteWithFooter>
               )}
             />
-
             <Route
               path='/locations/'
               exact
@@ -185,7 +185,30 @@ class App extends Component {
                 )
               }}
             />
-
+            <Route
+              path='/class-packages/'
+              exact
+              render={props => (
+                <RouteWithFooter>
+                  <Iframe
+                    page={this.getDocument('pages', 'classPackages')}
+                    {...props}
+                  />
+                </RouteWithFooter>
+              )}
+            />
+            <Route
+              path='/book-a-class/'
+              exact
+              render={props => (
+                <RouteWithFooter>
+                  <Iframe
+                    page={this.getDocument('pages', 'bookAClass')}
+                    {...props}
+                  />
+                </RouteWithFooter>
+              )}
+            />
             <Route
               path='/contact/'
               exact
@@ -214,30 +237,33 @@ class App extends Component {
               )}
             />
             <Route
-              path='/class-packages/'
-              exact
-              render={props => (
-                <RouteWithFooter>
-                  <Iframe
-                    page={this.getDocument('pages', 'classPackages')}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
+              path='/footer-pages/:slug/'
+              render={props => {
+                const slug = props.match.params.slug
+                const singleFooterPage = footerPages.find(
+                  item => _kebabCase(item.title) === slug
+                )
+                return (
+                  <RouteWithFooter>
+                    <Default singlePage={singleFooterPage} {...props} />
+                  </RouteWithFooter>
+                )
+              }}
             />
             <Route
-              path='/book-a-class/'
-              exact
-              render={props => (
-                <RouteWithFooter>
-                  <Iframe
-                    page={this.getDocument('pages', 'bookAClass')}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
+              path='/copyright-pages/:slug/'
+              render={props => {
+                const slug = props.match.params.slug
+                const singleCopyrightPage = copyrightPages.find(
+                  item => _kebabCase(item.title) === slug
+                )
+                return (
+                  <RouteWithFooter>
+                    <Default singlePage={singleCopyrightPage} {...props} />
+                  </RouteWithFooter>
+                )
+              }}
             />
-
             <Route
               render={() => (
                 <RouteWithFooter>
