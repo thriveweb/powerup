@@ -14,7 +14,6 @@ import About from './views/About'
 import Locations from './views/Locations'
 import SingleLocation from './views/SingleLocation'
 import Contact from './views/Contact'
-import Iframe from './views/Iframe'
 import Default from './views/Default'
 import NoMatch from './views/NoMatch'
 import Nav from './components/Nav'
@@ -190,8 +189,8 @@ class App extends Component {
               exact
               render={props => (
                 <RouteWithFooter>
-                  <Iframe
-                    page={this.getDocument('pages', 'classPackages')}
+                  <Default
+                    singlePage={this.getDocument('pages', 'classPackages')}
                     {...props}
                   />
                 </RouteWithFooter>
@@ -202,8 +201,8 @@ class App extends Component {
               exact
               render={props => (
                 <RouteWithFooter>
-                  <Iframe
-                    page={this.getDocument('pages', 'bookAClass')}
+                  <Default
+                    singlePage={this.getDocument('pages', 'bookAClass')}
                     {...props}
                   />
                 </RouteWithFooter>
@@ -229,8 +228,8 @@ class App extends Component {
               exact
               render={props => (
                 <RouteWithFooter>
-                  <Iframe
-                    page={this.getDocument('pages', 'bookNow')}
+                  <Default
+                    singlePage={this.getDocument('pages', 'bookNow')}
                     {...props}
                   />
                 </RouteWithFooter>
