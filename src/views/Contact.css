@@ -1,26 +1,61 @@
-.Contact h1 {
-  display: block;
-  width: 40%;
-  margin: 0;
+.Contact-Form-Section {
+  background: linear-gradient(to left, var(--midGrey) 45%, white 45%);
+  margin: 4rem 0;
 }
-.Contact h4 {
-  display: block;
+.Contact h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
 }
-.Contact .thirds .pods {
-  width: 33.33%;
+.Contact .one-half {
+  width: 50%;
   padding: 0 4rem 0 0;
+}
+
+.Contact-Form-flex {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.Contact-Form--Title {
+  font-size: 4rem;
+}
+
+.Contact-Form--Address {
+  margin: 4rem 0;
 }
 
 .contactForm {
   max-width: 100%;
 }
 
-@media screen and (max-width: 750px) {
-  .Contact h1,
-  .Contact .thirds,
-  .Contact .thirds .pods {
-    width: 90%;
-    margin: 1rem auto;
-    max-width: 500px;
-  }
+.Contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--secondary);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 4rem 0;
+}
+.Contact-link:hover {
+  color: var(--primary);
+}
+.Contact-link img {
+  display: block;
+  max-width: 45px;
+  max-height: 45px;
+  height: auto;
+  margin: 0 2rem 0 0;
+}
+
+.Contact--Locations--Container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.Contact--Locations--Container .LocationItem--Item {
+  margin: 1rem 2rem;
 }

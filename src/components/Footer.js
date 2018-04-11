@@ -8,7 +8,13 @@ import NavLink from './NavLink'
 
 import './Footer.css'
 
-export default ({ globalSettings, navLinks, footerPages }) => (
+export default ({
+  globalSettings,
+  navLinks,
+  footerPages,
+  copyrightPages,
+  ...props
+}) => (
   <main>
     <div className='section'>
       <div className='container skinny Flex justifyBetween center'>
@@ -78,23 +84,36 @@ export default ({ globalSettings, navLinks, footerPages }) => (
           </div>
           <div className='pods'>
             <h3>Info</h3>
-            {_sortBy(footerPages, ['order']).map(servicePod => (
+            {_sortBy(footerPages, ['order']).map(fPage => (
               <NavLink
-                key={_kebabCase(servicePod.title)}
-                to={`/footerPages/${_kebabCase(servicePod.title)}/`}
+                key={_kebabCase(fPage.title)}
+                to={`/footer-pages/${_kebabCase(fPage.title)}/`}
                 exact
               >
-                {servicePod.title}
+                {fPage.title}
               </NavLink>
             ))}
           </div>
         </div>
       </div>
       <div className='container Flex alignCenter justifyBetween flexWrap Footer--Copyright'>
-        <small>© {new Date().getFullYear()} All rights reserved.</small>
-        <small>
-          <a href='https://thriveweb.com.au/'>Build on the Gold Coast</a>
-        </small>
+        <div className='Flex alignCenter justifyBetween flexWrap'>
+          <small>© {new Date().getFullYear()} All rights reserved. </small>
+          <small>
+            <a href='https://thriveweb.com.au/'> Build on the Gold Coast</a>
+          </small>
+        </div>
+        <div className='Flex alignCenter justifyBetween flexWrap'>
+          {_sortBy(copyrightPages, ['order']).map(copyPage => (
+            <NavLink
+              key={_kebabCase(copyPage.title)}
+              to={`/copyright-pages/${_kebabCase(copyPage.title)}/`}
+              exact
+            >
+              {copyPage.title}
+            </NavLink>
+          ))}
+        </div>
       </div>
     </footer>
   </main>

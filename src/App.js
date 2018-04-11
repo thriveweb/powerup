@@ -80,12 +80,17 @@ class App extends Component {
     const locations = this.getDocuments('locations')
     const services = this.getDocuments('services')
     const footerPages = this.getDocuments('services')
+    const copyrightPages = this.getDocuments('services')
 
     const RouteWithFooter = ({ children, scrollToTop = true, ...props }) => (
       <div className='RouteWithFooter' {...props}>
         {children}
         {scrollToTop && <ScrollToTopOnMount />}
-        <Footer globalSettings={globalSettings} footerPages={footerPages} />
+        <Footer
+          globalSettings={globalSettings}
+          footerPages={footerPages}
+          copyrightPages={copyrightPages}
+        />
       </div>
     )
 
@@ -189,6 +194,7 @@ class App extends Component {
                     page={this.getDocument('pages', 'contact')}
                     globalSettings={globalSettings}
                     siteTitle={siteTitle}
+                    locations={locations}
                     {...props}
                   />
                 </RouteWithFooter>
