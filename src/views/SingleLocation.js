@@ -69,8 +69,8 @@ const SingleLocation = ({ singleLocation, ...props }) => {
           </div>
         </div>
       </section>
-      <section className='section Links'>
-        <div className='container Links--container'>
+      <section className='Links'>
+        <div className='container  Links--container'>
           {singleLocation.bookingLink && (
             <Link className='Links-link' to={singleLocation.bookingLink}>
               <img src='/images/book-online.svg' alt='instagram' /> Book a class
