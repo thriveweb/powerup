@@ -25,12 +25,18 @@
   height: 50%;
 }
 
-.AboutCard-odd {
+.Social--container {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin: 5rem 0 1rem 0;
 }
 
-.AboutCard-even {
-  background: linear-gradient(to right, var(--midGrey) 60%, white 40%);
-  margin-bottom: 4rem;
+.Social--container img {
+  max-width: 15px;
+  max-height: 15px;
+  height: auto;
+  margin: 0 1rem;
 }
 
 .Staff--wraper {
@@ -56,4 +62,28 @@
   width: 100%;
   padding: 3rem 0;
   background: linear-gradient(to top, black 0%, transparent 100%);
+}
+
+.BannerSection--container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.BannerSection--container .one-half {
+  width: 50%;
+  position: relative;
+  padding: 10rem 5rem;
+}
+
+.BannerSection--Subtitle {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 90%;
+}
+.BannerSection--Content {
+  margin: 2rem 0;
+}
+
+.BannerSection .button {
+  margin: 1rem 2rem 1rem 0;
 }

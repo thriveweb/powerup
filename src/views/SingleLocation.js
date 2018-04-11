@@ -19,7 +19,7 @@ const SingleLocation = ({ singleLocation, ...props }) => {
         bannerImage={singleLocation.bannerImage}
       />
       <section className='section SingleLocation relative'>
-        <div className='container'>
+        <div className='container skinny'>
           <div className='SingleLocation--content'>
             {singleLocation.title && (
               <h2 className='SingleLocation--content--title'>
@@ -37,7 +37,7 @@ const SingleLocation = ({ singleLocation, ...props }) => {
                 Book a class
               </Link>
             )}
-            <div className='social--container'>
+            <div className='Social--container'>
               <p>Follow studio</p>
               {singleLocation.twitterURL && (
                 <Link target='_blank' to={singleLocation.twitterURL}>
@@ -127,27 +127,46 @@ const SingleLocation = ({ singleLocation, ...props }) => {
       )}
       {singleLocation.bannerSectionImage && (
         <section className='section BannerSection'>
-          <div className='container'>
-            <div className='bannerSectionImage'>bannerSectionImage</div>
-            {singleLocation.bannerSectionTitle && (
-              <div className='bannerSectionTitle'>bannerSectionTitle</div>
-            )}
-            {singleLocation.bannerSectionSubtitle && (
-              <div className='bannerSectionSubtitle'>bannerSectionSubtitle</div>
-            )}
-            {singleLocation.bannerSectionContent && (
-              <div className='bannerSectionContent'>bannerSectionContent</div>
-            )}
-            {singleLocation.bannerSectionSheduleURL && (
-              <div className='bannerSectionSheduleURL'>
-                bannerSectionSheduleURL
-              </div>
-            )}
-            {singleLocation.bannerSectionPackageURL && (
-              <div className='bannerSectionPackageURL'>
-                bannerSectionPackageURL
-              </div>
-            )}
+          <div className='container BannerSection--container'>
+            <div className='one-half'>
+              {singleLocation.bannerSectionTitle && (
+                <h2 className='BannerSection--Title'>
+                  {singleLocation.bannerSectionTitle}
+                </h2>
+              )}
+              {singleLocation.bannerSectionSubtitle && (
+                <h3 className='BannerSection--Subtitle'>
+                  {singleLocation.bannerSectionSubtitle}
+                </h3>
+              )}
+              {singleLocation.bannerSectionContent && (
+                <div className='BannerSection--Content'>
+                  {singleLocation.bannerSectionContent}
+                </div>
+              )}
+              {singleLocation.bannerSectionSheduleURL && (
+                <Link
+                  className='button'
+                  to={singleLocation.bannerSectionSheduleURL}
+                >
+                  see schedule
+                </Link>
+              )}
+              {singleLocation.bannerSectionPackageURL && (
+                <Link
+                  className='button'
+                  to={singleLocation.bannerSectionPackageURL}
+                >
+                  package options
+                </Link>
+              )}
+            </div>
+            <div className='one-half'>
+              <BackgroundImage
+                className='BannerSection--Image'
+                src={singleLocation.bannerSectionImage}
+              />
+            </div>
           </div>
         </section>
       )}
