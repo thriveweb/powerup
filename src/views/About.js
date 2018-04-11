@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 
 import PageHeader from '../components/PageHeader'
 import BackgroundImage from '../components/BackgroundImage'
-import Content from '../components/Content.js'
+import Content from '../components/Content'
 import ServicePodSection from '../components/ServicePodSection'
 import AboutSection from '../components/AboutSection'
 import Buttons from '../components/Buttons'
