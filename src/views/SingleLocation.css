@@ -1,61 +1,52 @@
-.SingleProject {
+.SingleLocation {
+  background: linear-gradient(to left, var(--midGrey) 40%, white 40%);
+  margin: 4rem 0;
+}
+.SingleLocation .container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
 }
 
-.SingleProject--gallery {
-  width: 60%;
+.SingleLocation--content {
+  width: calc(50% - 4rem);
+  position: relative;
+  padding: 4rem;
 }
 
-.SingleProject--content {
-  width: 35%;
-}
-@media screen and (max-width: 750px) {
-  .SingleProject--gallery {
-    width: 100%;
-  }
-
-  .SingleProject--content {
-    width: 90%;
-    margin: 2rem auto;
-  }
-}
-
-.breakout {
-  border-top: 1px solid var(--midGrey);
-  border-bottom: 1px solid var(--midGrey);
-  padding: 1rem 0;
-  margin: 2rem 0 4rem 0;
-}
-
-.breakout h3 {
-  margin: 0;
-}
-@media screen and (max-width: 750px) {
-  .breakout {
-    flex-direction: row !important;
-    flex-wrap: wrap;
-  }
-}
-
-.testimonials em {
+.SingleLocation--content--title {
   font-size: 4rem;
-  font-family: georgia, serif;
-  line-height: 1;
   margin: 0;
-  padding: 0;
-}
-.testimonials blockquote {
-  margin: 0 0 2rem 0;
-  padding: 0;
-  font-style: italic;
-  color: var(--midGrey);
-}
-.testimonials p {
-  margin: 0 1rem 0 0;
-  text-transform: uppercase;
-  font-size: 1.3rem;
 }
 
-.testimonials small {
-  font-size: 1.3rem;
-  color: var(--midGrey);
+.SingleLocation--thumbnail {
+  position: relative;
+  width: 50%;
+  height: 50%;
+}
+
+.AboutCard-odd {
+}
+
+.AboutCard-even {
+  background: linear-gradient(to right, var(--midGrey) 60%, white 40%);
+  margin-bottom: 4rem;
+}
+
+.Staff--Menber {
+  position: relative;
+  width: 33.33%;
+  height: 33.33%;
+}
+
+.Staff--Menber--name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  padding: 3rem 0;
+  background: linear-gradient(to top, black 0%, transparent 100%);
 }

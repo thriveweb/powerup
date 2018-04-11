@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn start
+  /usr/local/bin/node /usr/local/lib/node_modules/yarn/bin/yarn.js run start:app
 
 PATH: 
-  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin
+  /Users/iMacAlex/www/powerup/node_modules/.bin:/Users/iMacAlex/.config/yarn/link/node_modules/.bin:/Users/iMacAlex/www/powerup/node_modules/.bin:/Users/iMacAlex/.config/yarn/link/node_modules/.bin:/usr/local/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/bin/node_modules/npm/bin/node-gyp-bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin
 
 Yarn version: 
   1.4.0
@@ -9024,10 +9024,10 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 1
+  Exit signal: SIGHUP
   Command: sh
-  Arguments: -c npm-run-all prepare-content -p start:content start:app
-  Directory: /Users/iMacAlex/www/spacialstudio
+  Arguments: -c react-scripts start
+  Directory: /Users/iMacAlex/www/powerup
   Output:
   
       at ProcessTermError.MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
