@@ -125,24 +125,28 @@ const SingleLocation = ({ singleLocation, ...props }) => {
           </div>
         </section>
       )}
-      {singleLocation.bannerImage && (
-        <section className='section Banner'>
+      {singleLocation.bannerSectionImage && (
+        <section className='section BannerSection'>
           <div className='container'>
-            <div className='bannerImage'>bannerImage</div>
-            {singleLocation.bannerTitle && (
-              <div className='bannerTitle'>bannerTitle</div>
+            <div className='bannerSectionImage'>bannerSectionImage</div>
+            {singleLocation.bannerSectionTitle && (
+              <div className='bannerSectionTitle'>bannerSectionTitle</div>
             )}
-            {singleLocation.bannerSubtitle && (
-              <div className='bannerSubtitle'>bannerSubtitle</div>
+            {singleLocation.bannerSectionSubtitle && (
+              <div className='bannerSectionSubtitle'>bannerSectionSubtitle</div>
             )}
-            {singleLocation.bannerContent && (
-              <div className='bannerContent'>bannerContent</div>
+            {singleLocation.bannerSectionContent && (
+              <div className='bannerSectionContent'>bannerSectionContent</div>
             )}
-            {singleLocation.bannerSheduleURL && (
-              <div className='bannerSheduleURL'>bannerSheduleURL</div>
+            {singleLocation.bannerSectionSheduleURL && (
+              <div className='bannerSectionSheduleURL'>
+                bannerSectionSheduleURL
+              </div>
             )}
-            {singleLocation.bannerPackageURL && (
-              <div className='bannerPackageURL'>bannerPackageURL</div>
+            {singleLocation.bannerSectionPackageURL && (
+              <div className='bannerSectionPackageURL'>
+                bannerSectionPackageURL
+              </div>
             )}
           </div>
         </section>
