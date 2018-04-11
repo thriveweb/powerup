@@ -39,6 +39,29 @@
   margin: 0 1rem;
 }
 
+.Links--container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.Links-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.Links-link:hover {
+  color: var(--primary);
+}
+.Links-link img {
+  max-width: 45px;
+  max-height: 45px;
+  height: auto;
+  margin: 0 1rem;
+}
+
 .Staff--wraper {
   display: flex;
   align-items: stretch;

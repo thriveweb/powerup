@@ -70,30 +70,31 @@ const SingleLocation = ({ singleLocation, ...props }) => {
         </div>
       </section>
       <section className='section Links'>
-        <div className='container'>
+        <div className='container Links--container'>
           {singleLocation.bookingLink && (
-            <Link to={singleLocation.bookingLink}>
-              <img src='/images/instagram.svg' alt='instagram' /> Book a class
+            <Link className='Links-link' to={singleLocation.bookingLink}>
+              <img src='/images/book-online.svg' alt='instagram' /> Book a class
             </Link>
           )}
 
           {singleLocation.location.address && (
             <Link
+              className='Links-link'
               to={`https://www.google.com/maps/dir//${
                 singleLocation.location.address
               }`}
             >
-              <img src='/images/instagram.svg' alt='instagram' /> Map it
+              <img src='/images/marker.svg' alt='instagram' /> Map it
             </Link>
           )}
           {singleLocation.phone && (
-            <Link to={`tel:${singleLocation.phone}`}>
-              <img src='/images/instagram.svg' alt='instagram' /> Call studio
+            <Link className='Links-link' to={`tel:${singleLocation.phone}`}>
+              <img src='/images/call.svg' alt='instagram' /> Call studio
             </Link>
           )}
           {singleLocation.email && (
-            <Link to={`mailto:${singleLocation.email}`}>
-              <img src='/images/instagram.svg' alt='instagram' /> Email studio
+            <Link className='Links-link' to={`mailto:${singleLocation.email}`}>
+              <img src='/images/email.svg' alt='instagram' /> Email studio
             </Link>
           )}
         </div>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="59px" viewBox="0 0 49 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="2.07334737%" y1="50%" x2="94.9444901%" y2="79.5219809%" id="linearGradient-1">
+            <stop stop-color="#FFA4A4" offset="0%"></stop>
+            <stop stop-color="#FFA3A3" offset="0%"></stop>
+            <stop stop-color="#FF7A8E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="single-location" transform="translate(-658.000000, -1316.000000)" stroke="url(#linearGradient-1)" stroke-width="2.6">
+            <g id="Group-2" transform="translate(271.000000, 1317.000000)">
+                <g id="Page-1-Copy" transform="translate(389.000000, 0.000000)">
+                    <path d="M32.3958333,24.0625 C32.3958333,29.5865625 27.9198958,34.0625 22.3958333,34.0625 C16.8717708,34.0625 12.3958333,29.5865625 12.3958333,24.0625 C12.3958333,18.5384375 16.8717708,14.0625 22.3958333,14.0625 C27.9198958,14.0625 32.3958333,18.5384375 32.3958333,24.0625" id="Stroke-1"></path>
+                    <path d="M2.91666667,33.9583333 C1.14583333,30.7291667 0.104166667,27.0833333 0.104166667,23.125 C0.104166667,10.7291667 10.1041667,0.729166667 22.5,0.729166667 C34.8958333,0.729166667 44.8958333,10.7291667 44.8958333,23.125 C44.8958333,26.9791667 43.9583333,30.625 42.1875,33.75 C37.8125,42.3958333 30.9375,49.375 22.3958333,56.3541667 C16.25,51.9791667 8.22916667,43.2291667 2.91666667,33.9583333 Z" id="Stroke-2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
