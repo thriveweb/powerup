@@ -22,8 +22,15 @@ staff:
     name: Amanda Hugo
   - image: /images/uploads/gym3.jpg
     name: Jane Dona
-sheduleURL: 'http://instagram.com'
-packageURL: 'http://instagram.com'
+bannerSectionImage: /images/uploads/aboutwelcome.png
+bannerSectionTitle: Join the revolution
+bannerSectionSubtitle: experience the power of the tower
+bannerSectionContent: >-
+  See the schedule or select from our package options lorem ipsum dolor sit
+  amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+  et
+bannerSectionSheduleURL: 'http://google.com'
+bannerSectionPackageURL: 'http://google.com'
 order: '1'
 ---
 
