@@ -1,6 +1,6 @@
 ---
 welcomeImage: /images/uploads/aboutbanner.png
-title: Climb and sculpt your body
+title: Climb and sculp your body
 buttons:
   - label: Learn more
     link: About
