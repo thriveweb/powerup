@@ -8,19 +8,22 @@ buttons:
     link: Book A Class
 classesSectionTitle: Explore our classes
 pods:
-  - description: |-
+  - backgroundImage: /images/uploads/aboutbanner.png
+    description: |-
       Estimated Feet Climbed: 
       700 to 2500ft
     label: Explore
     title: 'Fusion  Fitness '
     url: /book-now/
-  - description: |-
+  - backgroundImage: /images/uploads/aboutbanner.png
+    description: |-
       Estimated Feet Climbed: 
       1500 to 3500ft
     label: Explore
     title: Strength
     url: /book-now/
-  - description: |-
+  - backgroundImage: /images/uploads/aboutbanner.png
+    description: |-
       Estimated Feet Climbed: 
       2500 to 6000ft
     label: Explore
@@ -37,5 +40,6 @@ testimonialSectionTitle: what our clients say
 testimonialImage: /images/uploads/gym3.jpg
 testimonialThumbnail: /images/uploads/gym.jpg
 testimonial: 'Feeling the BURN, this piece of equipment by Synergy Fitness does it all.'
+testimonialFrom: Sylvester Stallone
 ---
 
