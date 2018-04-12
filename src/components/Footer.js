@@ -49,12 +49,12 @@ export default ({
       </div>
     </div>
 
-    {globalSettings.socialMediaCard.instagramURL && (
+    {/* {globalSettings.socialMediaCard.instagramURL && (
       <InstagramFeed
         instagramUrl={globalSettings.socialMediaCard.instagramURL}
         count='10'
       />
-    )}
+    )} */}
 
     <footer className='Footer'>
       <div className='container mainFooter Flex justifyBetween center'>

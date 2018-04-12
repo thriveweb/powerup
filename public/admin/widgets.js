@@ -24,6 +24,36 @@ var EncodeControl = createClass({
 CMS.registerWidget('encode', EncodeControl)
 //
 // CMS.registerEditorComponent({
+//   id: 'file',
+//   label: 'File',
+//   fields: [
+//     {
+//       label: 'File',
+//       name: 'file',
+//       widget: 'file'
+//     },
+//     {
+//       label: 'Label',
+//       name: 'label'
+//     }
+//   ],
+//   // Pattern to identify a block as being an instance of this component
+//   pattern: /^{{\\_(.*)\\_-\/images\/uploads\/(.*)-}}$/,
+//   // Function to extract data elements from the regexp match
+//   fromBlock: match =>
+//     match && {
+//       file: match[2],
+//       label: match[1]
+//     },
+//   // Function to create a text block from an instance of this component
+//   toBlock: data => `{{_${data.label || ''}_-${data.file || ''}-}}`,
+//   toPreview: function (obj) {
+//     return ''
+//   }
+// })
+
+//
+// CMS.registerEditorComponent({
 //   // Internal id of the component
 //   id: 'youtube',
 //   // Visible label

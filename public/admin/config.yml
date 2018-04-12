@@ -55,7 +55,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Banner Image, name: bannerImage, widget: image}
-          - {label: Content, name: content, widget: text}
+          - {label: Content, name: content, widget: markdown}
       - file: "content/pages/contact.md"
         label: "Contact Page"
         name: "contact-page"
@@ -68,14 +68,14 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Banner Image, name: bannerImage, widget: image}
-          - {label: Content, name: content, widget: text}
+          - {label: Content, name: content, widget: markdown}
       - file: "content/pages/classPackages.md"
         label: "Class Packages Page"
         name: "classpackages-page"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Banner Image, name: bannerImage, widget: image}
-          - {label: Content, name: content, widget: text}
+          - {label: Content, name: content, widget: markdown}
       - file: "content/pages/locations.md"
         label: "Locations Page"
         name: "locations-page"
