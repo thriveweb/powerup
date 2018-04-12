@@ -136,21 +136,38 @@ collections: # A list of collections the CMS should be able to edit
         label: "Home Page"
         name: "home-page"
         fields:
-          - label: "Welcome Gallery Images"
-            name: "welcomeGalleryImages"
+          - {label: Welcome Image, name: welcomeImage, widget: image}
+          - {label: Title, name: title, widget: string}
+          - label: "Buttons"
+            name: "buttons"
             widget: "list"
             fields:
-              - {label: Image, name: galleryimage, widget: image}
-          - {label: Title, name: title, widget: string}
-          - {label: About Image, name: aboutImage, widget: image}
-          - {label: About Section Title, name: aboutSectionTitle, widget: string}
-          - {label: About Content, name: aboutContent, widget: markdown}
-          - {label: About link text, name: aboutLinkText, widget: string}
-          - {label: News Section Title, name: newsSectionTitle, widget: string}
-          - {label: News Content, name: newsContent, widget: markdown}
-          - {label: News link text, name: newsLinkText, widget: string}
-          - {label: Project Section Title, name: projectSectionTitle, widget: string}
+              - {label: Label, name: label, widget: string}
+              - label: "Link"
+                name: "link"
+                widget: "relation"
+                collection: "pages"
+                searchFields: ["title"]
+                valueField: "title"
+          - {label: Classes Section Title, name: classesSectionTitle, widget: string}
+          - label: "Pods"
+            name: "pods"
+            widget: "list"
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: text}
+              - {label: Label, name: label, widget: string}
+              - {label: URL, name: url, widget: string}
+          - {label: Services Subtitle, name: servicesSubtitle, widget: string}
+          - {label: Services Content, name: servicesContent, widget: markdown}
+          - {label: Services Section Title, name: servicesSectionTitle, widget: string}
+          - {label: Services Subtitle, name: servicesSubtitle, widget: string}
+          - {label: Services Content, name: servicesContent, widget: markdown}
+          - {label: Testimonial Banner, name: testimonialBanner, widget: image}
           - {label: Testimonial Section Title, name: testimonialSectionTitle, widget: string}
+          - {label: Testimonial Image, name: testimonialImage, widget: image}
+          - {label: Testimonial Thumbnail, name: testimonialThumbnail, widget: image}
+          - {label: Testimonial, name: testimonial, widget: text}
   - name: locations
     label: Locations
     editor:
