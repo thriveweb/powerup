@@ -8,13 +8,7 @@ content: >-
   posuere a mauris. 
 
 
-  ac dui pellentesque, 
-
-
-  {{_fghsafgjs_-/images/uploads/pdf.pdf-}}
-
-
-  lacinia risus ut, imperdiet eros.
+  ac dui pellentesque, lacinia risus ut, imperdiet eros.
 
 
   <iframe width="560" height="315"
