@@ -195,14 +195,17 @@ class App extends Component {
             <Route
               path='/book-a-class/'
               exact
-              render={props => (
-                <RouteWithFooter>
-                  <Default
-                    page={this.getDocument('pages', 'bookAClass')}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
+              render={props => {
+                const Comp = props => <Default {...props} />
+                return (
+                  <RouteWithFooter>
+                    <Comp
+                      page={this.getDocument('pages', 'bookAClass')}
+                      {...props}
+                    />
+                  </RouteWithFooter>
+                )
+              }}
             />
             <Route
               path='/contact/'
@@ -222,14 +225,17 @@ class App extends Component {
             <Route
               path='/book-now/'
               exact
-              render={props => (
-                <RouteWithFooter>
-                  <Default
-                    page={this.getDocument('pages', 'bookNow')}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
+              render={props => {
+                const Comp = props => <Default {...props} />
+                return (
+                  <RouteWithFooter>
+                    <Comp
+                      page={this.getDocument('pages', 'bookNow')}
+                      {...props}
+                    />
+                  </RouteWithFooter>
+                )
+              }}
             />
             <Route
               path='/faq/'
@@ -243,14 +249,17 @@ class App extends Component {
             <Route
               path='/disclaimer/'
               exact
-              render={props => (
-                <RouteWithFooter>
-                  <Default
-                    page={this.getDocument('pages', 'disclaimer')}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
+              render={props => {
+                const Comp = props => <Default {...props} />
+                return (
+                  <RouteWithFooter>
+                    <Comp
+                      page={this.getDocument('pages', 'disclaimer')}
+                      {...props}
+                    />
+                  </RouteWithFooter>
+                )
+              }}
             />
 
             <Route
