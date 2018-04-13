@@ -12,7 +12,7 @@ const Default = ({ page, ...props }) => (
       <title>{page.title}</title>
     </Helmet>
     <PageHeader title={page.title} bannerImage={page.bannerImage} />
-    <section className='section thin'>
+    <section className='section'>
       <div className='container skinny'>
         <Content source={page.content} />
       </div>
