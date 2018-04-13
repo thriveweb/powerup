@@ -10,7 +10,7 @@ location:
   lat: '-28.104'
   lng: '153.43600000000004'
 classInfo: 'Classes are $45, with walk-ins welcome pending availability.'
-bookingLink: 'http://twitter.com'
+bookingLink: book-a-class
 twitterURL: 'http://twitter.com'
 facebookURL: 'http://facebook.com'
 linkedinURL: 'http://linkedin.com'
