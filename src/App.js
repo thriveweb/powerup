@@ -80,18 +80,12 @@ class App extends Component {
 
     const locations = this.getDocuments('locations')
     const services = this.getDocuments('services')
-    const footerPages = this.getDocuments('footerPages')
-    const copyrightPages = this.getDocuments('copyrightPages')
 
     const RouteWithFooter = ({ children, scrollToTop = true, ...props }) => (
       <div className='RouteWithFooter' {...props}>
         {children}
         {scrollToTop && <ScrollToTopOnMount />}
-        <Footer
-          globalSettings={globalSettings}
-          footerPages={footerPages}
-          copyrightPages={copyrightPages}
-        />
+        <Footer globalSettings={globalSettings} />
       </div>
     )
 
@@ -236,34 +230,7 @@ class App extends Component {
                 </RouteWithFooter>
               )}
             />
-            <Route
-              path='/footer-pages/:slug/'
-              render={props => {
-                const slug = props.match.params.slug
-                const singleFooterPage = footerPages.find(
-                  item => _kebabCase(item.title) === slug
-                )
-                return (
-                  <RouteWithFooter>
-                    <Default singlePage={singleFooterPage} {...props} />
-                  </RouteWithFooter>
-                )
-              }}
-            />
-            <Route
-              path='/copyright-pages/:slug/'
-              render={props => {
-                const slug = props.match.params.slug
-                const singleCopyrightPage = copyrightPages.find(
-                  item => _kebabCase(item.title) === slug
-                )
-                return (
-                  <RouteWithFooter>
-                    <Default singlePage={singleCopyrightPage} {...props} />
-                  </RouteWithFooter>
-                )
-              }}
-            />
+
             <Route
               render={() => (
                 <RouteWithFooter>

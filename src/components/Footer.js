@@ -8,13 +8,7 @@ import NavLink from './NavLink'
 
 import './Footer.css'
 
-export default ({
-  globalSettings,
-  navLinks,
-  footerPages,
-  copyrightPages,
-  ...props
-}) => (
+export default ({ globalSettings, ...props }) => (
   <main>
     <div className='section'>
       <div className='container skinny Flex justifyBetween center'>
@@ -84,15 +78,17 @@ export default ({
           </div>
           <div className='pods'>
             <h3>Info</h3>
-            {_sortBy(footerPages, ['order']).map(fPage => (
-              <NavLink
-                key={_kebabCase(fPage.title)}
-                to={`/footer-pages/${_kebabCase(fPage.title)}/`}
-                exact
-              >
-                {fPage.title}
-              </NavLink>
-            ))}
+
+            <NavLink to={`/about/`} exact>
+              How It Works
+            </NavLink>
+
+            <NavLink to={`/locations/`} exact>
+              Studio Locations
+            </NavLink>
+            <NavLink to={`/class-packages/`} exact>
+              Class Packages
+            </NavLink>
           </div>
         </div>
       </div>
@@ -104,15 +100,12 @@ export default ({
           </small>
         </div>
         <div className='Flex alignCenter justifyBetween flexWrap'>
-          {_sortBy(copyrightPages, ['order']).map(copyPage => (
-            <NavLink
-              key={_kebabCase(copyPage.title)}
-              to={`/copyright-pages/${_kebabCase(copyPage.title)}/`}
-              exact
-            >
-              {copyPage.title}
-            </NavLink>
-          ))}
+          <NavLink to={`/faq/`} exact>
+            FAQ
+          </NavLink>
+          <NavLink to={`/disclaimer/`} exact>
+            Disclaimer
+          </NavLink>
         </div>
       </div>
     </footer>
