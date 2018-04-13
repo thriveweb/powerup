@@ -33,31 +33,31 @@ const SingleLocation = ({ singleLocation, ...props }) => {
             {singleLocation.classInfo && <p>{singleLocation.classInfo}</p>}
 
             {singleLocation.bookingLink && (
-              <Link className='button' to={singleLocation.bookingLink}>
+              <Link className='button' to={`/${singleLocation.bookingLink}/`}>
                 Book a class
               </Link>
             )}
             <div className='Social--container'>
               <p>Follow studio</p>
               {singleLocation.twitterURL && (
-                <Link target='_blank' to={singleLocation.twitterURL}>
+                <a target='_blank' href={singleLocation.twitterURL}>
                   <img src='/images/twitter.svg' alt='twitter' />
-                </Link>
+                </a>
               )}
               {singleLocation.facebookURL && (
-                <Link target='_blank' to={singleLocation.facebookURL}>
+                <a target='_blank' href={singleLocation.facebookURL}>
                   <img src='/images/facebook.svg' alt='facebook' />
-                </Link>
+                </a>
               )}
               {singleLocation.linkedinURL && (
-                <Link target='_blank' to={singleLocation.linkedinURL}>
+                <a target='_blank' href={singleLocation.linkedinURL}>
                   <img src='/images/linkedin.svg' alt='linkedin' />
-                </Link>
+                </a>
               )}
               {singleLocation.instagramURL && (
-                <Link target='_blank' to={singleLocation.instagramURL}>
+                <a target='_blank' href={singleLocation.instagramURL}>
                   <img src='/images/instagram.svg' alt='instagram' />
-                </Link>
+                </a>
               )}
             </div>
           </div>
