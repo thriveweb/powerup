@@ -1,5 +1,5 @@
 ---
-welcomeImage: /images/uploads/aboutbanner.png
+welcomeImage: /images/uploads/gym2.jpg
 title: Climb and sculp your body
 buttons:
   - label: Learn more
