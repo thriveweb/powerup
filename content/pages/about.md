@@ -1,7 +1,7 @@
 ---
 title: About
 bannerImage: /images/uploads/aboutbanner.png
-welcomeImage: /images/uploads/aboutwelcome.png
+welcomeImage: /images/uploads/workout7.png
 welcomeTitle: How it works
 welcomeQuote: 'Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. '
 welcomeSection: >-
