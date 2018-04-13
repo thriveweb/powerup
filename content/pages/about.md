@@ -92,8 +92,8 @@ sections:
     title: Safety
 buttons:
   - label: See FAQ
-    link: Contact
+    link: FAQ's
   - label: Choose your location
-    link: Contact
+    link: Locations
 ---
 
