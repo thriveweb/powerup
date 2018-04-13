@@ -1,5 +1,5 @@
 ---
-featuredThumbnail: /images/uploads/gym2.jpg
+featuredThumbnail: /images/uploads/city.jpg
 bannerImage: /images/uploads/gym2.jpg
 title: Gold Coast
 subTitle: Robina
