@@ -4,14 +4,14 @@ subtitle: Choose your location
 bannerImage: /images/uploads/aboutbanner.png
 message: Go to Locations to edit the content on this page.
 thumbnailLocations:
-  - featuredThumbnail: /images/uploads/tyler-gebhart-329964.jpg
+  - featuredThumbnail: /images/uploads/city.jpg
     locationLink: Gold Coast
     subTitle: Robina
     title: Gold coast
-  - featuredThumbnail: /images/uploads/tyler-gebhart-329964.jpg
+  - featuredThumbnail: /images/uploads/city.jpg
     subTitle: coming soon
     title: Brisbane
-  - featuredThumbnail: /images/uploads/tyler-gebhart-329964.jpg
+  - featuredThumbnail: /images/uploads/city.jpg
     subTitle: coming soon
     title: Sydney
 ---
