@@ -49,6 +49,26 @@ collections: # A list of collections the CMS should be able to edit
     editor:
       preview: false
     files:
+      - file: "content/pages/disclaimer.md"
+        label: "Disclaimer Page"
+        name: "disclaimer-page"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Banner Image, name: bannerImage, widget: image}
+          - {label: Content, name: content, widget: markdown}
+      - file: "content/pages/faq.md"
+        label: "FAQ Page"
+        name: "faq-page"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Banner Image, name: bannerImage, widget: image}
+          - {label: Content, name: content, widget: markdown}
+          - label: "Accordion"
+            name: "accordion"
+            widget: "list"
+            fields:
+              - {label: Accordion Title, name: accordiontitle, widget: string, required: false}
+              - {label: Accordion Content, name: accordionContent, widget: text, required: false}
       - file: "content/pages/bookNow.md"
         label: "Book Now Page"
         name: "booknow-page"
@@ -154,12 +174,11 @@ collections: # A list of collections the CMS should be able to edit
             name: "pods"
             widget: "list"
             fields:
+              - {label: Background Image, name: backgroundImage, widget: image}
               - {label: Title, name: title, widget: string}
               - {label: Description, name: description, widget: text}
               - {label: Label, name: label, widget: string}
               - {label: URL, name: url, widget: string}
-          - {label: Services Subtitle, name: servicesSubtitle, widget: string}
-          - {label: Services Content, name: servicesContent, widget: markdown}
           - {label: Services Section Title, name: servicesSectionTitle, widget: string}
           - {label: Services Subtitle, name: servicesSubtitle, widget: string}
           - {label: Services Content, name: servicesContent, widget: markdown}
@@ -168,6 +187,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Testimonial Image, name: testimonialImage, widget: image}
           - {label: Testimonial Thumbnail, name: testimonialThumbnail, widget: image}
           - {label: Testimonial, name: testimonial, widget: text}
+          - {label: Testimonial From, name: testimonialFrom, widget: string}
   - name: locations
     label: Locations
     editor:
@@ -219,28 +239,4 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Icon, name: icon, widget: image}
       - {label: Title, name: title, widget: string}
       - {label: Description, name: description, widget: markdown}
-      - {label: Order, name: order, widget: number}
-  - name: footerPages
-    label: Footer Pages
-    editor:
-      preview: false
-    folder: content/footerPages
-    slug: "{{slug}}"
-    create: true # Allow users to create new documents in this collection
-    fields:
-      - {label: Title, name: title, widget: string}
-      - {label: Banner Image, name: bannerImage, widget: image}
-      - {label: Content, name: content, widget: markdown}
-      - {label: Order, name: order, widget: number}
-  - name: coprightPages
-    label: Copyright Pages
-    editor:
-      preview: false
-    folder: content/coprightPages
-    slug: "{{slug}}"
-    create: true # Allow users to create new documents in this collection
-    fields:
-      - {label: Title, name: title, widget: string}
-      - {label: Banner Image, name: bannerImage, widget: image}
-      - {label: Content, name: content, widget: markdown}
       - {label: Order, name: order, widget: number}

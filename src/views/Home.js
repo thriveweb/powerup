@@ -1,97 +1,147 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Helmet from 'react-helmet'
+import _kebabCase from 'lodash/kebabCase'
 
-import Content from '../components/Content'
-import LazyImage from '../components/LazyImage'
+import BackgroundImage from '../components/BackgroundImage'
+import LocationItem from '../components/LocationItem'
 
 import ServicePodSection from '../components/ServicePodSection'
-import TestimonialsSection from '../components/TestimonialsSection'
 
 import './Home.css'
 
-const Home = ({ page, services }) => {
+const Home = ({ page, locations, services }) => {
   return (
     <main className='Home'>
       <Helmet>
         <title>{page.title}</title>
       </Helmet>
 
-      {page.title && (
-        <section className='section HomeTitle'>
-          <div className='container'>
-            <h1 data-aos='fade-down'>{page.title}</h1>
-          </div>
-        </section>
-      )}
-
       {page.welcomeImage && (
-        <div className='welcomeImage'> {page.welcomeImage}</div>
-      )}
-
-      {page.title && <div className='title'> {page.title}</div>}
-
-      {page.buttons.label && <div className='label'> {page.buttons.label}</div>}
-      {page.buttons.link && <div className='link'> {page.buttons.link}</div>}
-
-      {page.classesSectionTitle && (
-        <div className='classesSectionTitle'> {page.classesSectionTitle}</div>
-      )}
-
-      {page.pods.title && <div className='title'> {page.pods.title}</div>}
-
-      {page.pods.description && (
-        <div className='description'> {page.pods.description}</div>
-      )}
-
-      {page.pods.label && <div className='url'> {page.pods.label}</div>}
-      {page.pods.url && <div className='url'> {page.pods.url}</div>}
-
-      {page.servicesSubtitle && (
-        <div className='servicesSubtitle'> {page.servicesSubtitle}</div>
-      )}
-
-      {page.servicesContent && (
-        <div className='servicesContent'> {page.servicesContent}</div>
-      )}
-
-      {page.servicesSectionTitle && (
-        <div className='servicesSectionTitle'> {page.servicesSectionTitle}</div>
-      )}
-
-      {page.servicesSubtitle && (
-        <div className='servicesSubtitle'> {page.servicesSubtitle}</div>
-      )}
-
-      {page.servicesContent && (
-        <div className='servicesContent'> {page.servicesContent}</div>
-      )}
-
-      {page.testimonialBanner && (
-        <div className='testimonialBanner'> {page.testimonialBanner}</div>
-      )}
-
-      {page.testimonialSectionTitle && (
-        <div className='testimonialSectionTitle'>
-          {' '}
-          {page.testimonialSectionTitle}
+        <div className='WelcomeImage relative'>
+          <BackgroundImage
+            className='WelcomeImage--BackgroundImage'
+            opacity='0.5'
+            src={page.welcomeImage}
+          />
+          <h1 className='WelcomeImage--title'> {page.title}</h1>
+          {page.buttons && (
+            <div className='WelcomeImage--links'>
+              {page.buttons.map((button, index) => (
+                <Link
+                  className={`button-outline pos-${index}`}
+                  key={button + index}
+                  to={`/${_kebabCase(button.link)}/`}
+                >
+                  {button.label}
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
       )}
 
-      {page.testimonialImage && (
-        <div className='testimonialImage'> {page.testimonialImage}</div>
+      {locations && (
+        <div className='HomeLocations section'>
+          <div className='container'>
+            <h2 className='HomeLocations--title taCenter'>Studio locations</h2>
+            <div className='Locations--Grid'>
+              {locations.thumbnailLocations.map((locationItem, index) => (
+                <LocationItem key={index} locationItem={locationItem} />
+              ))}
+            </div>
+            <div className='HomeLocations--link taCenter'>
+              <Link className='button' to='/locations/'>
+                View all
+              </Link>
+            </div>
+          </div>
+        </div>
       )}
 
-      {page.testimonialThumbnail && (
-        <div className='testimonialThumbnail'> {page.testimonialThumbnail}</div>
+      {page.pods && (
+        <div className='PodsGrid section'>
+          <div className='container '>
+            <h2 className='ClassesSection--title taCenter'>
+              {page.classesSectionTitle}
+            </h2>
+            <div className='PodsGrid--wrap'>
+              {page.pods.map((pod, index) => (
+                <div key={index + pod.title} className='PodsGrid--pod'>
+                  <BackgroundImage src={pod.backgroundImage} opacity='0.5' />
+                  <h3 className='PodsGrid--title'>{pod.title}</h3>
+                  <div className='PodsGrid--description'>
+                    {' '}
+                    {pod.description}
+                  </div>
+                  <Link className='button' to={pod.url}>
+                    {pod.label}
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       )}
 
-      {page.testimonial && (
-        <div className='testimonial'> {page.testimonial}</div>
+      {page.servicesSectionTitle && (
+        <div className='section ServicesSection'>
+          <div className='container ServicesSection--wrap'>
+            <div className='ServicesSection--info'>
+              <h2 className='ServicesSection--title'>
+                {page.servicesSectionTitle}
+              </h2>
+              <h3 className='ServicesSection--subtitle'>
+                {page.servicesSubtitle}
+              </h3>
+              <div className='ServicesSection--Content'>
+                {page.servicesContent}
+              </div>
+              {services && (
+                <ServicePodSection
+                  title={page.servicesTitle}
+                  services={services}
+                />
+              )}
+            </div>
+            <div className='ServicesSection--banner' />
+          </div>
+        </div>
       )}
 
-      {services && (
-        <ServicePodSection title={page.servicesTitle} services={services} />
+      {page.testimonialBanner && (
+        <div className='TestimonialSection relative section thick'>
+          <BackgroundImage
+            className='TestimonialSection--banner'
+            src={page.testimonialBanner}
+            opacity='0.5'
+          />
+          <div className='container relative TestimonialSection--wrap'>
+            <h2 className='TestimonialSection--title'>
+              {page.testimonialSectionTitle}
+            </h2>
+            <div className='TestimonialSection--quote'>
+              <div className='TestimonialSection--imageWrap'>
+                <BackgroundImage
+                  className='TestimonialSection--image'
+                  src={page.testimonialImage}
+                />
+              </div>
+              <div className='TestimonialSection--thumbnailWrap'>
+                <div className='TestimonialSection--from'>
+                  <BackgroundImage
+                    className='TestimonialSection--thumbnail'
+                    src={page.testimonialThumbnail}
+                  />
+                  <strong>{page.testimonialFrom}</strong>
+                </div>
+                <div className='TestimonialSection--testimonial'>
+                  {page.testimonial}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       )}
     </main>
   )

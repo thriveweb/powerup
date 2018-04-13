@@ -73,6 +73,7 @@
   width: calc(33.33% - 2rem);
   height: calc(33.33% - 2rem);
   margin: 0 2rem;
+  max-width: 400px;
 }
 
 .Staff--Menber--name {

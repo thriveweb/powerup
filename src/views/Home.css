@@ -1,75 +1,172 @@
 .Home {
 }
 
-.section.HomeTitle {
-  padding: 15rem 0 5rem 0;
+.WelcomeImage {
+  height: 50vh;
+  background: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-.HomeTitle .container {
-  max-width: 600px;
+
+.WelcomeImage--title {
+  position: relative;
+  color: white;
+  height: auto;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 800px;
+  font-size: 75px;
+  font-weight: bold;
+  line-height: 82px;
+  text-align: center;
+  text-shadow: 0 2px 4px 0 rgba(27, 13, 15, 0.33);
+}
+
+.WelcomeImage--links {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.button-outline.pos-0 {
+  color: var(--primary);
+}
+.button-outline.pos-1 {
+  color: white;
+}
+
+.HomeLocations {
+  background: linear-gradient(to top, var(--midGrey) 70%, white 70%);
+}
+
+.PodsGrid--wrap {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.PodsGrid--pod {
+  position: relative;
+  background: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 4rem;
+  width: calc(33.33% - 2rem);
+  box-shadow: 0 12px 26px 0 rgba(130, 130, 130, 0.23);
+}
+.PodsGrid--title {
+  position: relative;
+  color: white;
+  text-transform: uppercase;
+  margin: 4rem 0;
+  font-weight: 600;
+  font-size: 4rem;
   text-align: center;
 }
-.HomeTitle h1 {
+.PodsGrid--description {
+  position: relative;
+  color: white;
+  text-transform: uppercase;
+  margin: 4rem 0;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
   line-height: 1.2;
 }
 
-.AboutSection small {
-  margin: 2rem 0;
-  display: block;
+.ServicesSection {
+  background: linear-gradient(to right, var(--midGrey) 70%, white 70%);
+}
+.ServicesSection--wrap {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.ServicesSection--info {
+  width: 65%;
 }
 
-.AboutSection .LazyImage {
-  width: 40%;
+.ServicesSection--title {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.ServicesSection--subtitle {
+  font-weight: 600;
 }
 
-.AboutSection--Info {
+.ServicesSection--banner {
+  width: 30%;
+  background: url(/images/homeServices.png) 0 0 no-repeat;
+  background-size: contain;
+}
+
+.TestimonialSection {
+  position: relative;
+  background: var(--secondary);
+}
+.TestimonialSection--banner {
+  position: relative;
+}
+.TestimonialSection--wrap {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+}
+.TestimonialSection--title {
+  position: relative;
+  color: white;
+  text-transform: uppercase;
+  margin: 4rem 0;
+  font-weight: 600;
+  font-size: 4rem;
+  width: 30%;
+}
+.TestimonialSection--quote {
   width: 50%;
+  background: white url(/images/quote.svg) 101% 0 no-repeat;
+  background-size: 120px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  overflow: hidden;
 }
-
-.HomeNews {
-  background: white;
-  padding: 0 !important;
-}
-
-.HomeNews--Info {
-  display: block;
-  width: 40%;
-  background: #f8f8f8;
-  padding: 4rem 8rem;
-}
-
-.HomeNews--Posts {
-  display: block;
-  width: calc(60% - 4rem);
-  padding: 4rem 0;
-}
-
-.HomeNews--Post {
-  display: block;
+.TestimonialSection--imageWrap {
+  position: relative;
   width: 45%;
-  margin: 0;
+}
+.TestimonialSection--image {
+  position: relative;
+}
+.TestimonialSection--thumbnailWrap {
+  position: relative;
+  padding: 5rem 4rem;
+}
+.TestimonialSection--from {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0 0 2rem 0;
+}
+.TestimonialSection--thumbnail {
+  position: relative !important;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 2rem 0 0;
 }
 
-.HomeProjectSection {
-  padding: 8rem 0 !important;
-}
-
-@media screen and (max-width: 750px) {
-  .AboutSection .LazyImage {
-    width: 100%;
-  }
-
-  .AboutSection--Info,
-  .HomeNews--Posts {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .HomeNews--Post {
-    width: 100%;
-    margin: 2rem 0;
-  }
-  .HomeNews--Info {
-    width: 100%;
-    padding: 2rem;
-  }
+.TestimonialSection--testimonial {
+  position: relative;
 }

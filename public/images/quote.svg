@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="103px" viewBox="0 0 160 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon''</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="2.07334737%" y1="50%" x2="94.9444901%" y2="79.5219809%" id="linearGradient-1">
+            <stop stop-color="#FFA4A4" offset="0%"></stop>
+            <stop stop-color="#FFA3A3" offset="0%"></stop>
+            <stop stop-color="#FF7A8E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Copy-3" transform="translate(-1340.000000, -4145.000000)" fill="url(#linearGradient-1)">
+            <g id="Card-1-Copy-4" transform="translate(799.000000, 4145.000000)">
+                <g id="Icon''" transform="translate(541.000000, -38.000000)">
+                    <path d="M124.5,0 C104.92175,0 89,15.809625 89,35.25 C89,54.690375 104.92175,70.5 124.5,70.5 C130.9965,70.5 137.004875,68.63175 142.25,65.5914375 L142.25,88.125 C142.25,107.565375 126.32825,123.375 106.75,123.375 L97.875,123.375 L97.875,141 L106.75,141 C136.117375,141 160,117.285563 160,88.125 L160,35.25 C160,15.809625 144.07825,0 124.5,0 Z" id="Shape"></path>
+                    <path d="M35.5,0 C15.92175,0 0,15.809625 0,35.25 C0,54.690375 15.92175,70.5 35.5,70.5 C41.9965,70.5 48.004875,68.63175 53.25,65.5914375 L53.25,88.125 C53.25,107.565375 37.32825,123.375 17.75,123.375 L8.875,123.375 L8.875,141 L17.75,141 C47.117375,141 71,117.285563 71,88.125 L71,35.25 C71,15.809625 55.07825,0 35.5,0 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

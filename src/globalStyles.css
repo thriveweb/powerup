@@ -350,6 +350,35 @@ pre code:after {
   cursor: progress;
 }
 
+.button-outline {
+  border: currentColor 2px solid;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  font-size: 1.3rem;
+  display: inline-block;
+  transition: all 0.1s ease;
+  cursor: pointer;
+  position: relative;
+  border-radius: 2rem;
+  background: transparent;
+  box-shadow: 0 1px 1px 0 rgba(130, 130, 130, 0.23);
+  padding: 1rem 3rem;
+  margin: 1rem;
+}
+.button-outline:hover,
+.button-outline:focus {
+  color: black;
+  background: white;
+  outline: none;
+}
+.button-outline[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: progress;
+}
+
 @media screen and (max-width: 750px) {
   .button {
     font-size: 1.3rem;
