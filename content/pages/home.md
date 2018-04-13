@@ -29,16 +29,16 @@ pods:
     label: Explore
     title: Cardio
     url: /book-now/
+servicesSectionTitle: 'Join the revolution '
 servicesSubtitle: TRULY VERSATILE TRAINING
 servicesContent: >-
   The collapse of the online-advertising market in 2001 made marketing on the
   Internet seem even less compelling. Website usability, press releases, online
   media buys, podcasts.
-servicesSectionTitle: 'Join the revolution '
 testimonialBanner: /images/uploads/aboutbanner.png
 testimonialSectionTitle: what our clients say
-testimonialImage: /images/uploads/gym3.jpg
-testimonialThumbnail: /images/uploads/gym.jpg
+testimonialImage: /images/uploads/Sylvester-Stallone-workout.jpg
+testimonialThumbnail: /images/uploads/Sylvester-Stallone.jpg
 testimonial: 'Feeling the BURN, this piece of equipment by Synergy Fitness does it all.'
 testimonialFrom: Sylvester Stallone
 ---
