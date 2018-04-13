@@ -1,6 +1,6 @@
 ---
-featuredThumbnail: /images/uploads/city.jpg
-bannerImage: /images/uploads/gym2.jpg
+featuredThumbnail: /images/uploads/gym2.jpg
+bannerImage: /images/uploads/city.jpg
 title: Gold Coast
 subTitle: Robina
 location:
