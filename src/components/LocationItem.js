@@ -19,7 +19,10 @@ const LocationItem = ({ locationItem, useTitle, ...props }) => {
         <h3 className='LocationItem--Item--title'>{locationItem.title}</h3>
         <p className='LocationItem--Item--subtitle'>{locationItem.subTitle}</p>
         {link && (
-          <Link className='LocationItem--Item--link button' to={link}>
+          <Link
+            className='LocationItem--Item--link button'
+            to={`/locations/${link}`}
+          >
             Read more
           </Link>
         )}

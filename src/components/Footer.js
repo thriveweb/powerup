@@ -1,7 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import _sortBy from 'lodash/sortBy'
-import _kebabCase from 'lodash/kebabCase'
 
 import InstagramFeed from './InstagramFeed'
 import NavLink from './NavLink'
