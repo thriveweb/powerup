@@ -78,24 +78,24 @@ const SingleLocation = ({ singleLocation, ...props }) => {
           )}
 
           {singleLocation.location.address && (
-            <Link
+            <a
               className='Links-link'
-              to={`https://www.google.com/maps/dir//${
+              href={`https://www.google.com/maps/dir//${
                 singleLocation.location.address
               }`}
             >
               <img src='/images/marker.svg' alt='instagram' /> Map it
-            </Link>
+            </a>
           )}
           {singleLocation.phone && (
-            <Link className='Links-link' to={`tel:${singleLocation.phone}`}>
+            <a className='Links-link' href={`tel:${singleLocation.phone}`}>
               <img src='/images/call.svg' alt='instagram' /> Call studio
-            </Link>
+            </a>
           )}
           {singleLocation.email && (
-            <Link className='Links-link' to={`mailto:${singleLocation.email}`}>
+            <a className='Links-link' href={`mailto:${singleLocation.email}`}>
               <img src='/images/email.svg' alt='instagram' /> Email studio
-            </Link>
+            </a>
           )}
         </div>
       </section>
