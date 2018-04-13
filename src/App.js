@@ -15,6 +15,7 @@ import Locations from './views/Locations'
 import SingleLocation from './views/SingleLocation'
 import Contact from './views/Contact'
 import Default from './views/Default'
+import Faq from './views/Faq'
 import NoMatch from './views/NoMatch'
 import Nav from './components/Nav'
 import NavPopup from './components/NavPopup'
@@ -185,7 +186,7 @@ class App extends Component {
               render={props => (
                 <RouteWithFooter>
                   <Default
-                    singlePage={this.getDocument('pages', 'classPackages')}
+                    page={this.getDocument('pages', 'classPackages')}
                     {...props}
                   />
                 </RouteWithFooter>
@@ -197,7 +198,7 @@ class App extends Component {
               render={props => (
                 <RouteWithFooter>
                   <Default
-                    singlePage={this.getDocument('pages', 'bookAClass')}
+                    page={this.getDocument('pages', 'bookAClass')}
                     {...props}
                   />
                 </RouteWithFooter>
@@ -224,7 +225,28 @@ class App extends Component {
               render={props => (
                 <RouteWithFooter>
                   <Default
-                    singlePage={this.getDocument('pages', 'bookNow')}
+                    page={this.getDocument('pages', 'bookNow')}
+                    {...props}
+                  />
+                </RouteWithFooter>
+              )}
+            />
+            <Route
+              path='/faq/'
+              exact
+              render={props => (
+                <RouteWithFooter>
+                  <Faq page={this.getDocument('pages', 'faq')} {...props} />
+                </RouteWithFooter>
+              )}
+            />
+            <Route
+              path='/disclaimer/'
+              exact
+              render={props => (
+                <RouteWithFooter>
+                  <Default
+                    page={this.getDocument('pages', 'disclaimer')}
                     {...props}
                   />
                 </RouteWithFooter>

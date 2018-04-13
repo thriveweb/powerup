@@ -2,7 +2,7 @@
 title: FAQ's
 bannerImage: /images/uploads/aboutbanner.png
 content: >-
-  ## Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu.
+  ## Etiam ac quam eget lectus.
 
 
   Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
@@ -28,4 +28,3 @@ accordion:
       dui pellentesque, lacinia risus ut, imperdiet eros.
     accordiontitle: Question
 ---
-

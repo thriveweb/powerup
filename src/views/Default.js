@@ -6,15 +6,15 @@ import Content from '../components/Content'
 
 import './Default.css'
 
-const Default = ({ singlePage, ...props }) => (
+const Default = ({ page, ...props }) => (
   <main className='Default' data-aos='fade-up'>
     <Helmet>
-      <title>{singlePage.title}</title>
+      <title>{page.title}</title>
     </Helmet>
-    <PageHeader title={singlePage.title} bannerImage={singlePage.bannerImage} />
+    <PageHeader title={page.title} bannerImage={page.bannerImage} />
     <section className='section thin'>
       <div className='container skinny'>
-        <Content source={singlePage.content} />
+        <Content source={page.content} />
       </div>
     </section>
   </main>

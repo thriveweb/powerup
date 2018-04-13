@@ -1,0 +1,7 @@
+.FAQ {
+  background: var(--lightGrey);
+}
+
+.FAQ .Accordion {
+  margin: 4rem auto;
+}
