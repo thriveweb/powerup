@@ -35,7 +35,7 @@ servicesContent: >-
   The collapse of the online-advertising market in 2001 made marketing on the
   Internet seem even less compelling. Website usability, press releases, online
   media buys, podcasts.
-testimonialBanner: /images/uploads/gym4.jpg
+testimonialBanner: /images/uploads/aboutbanner.png
 testimonialSectionTitle: what our clients say
 testimonialImage: /images/uploads/Sylvester-Stallone-workout.jpg
 testimonialThumbnail: /images/uploads/Sylvester-Stallone.jpg
