@@ -86,7 +86,7 @@
 }
 
 .EnquiryForm--Alert {
-  background: var(--lightGrey);
+  background: var(--primary);
   width: 100%;
   text-align: center;
   padding: 2rem;
