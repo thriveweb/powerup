@@ -29,8 +29,11 @@ bannerSectionContent: >-
   See the schedule or select from our package options lorem ipsum dolor sit
   amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
   et
-bannerSectionSheduleURL: 'http://google.com'
-bannerSectionPackageURL: 'http://google.com'
+bannerSectionButtons:
+  - label: See schedule
+    link: Book A Class
+  - label: Package options
+    link: Class Packages
 order: '1'
 ---
 
