@@ -225,8 +225,17 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Banner Section Title, name: bannerSectionTitle, widget: string, required: false}
       - {label: Banner Section Subtitle, name: bannerSectionSubtitle, widget: string, required: false}
       - {label: Banner Section Content, name: bannerSectionContent, widget: markdown, required: false}
-      - {label: Banner Section Shedule URL, name: bannerSectionSheduleURL, widget: string, required: false}
-      - {label: Banner Section Package URL, name: bannerSectionPackageURL, widget: string, required: false}
+      - label: "Banner Section Buttons"
+        name: "bannerSectionButtons"
+        widget: "list"
+        fields:
+          - {label: Label, name: label, widget: string}
+          - label: "Link"
+            name: "link"
+            widget: "relation"
+            collection: "pages"
+            searchFields: ["title"]
+            valueField: "title"
       - {label: Order, name: order, widget: number}
   - name: serrvices
     label: Services

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import MapBanner from '../components/MapBanner'
 import PageHeader from '../components/PageHeader'
 import BackgroundImage from '../components/BackgroundImage'
+import Buttons from '../components/Buttons'
 
 import './SingleLocation.css'
 
@@ -145,21 +146,8 @@ const SingleLocation = ({ singleLocation, ...props }) => {
                   {singleLocation.bannerSectionContent}
                 </div>
               )}
-              {singleLocation.bannerSectionSheduleURL && (
-                <Link
-                  className='button'
-                  to={singleLocation.bannerSectionSheduleURL}
-                >
-                  see schedule
-                </Link>
-              )}
-              {singleLocation.bannerSectionPackageURL && (
-                <Link
-                  className='button'
-                  to={singleLocation.bannerSectionPackageURL}
-                >
-                  package options
-                </Link>
+              {singleLocation.bannerSectionButtons && (
+                <Buttons buttons={singleLocation.bannerSectionButtons} />
               )}
             </div>
             <div className='one-half'>

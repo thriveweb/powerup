@@ -7,7 +7,7 @@ import _kebabCase from 'lodash/kebabCase'
 import _merge from 'lodash/merge'
 
 import ScrollToTopOnMount from './components/ScrollToTopOnMount'
-import AOS from './components/AOS'
+// import AOS from './components/AOS'
 import Meta from './components/Meta'
 import Home from './views/Home'
 import About from './views/About'
@@ -94,7 +94,7 @@ class App extends Component {
       <Router>
         <div className='React-Wrap'>
           {this.state.loading && <Spinner />}
-          <AOS />
+          {/* <AOS /> */}
           <ServiceWorkerNotifications reloadOnUpdate />
           <Helmet titleTemplate={`${siteTitle} | %s`} />
           <Meta
