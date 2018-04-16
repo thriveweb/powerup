@@ -1,6 +1,6 @@
 ---
 title: Book Now
-bannerImage: /images/uploads/aboutbanner.png
+bannerImage: /images/uploads/city2.jpg
 content: >-
   **Book now Description** goes here.  Etiam ac quam eget lectus venenatis
   ullamcorper sit amet non arcu. Nullam interdum arcu vitae augue pulvinar
