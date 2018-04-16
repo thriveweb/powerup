@@ -1,7 +1,7 @@
 ---
 title: Locations
 subtitle: Choose your location
-bannerImage: /images/uploads/aboutbanner.png
+bannerImage: /images/uploads/gym4.jpg
 message: Go to Locations to edit the content on this page.
 thumbnailLocations:
   - featuredThumbnail: /images/uploads/city.jpg
