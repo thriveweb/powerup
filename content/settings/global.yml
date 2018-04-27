@@ -4,7 +4,7 @@ siteDescription: Power up
 socialMediaCard:
   facebookURL: 'https://www.facebook.com/'
   image: /images/uploads/card-og.png
-  instagramURL: 'https://www.instagram.com/coffee/'
+  instagramURL: 'https://www.instagram.com/synergyfitnessequipment'
   linkedinURL: 'https://www.linkedin.com/feed/'
   twitterCreatorAccount: Power up
   twitterSiteAccount: '@Powerup'
@@ -14,11 +14,7 @@ location:
 officeAddress: |-
   4 / 25 Lemana Ln.
   Burleigh Heads, Gold Coast, Queensland, 4220
-postalAddress: |-
-  4 / 25 Lemana Ln.
-  Burleigh Heads, Gold Coast, Queensland, 4220
 phone: (07) 55 35 00 63
 email: info@Powerup.com
-clientAreaPassword: cGFzc3dvcmQ=
 headerScripts: <!-- Add your analytics scripts / verification meta here -->
 enableServiceWorker: false
