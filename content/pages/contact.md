@@ -1,4 +1,5 @@
 ---
 title: Contact
-bannerImage: /images/uploads/aboutbanner.png
+bannerImage: /images/uploads/edgestudios-126.jpg
 ---
+
