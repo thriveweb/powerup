@@ -30,9 +30,11 @@ pods:
 servicesSectionTitle: Join the Revolution
 servicesSubtitle: TRULY VERSATILE TRAINING
 servicesContent: >-
-  The collapse of the online-advertising market in 2001 made marketing on the
-  Internet seem even less compelling. Website usability, press releases, online
-  media buys, podcasts.
+  Power Up is a revolutionary group fitness model with unprecedented total body
+  functional strength and conditioning workout options that caters for everyone.
+  You will leave drenched in sweat, motivated, and ready to take on anything
+  after our cutting edge classes. Raise your standards and get ready to TAKE
+  YOUR TRAINING TO NEW HEIGHTS!
 testimonialBanner: /images/uploads/aboutbanner.png
 testimonialSectionTitle: what our clients say
 testimonialImage: /images/uploads/Sylvester-Stallone-workout.jpg
