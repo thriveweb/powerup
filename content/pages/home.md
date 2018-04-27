@@ -6,26 +6,20 @@ buttons:
     link: Book A Class
 classesSectionTitle: Explore our classes
 pods:
-  - backgroundImage: /images/uploads/aboutbanner.png
-    description: |-
-      Estimated Feet Climbed: 
-      700 to 2500ft
+  - backgroundImage: /images/uploads/workout1.png
+    description: ''
     label: Explore
     title: 'Fusion '
     url: /book-now/
-  - backgroundImage: /images/uploads/aboutbanner.png
-    description: |-
-      Estimated Feet Climbed: 
-      1500 to 3500ft
-    label: Explore
-    title: Strength
-    url: /book-now/
-  - backgroundImage: /images/uploads/aboutbanner.png
-    description: |-
-      Estimated Feet Climbed: 
-      2500 to 6000ft
+  - backgroundImage: /images/uploads/workout4.png
+    description: ''
     label: Explore
     title: Cardio
+    url: /book-now/
+  - backgroundImage: /images/uploads/workout3.png
+    description: ''
+    label: Explore
+    title: Strength
     url: /book-now/
 servicesSectionTitle: Join the Revolution
 servicesSubtitle: TRULY VERSATILE TRAINING
