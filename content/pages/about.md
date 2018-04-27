@@ -3,35 +3,33 @@ title: About
 bannerImage: /images/uploads/aboutbanner.png
 welcomeImage: /images/uploads/workout7.png
 welcomeTitle: How it works
-welcomeQuote: 'Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. '
+welcomeQuote: Get Ready to Energize Your LIFE!
 welcomeSection: >-
-  Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
-  lectus est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
-  pellentesque, lacinia risus ut, imperdiet eros.
-
-
-  interdum interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
-  lectus est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
-  pellentesque, lacinia risus ut, imperdiet eros
-workoutTitle: Getting ready for your first climbing workout
+  Power Up is offers and unprecedented total body functional strength and
+  conditioning workout options by exclusively using the unique SynergyAIR Power
+  Tower. There is zero-impact on the body on the Power Tower, making the PowerUP
+  workout available to all fitness levels. You will leave drenched in sweat,
+  motivated, and ready to take on anything after our cutting edge classes. Raise
+  your standards and get ready to TAKE YOUR TRAINING TO NEW HEIGHTS!
+workoutTitle: Getting ready for your first Power Up experiance
 sections:
-  - Image: /images/uploads/gym.jpg
+  - Image: /images/uploads/edgestudios-126.jpg
     accordionSections:
       - accordionContent: >-
-          Nothing too tricky here, just be ready to sweat! An athletic shirt or
-          tank top with form-fitting leggings, shorts or other athletic bottom
-          and athletic shoes will suffice.
-        accordiontitle: Hydrate
+          If it’s your first time at Power Up please make sure you arrive 5-10
+          minutes before your class and let your instructor know you are a
+          first-timer so they can give you a rundown of the Power Tower.
+        accordiontitle: Check In
       - accordionContent: >-
-          Nothing too tricky here, just be ready to sweat! An athletic shirt or
-          tank top with form-fitting leggings, shorts or other athletic bottom
-          and athletic shoes will suffice.
-        accordiontitle: Fuel Up
+          You will leave drenched in sweat, motivated, and ready to take on
+          anything!
+        accordiontitle: Drink Plenty of Water
       - accordionContent: >-
-          Nothing too tricky here, just be ready to sweat! An athletic shirt or
-          tank top with form-fitting leggings, shorts or other athletic bottom
-          and athletic shoes will suffice.
-        accordiontitle: Attire
+          All first-time users must sign our waiver, which will be displayed on
+          a front desk iPad.  Be sure to review all safety instructions outlined
+          in the waiver before submitting.  All climbers under the age of 18
+          must have their parent or guardian sign the waiver for them.
+        accordiontitle: Waiver
     title: Preparation
   - Image: /images/uploads/gym2.jpg
     accordionSections:
@@ -96,3 +94,4 @@ buttons:
   - label: Choose your location
     link: Locations
 ---
+
