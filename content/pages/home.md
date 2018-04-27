@@ -1,9 +1,7 @@
 ---
 welcomeImage: /images/uploads/edgestudios-128.jpg
-title: Join The Revolution
+title: Energize Your Life
 buttons:
-  - label: Learn more
-    link: About
   - label: Book a class
     link: Book A Class
 classesSectionTitle: Explore our classes
@@ -13,7 +11,7 @@ pods:
       Estimated Feet Climbed: 
       700 to 2500ft
     label: Explore
-    title: 'Fusion  Fitness '
+    title: 'Fusion '
     url: /book-now/
   - backgroundImage: /images/uploads/aboutbanner.png
     description: |-
@@ -29,7 +27,7 @@ pods:
     label: Explore
     title: Cardio
     url: /book-now/
-servicesSectionTitle: 'Join the Revolution '
+servicesSectionTitle: Join the Revolution
 servicesSubtitle: TRULY VERSATILE TRAINING
 servicesContent: >-
   The collapse of the online-advertising market in 2001 made marketing on the
