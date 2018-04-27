@@ -35,7 +35,7 @@ servicesContent: >-
   You will leave drenched in sweat, motivated, and ready to take on anything
   after our cutting edge classes. Raise your standards and get ready to TAKE
   YOUR TRAINING TO NEW HEIGHTS!
-testimonialBanner: /images/uploads/aboutbanner.png
+testimonialBanner: /images/uploads/edge-studios-hero-slider-02.jpg
 testimonialSectionTitle: what our clients say
 testimonialImage: /images/uploads/Sylvester-Stallone-workout.jpg
 testimonialThumbnail: /images/uploads/Sylvester-Stallone.jpg
