@@ -1,6 +1,6 @@
 ---
 welcomeImage: /images/uploads/edgestudios-128.jpg
-title: Climb and sculp your body
+title: Join The Revolution
 buttons:
   - label: Learn more
     link: About
