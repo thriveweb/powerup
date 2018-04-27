@@ -1,5 +1,5 @@
 ---
-welcomeImage: /images/uploads/gym2.jpg
+welcomeImage: /images/uploads/edgestudios-128.jpg
 title: Climb and sculp your body
 buttons:
   - label: Learn more
@@ -29,7 +29,7 @@ pods:
     label: Explore
     title: Cardio
     url: /book-now/
-servicesSectionTitle: 'Join the revolution '
+servicesSectionTitle: 'Join the Revolution '
 servicesSubtitle: TRULY VERSATILE TRAINING
 servicesContent: >-
   The collapse of the online-advertising market in 2001 made marketing on the
