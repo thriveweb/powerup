@@ -51,6 +51,10 @@
   margin-top: 0;
 }
 
+.nc-entryEditor-container {
+  max-width: 96%;
+}
+
 /* Custom logo */
 
 .nc-githubAuthenticationPage-logo {

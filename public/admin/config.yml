@@ -47,7 +47,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Pages"
     delete: false # Prevent users from deleting documents in this collection
     editor:
-      preview: false
+      preview: true
     files:
       - file: "content/pages/disclaimer.md"
         label: "Disclaimer Page"
@@ -191,7 +191,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: locations
     label: Locations
     editor:
-      preview: false
+      preview: true
     folder: content/locations
     slug: "{{slug}}"
     create: true # Allow users to create new documents in this collection
@@ -240,7 +240,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: serrvices
     label: Services
     editor:
-      preview: false
+      preview: true
     folder: content/services
     slug: "{{slug}}"
     create: true # Allow users to create new documents in this collection
