@@ -13,6 +13,6 @@ build
 .DS_Store
 npm-debug.log
 .env*.local
-+*error.log
+*error.log
 
 src/data.json
