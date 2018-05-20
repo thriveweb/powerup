@@ -8,6 +8,10 @@
   padding: 4rem 0 0 0;
   color: white;
 }
+.mainFooter img {
+  max-width: 280px;
+  height: auto;
+}
 
 .Footer .Logo {
   width: 8rem;
