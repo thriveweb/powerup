@@ -3,6 +3,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  max-width: 250px;
 }
 
 .Logo svg {
