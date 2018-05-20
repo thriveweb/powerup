@@ -32,7 +32,7 @@ export default class InstagramFeed extends Component {
       .then(res => res.json())
       .then(data => {
         this.setState({
-          posts: data ? data.items : []
+          posts: data && data.items ? data.items : []
         })
       })
       .catch(err => console.error(err))
@@ -79,6 +79,6 @@ const Post = ({ src, code, caption }) => (
     target='_blank'
     aria-label='Instagram Post Link'
   >
-    <BackgroundImage contain='contain' src={src} lazy />
+    <BackgroundImage contain src={src} lazy />
   </a>
 )
