@@ -1,5 +1,5 @@
 :root {
-  --primary: #ffa4a4;
+  --primary: #e72024;
   --secondary: #000;
   --lightGrey: #f1f1f1;
   --midGrey: #f3f3f3;
@@ -334,8 +334,8 @@ pre code:after {
   cursor: pointer;
   position: relative;
   border-radius: 2rem;
-  background: #ff7a8e;
-  background: linear-gradient(107.63deg, #ffa4a4 0%, #ffa3a3 0%, #ff7a8e 100%);
+  background: #d8683b;
+  background: linear-gradient(107.63deg, #e72024 0%, #e72024 0%, #e53600 100%);
   box-shadow: 0 1px 1px 0 rgba(130, 130, 130, 0.23);
   padding: 1rem 3rem;
 }
