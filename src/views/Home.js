@@ -41,7 +41,7 @@ const Home = ({ page, locations, services }) => {
         </div>
       )}
 
-      {locations && (
+      {/* {locations && (
         <div className='HomeLocations section'>
           <div className='container'>
             <h2 className='HomeLocations--title taCenter'>Studio locations</h2>
@@ -57,7 +57,7 @@ const Home = ({ page, locations, services }) => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
 
       {page.pods && (
         <div className='PodsGrid section'>
@@ -69,13 +69,13 @@ const Home = ({ page, locations, services }) => {
               {page.pods.map((pod, index) => (
                 <div key={index + pod.title} className='PodsGrid--pod'>
                   <BackgroundImage src={pod.backgroundImage} opacity='0.5' />
-                  <h3 className='PodsGrid--title'>{pod.title}</h3>
+                  {/* <h3 className='PodsGrid--title'>{pod.title}</h3>
                   <div className='PodsGrid--description'>
                     {' '}
                     {pod.description}
-                  </div>
+                  </div> */}
                   <Link className='button' to={pod.url}>
-                    {pod.label}
+                    {pod.title}
                   </Link>
                 </div>
               ))}

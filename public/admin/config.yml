@@ -82,13 +82,13 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Banner Image, name: bannerImage, widget: image}
-      - file: "content/pages/bookAClass.md"
-        label: "Book A Class Page"
-        name: "bookaclass-page"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Banner Image, name: bannerImage, widget: image}
-          - {label: Content, name: content, widget: markdown}
+      # - file: "content/pages/bookAClass.md"
+      #   label: "Book A Class Page"
+      #   name: "bookaclass-page"
+      #   fields:
+      #     - {label: Title, name: title, widget: string}
+      #     - {label: Banner Image, name: bannerImage, widget: image}
+      #     - {label: Content, name: content, widget: markdown}
       - file: "content/pages/classPackages.md"
         label: "Class Packages Page"
         name: "classpackages-page"
@@ -169,15 +169,15 @@ collections: # A list of collections the CMS should be able to edit
                 collection: "pages"
                 searchFields: ["title"]
                 valueField: "title"
-          - {label: Classes Section Title, name: classesSectionTitle, widget: string}
+          # - {label: Classes Section Title, name: classesSectionTitle, widget: string}
           - label: "Pods"
             name: "pods"
             widget: "list"
             fields:
               - {label: Background Image, name: backgroundImage, widget: image}
               - {label: Title, name: title, widget: string}
-              - {label: Description, name: description, widget: text}
-              - {label: Label, name: label, widget: string}
+              # - {label: Description, name: description, widget: text}
+              # - {label: Label, name: label, widget: string}
               - {label: URL, name: url, widget: string}
           - {label: Services Section Title, name: servicesSectionTitle, widget: string}
           - {label: Services Subtitle, name: servicesSubtitle, widget: string}
