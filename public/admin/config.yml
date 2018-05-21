@@ -129,18 +129,27 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Welcome Section, name: welcomeSection, widget: markdown}
           - {label: Edit Icons Title and Description in Services menu, name: aboutMessage, widget: message, required: false}
           - {label: Workout Title, name: workoutTitle, widget: string}
-          - label: "Sections"
-            name: "sections"
+          - label: "Pods"
+            name: "pods"
             widget: "list"
             fields:
-              - {label: Image, name: Image, widget: image}
+              - {label: Background Image, name: backgroundImage, widget: image}
               - {label: Title, name: title, widget: string}
-              - label: "Accordion Sections"
-                name: "accordionSections"
-                widget: "list"
-                fields:
-                  - {label: Accordion Title, name: accordiontitle, widget: string, required: false}
-                  - {label: Accordion Content, name: accordionContent, widget: text, required: false}
+              - {label: Description, name: description, widget: markdown}
+
+          # - label: "Sections"
+          #   name: "sections"
+          #   widget: "list"
+          #   fields:
+          #     - {label: Image, name: Image, widget: image}
+          #     - {label: Title, name: title, widget: string}
+          #     - label: "Accordion Sections"
+          #       name: "accordionSections"
+          #       widget: "list"
+          #       fields:
+          #         - {label: Accordion Title, name: accordiontitle, widget: string, required: false}
+          #         - {label: Accordion Content, name: accordionContent, widget: text, required: false}
+
           - label: "Buttons"
             name: "buttons"
             widget: "list"

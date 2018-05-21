@@ -4,8 +4,8 @@ import Helmet from 'react-helmet'
 import PageHeader from '../components/PageHeader'
 import BackgroundImage from '../components/BackgroundImage'
 import Content from '../components/Content'
-import ServicePodSection from '../components/ServicePodSection'
-import AboutSection from '../components/AboutSection'
+// import ServicePodSection from '../components/ServicePodSection'
+// import AboutSection from '../components/AboutSection'
 import Buttons from '../components/Buttons'
 
 import './About.css'
@@ -33,6 +33,18 @@ export default ({ page, services }) => (
       </div>
     </section>
 
+    <section className='section thin welcome'>
+      <div className='container Flex alignCenter justifyBettwen'>
+        {page.pods.map((pod, index) => (
+          <div key={index + pod.title} className='PodsGrid--pod'>
+            <BackgroundImage src={pod.backgroundImage} opacity='0.5' />
+            <h2>{pod.title}</h2>
+            {pod.description}
+          </div>
+        ))}
+      </div>
+    </section>
+    {/*
     {services && <ServicePodSection services={services} />}
 
     <section className='section nopad workoutTitle'>
@@ -41,7 +53,7 @@ export default ({ page, services }) => (
       </div>
     </section>
 
-    {page.sections && <AboutSection accordionSections={page.sections} />}
+    {page.sections && <AboutSection accordionSections={page.sections} />} */}
 
     {page.buttons && (
       <section className='section AboutButtons'>
