@@ -97,14 +97,8 @@ const Home = ({ page, locations, services }) => {
               <div className='ServicesSection--Content'>
                 {page.servicesContent}
               </div>
-              {services && (
-                <ServicePodSection
-                  title={page.servicesTitle}
-                  services={services}
-                />
-              )}
+              <p>5x deep-etched images running across</p>
             </div>
-            <div className='ServicesSection--banner' />
           </div>
         </div>
       )}

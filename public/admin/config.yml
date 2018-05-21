@@ -169,7 +169,7 @@ collections: # A list of collections the CMS should be able to edit
                 collection: "pages"
                 searchFields: ["title"]
                 valueField: "title"
-          # - {label: Classes Section Title, name: classesSectionTitle, widget: string}
+          - {label: Classes Section Title, name: classesSectionTitle, widget: string}
           - label: "Pods"
             name: "pods"
             widget: "list"
