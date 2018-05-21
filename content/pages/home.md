@@ -4,21 +4,15 @@ title: Energize Your Life
 buttons:
   - label: Book a class
     link: Book A Class
-classesSectionTitle: Explore our classes
+classesSectionTitle: Power Up Exercises
 pods:
   - backgroundImage: /images/uploads/workout1.png
-    description: ''
-    label: Explore
     title: 'Fusion '
     url: /book-now/
   - backgroundImage: /images/uploads/workout4.png
-    description: ''
-    label: Explore
     title: Cardio
     url: /book-now/
   - backgroundImage: /images/uploads/workout3.png
-    description: ''
-    label: Explore
     title: Strength
     url: /book-now/
 servicesSectionTitle: Join the Revolution
