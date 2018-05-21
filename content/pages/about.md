@@ -19,11 +19,24 @@ pods:
       interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
       lectus est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac
       dui pellentesque, lacinia risus ut, imperdiet eros.
+    title: Fusion
+  - backgroundImage: /images/uploads/active-adult-african-864078.jpg
+    description: >-
+      Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
+      interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
+      lectus est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac
+      dui pellentesque, lacinia risus ut, imperdiet eros.
     title: Cardio
+  - backgroundImage: /images/uploads/active-adult-african-864078.jpg
+    description: >-
+      Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
+      interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
+      lectus est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac
+      dui pellentesque, lacinia risus ut, imperdiet eros.
+    title: Strength
 buttons:
   - label: See FAQ
     link: FAQ's
   - label: Choose your location
     link: Locations
 ---
-

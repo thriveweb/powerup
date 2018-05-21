@@ -34,10 +34,10 @@ export default ({ page, services }) => (
     </section>
 
     <section className='section thin welcome'>
-      <div className='container Flex alignCenter justifyBettwen'>
+      <div className='container Flex alignCenter justifyBettwen About-PodsGrid relative'>
         {page.pods.map((pod, index) => (
-          <div key={index + pod.title} className='PodsGrid--pod'>
-            <BackgroundImage src={pod.backgroundImage} opacity='0.5' />
+          <div key={index + pod.title} className='About-PodsGrid--pod relative'>
+            <BackgroundImage src={pod.backgroundImage} />
             <h2>{pod.title}</h2>
             {pod.description}
           </div>
