@@ -6,13 +6,13 @@ buttons:
     link: Book A Class
 classesSectionTitle: Power Up Exercises
 pods:
-  - backgroundImage: /images/uploads/gym.png
+  - backgroundImage: /images/uploads/gym.jpg
     title: 'Fusion '
     url: /book-now/
-  - backgroundImage: /images/uploads/gym2.png
+  - backgroundImage: /images/uploads/gym2.jpg
     title: Cardio
     url: /book-now/
-  - backgroundImage: /images/uploads/gym.png
+  - backgroundImage: /images/uploads/gym.jpg
     title: Strength
     url: /book-now/
 servicesSectionTitle: Join the Revolution
