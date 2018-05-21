@@ -182,6 +182,13 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Services Section Title, name: servicesSectionTitle, widget: string}
           - {label: Services Subtitle, name: servicesSubtitle, widget: string}
           - {label: Services Content, name: servicesContent, widget: markdown}
+          - label: "Training Pods"
+            name: "trainingPods"
+            widget: "list"
+            fields:
+              - {label: Background Image, name: backgroundImage, widget: image}
+              - {label: Title, name: title, widget: string}
+              - {label: URL, name: url, widget: string}
           - {label: Testimonial Banner, name: testimonialBanner, widget: image}
           - {label: Testimonial Section Title, name: testimonialSectionTitle, widget: string}
           - {label: Testimonial Image, name: testimonialImage, widget: image}

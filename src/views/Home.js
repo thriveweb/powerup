@@ -98,6 +98,16 @@ const Home = ({ page, locations, services }) => {
                 {page.servicesContent}
               </div>
               <p>5x deep-etched images running across</p>
+              <div className='PodsGrid--wrap'>
+                {page.trainingPods.map((pod, index) => (
+                  <div key={index + pod.title} className='PodsGrid--pod'>
+                    <BackgroundImage src={pod.backgroundImage} opacity='0.5' />
+                    <Link className='button' to={pod.url}>
+                      {pod.title}
+                    </Link>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
