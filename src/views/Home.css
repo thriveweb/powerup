@@ -60,6 +60,7 @@
   padding: 4rem;
   width: calc(33.33% - 2rem);
   box-shadow: 0 12px 26px 0 rgba(130, 130, 130, 0.23);
+  min-height: 280px;
 }
 .PodsGrid--title {
   position: relative;

@@ -6,13 +6,13 @@ buttons:
     link: Book A Class
 classesSectionTitle: Power Up Exercises
 pods:
-  - backgroundImage: /images/uploads/workout1.png
+  - backgroundImage: /images/uploads/gym.png
     title: 'Fusion '
     url: /book-now/
-  - backgroundImage: /images/uploads/workout4.png
+  - backgroundImage: /images/uploads/gym2.png
     title: Cardio
     url: /book-now/
-  - backgroundImage: /images/uploads/workout3.png
+  - backgroundImage: /images/uploads/gym.png
     title: Strength
     url: /book-now/
 servicesSectionTitle: Join the Revolution
@@ -30,4 +30,3 @@ testimonialThumbnail: /images/uploads/Sylvester-Stallone.jpg
 testimonial: 'Feeling the BURN, this piece of equipment by Synergy Fitness does it all.'
 testimonialFrom: Sylvester Stallone
 ---
-
