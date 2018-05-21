@@ -192,21 +192,7 @@ class App extends Component {
                 </RouteWithFooter>
               )}
             />
-            <Route
-              path='/book-a-class/'
-              exact
-              render={props => {
-                const Comp = props => <Default {...props} />
-                return (
-                  <RouteWithFooter>
-                    <Comp
-                      page={this.getDocument('pages', 'bookAClass')}
-                      {...props}
-                    />
-                  </RouteWithFooter>
-                )
-              }}
-            />
+
             <Route
               path='/contact/'
               exact
