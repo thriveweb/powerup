@@ -48,21 +48,21 @@ class Nav extends React.Component {
               <NavLink to='/about/' exact>
                 About
               </NavLink>
-              <div className='NavLink--DropDown'>
-                <NavLink className='NavLink--Parent' to='/locations/' exact>
+              <div className='NavLink--DropDown NavLink--Parent'>
+                <NavLink to='/locations/' exact>
                   Locations
-                  <div className='NavLink--Children'>
-                    {_sortBy(locations, ['order']).map(locationPod => (
-                      <NavLink
-                        key={_kebabCase(locationPod.title)}
-                        to={`/locations/${_kebabCase(locationPod.title)}/`}
-                        exact
-                      >
-                        {locationPod.title}
-                      </NavLink>
-                    ))}
-                  </div>
                 </NavLink>
+                <div className='NavLink--Children'>
+                  {_sortBy(locations, ['order']).map(locationPod => (
+                    <NavLink
+                      key={_kebabCase(locationPod.title)}
+                      to={`/locations/${_kebabCase(locationPod.title)}/`}
+                      exact
+                    >
+                      {locationPod.title}
+                    </NavLink>
+                  ))}
+                </div>
               </div>
               <NavLink to='/class-packages/' exact>
                 Class Packages

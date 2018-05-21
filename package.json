@@ -46,7 +46,8 @@
     "react-markdown": "^2.5.0",
     "react-router-dom": "^4.1.1",
     "react-router-transition": "^1.2.0",
-    "react-snapshot": "^1.1.0"
+    "react-snapshot": "^1.1.0",
+    "react-swipe": "^5.1.1"
   },
   "scripts": {
     "start": "npm-run-all prepare-content -p start:content start:app",

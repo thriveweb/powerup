@@ -2,11 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Helmet from 'react-helmet'
 import _kebabCase from 'lodash/kebabCase'
+import ReactSwipe from 'react-swipe'
 
 import BackgroundImage from '../components/BackgroundImage'
-import LocationItem from '../components/LocationItem'
-
-import ServicePodSection from '../components/ServicePodSection'
+// import LocationItem from '../components/LocationItem'
+// import ServicePodSection from '../components/ServicePodSection'
 
 import './Home.css'
 
@@ -104,10 +104,7 @@ const Home = ({ page, locations, services }) => {
                   key={index + pod.backgroundImage}
                   className='TrainingPods--pod'
                 >
-                  <BackgroundImage
-                    src={pod.backgroundImage}
-                    contain='contain'
-                  />
+                  <BackgroundImage src={pod.backgroundImage} contain />
                 </div>
               ))}
             </div>
@@ -126,28 +123,43 @@ const Home = ({ page, locations, services }) => {
             <h2 className='TestimonialSection--title'>
               {page.testimonialSectionTitle}
             </h2>
-            {page.quotes.map((quote, index) => (
-              <div className='TestimonialSection--quote'>
-                <div className='TestimonialSection--imageWrap'>
-                  <BackgroundImage
-                    className='TestimonialSection--image'
-                    src={quote.testimonialImage}
-                  />
-                </div>
-                <div className='TestimonialSection--thumbnailWrap'>
-                  <div className='TestimonialSection--from'>
+            <ReactSwipe
+              key={page.quotes.length}
+              className='carousel'
+              swipeOptions={{
+                speed: 1000,
+                auto: 3000,
+                continuous: true,
+                disableScroll: false,
+                stopPropagation: false
+              }}
+            >
+              {page.quotes.map((quote, index) => (
+                <div
+                  key={index + quote.testimonialFrom}
+                  className='TestimonialSection--quote'
+                >
+                  <div className='TestimonialSection--imageWrap'>
                     <BackgroundImage
-                      className='TestimonialSection--thumbnail'
-                      src={quote.testimonialThumbnail}
+                      className='TestimonialSection--image'
+                      src={quote.testimonialImage}
                     />
-                    <strong>{quote.testimonialFrom}</strong>
                   </div>
-                  <div className='TestimonialSection--testimonial'>
-                    {quote.testimonial}
+                  <div className='TestimonialSection--thumbnailWrap'>
+                    <div className='TestimonialSection--from'>
+                      <BackgroundImage
+                        className='TestimonialSection--thumbnail'
+                        src={quote.testimonialThumbnail}
+                      />
+                      <strong>{quote.testimonialFrom}</strong>
+                    </div>
+                    <div className='TestimonialSection--testimonial'>
+                      {quote.testimonial}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </ReactSwipe>
           </div>
         </div>
       )}

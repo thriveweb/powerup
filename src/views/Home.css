@@ -146,11 +146,16 @@
   font-size: 4rem;
   width: 30%;
 }
+
+.carousel {
+  width: 50%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
 .TestimonialSection--quote {
   width: 50%;
   background: white url(/images/quote.svg) 101% 0 no-repeat;
   background-size: 120px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   border-radius: 1rem;
   display: flex;
   align-items: stretch;
