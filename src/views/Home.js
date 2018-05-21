@@ -126,26 +126,28 @@ const Home = ({ page, locations, services }) => {
             <h2 className='TestimonialSection--title'>
               {page.testimonialSectionTitle}
             </h2>
-            <div className='TestimonialSection--quote'>
-              <div className='TestimonialSection--imageWrap'>
-                <BackgroundImage
-                  className='TestimonialSection--image'
-                  src={page.testimonialImage}
-                />
-              </div>
-              <div className='TestimonialSection--thumbnailWrap'>
-                <div className='TestimonialSection--from'>
+            {page.quotes.map((quote, index) => (
+              <div className='TestimonialSection--quote'>
+                <div className='TestimonialSection--imageWrap'>
                   <BackgroundImage
-                    className='TestimonialSection--thumbnail'
-                    src={page.testimonialThumbnail}
+                    className='TestimonialSection--image'
+                    src={quote.testimonialImage}
                   />
-                  <strong>{page.testimonialFrom}</strong>
                 </div>
-                <div className='TestimonialSection--testimonial'>
-                  {page.testimonial}
+                <div className='TestimonialSection--thumbnailWrap'>
+                  <div className='TestimonialSection--from'>
+                    <BackgroundImage
+                      className='TestimonialSection--thumbnail'
+                      src={quote.testimonialThumbnail}
+                    />
+                    <strong>{quote.testimonialFrom}</strong>
+                  </div>
+                  <div className='TestimonialSection--testimonial'>
+                    {quote.testimonial}
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       )}
