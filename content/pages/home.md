@@ -36,5 +36,8 @@ quotes:
     testimonialFrom: Sylvester Stallone
     testimonialImage: /images/uploads/Sylvester-Stallone-workout.jpg
     testimonialThumbnail: /images/uploads/Sylvester-Stallone.jpg
+  - testimonial: 'Feeling the BURN, this piece of equipment by Synergy Fitness does it all.'
+    testimonialFrom: Sylvester Stallone
+    testimonialImage: /images/uploads/Sylvester-Stallone-workout.jpg
+    testimonialThumbnail: /images/uploads/Sylvester-Stallone.jpg
 ---
-
