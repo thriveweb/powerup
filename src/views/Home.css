@@ -86,9 +86,6 @@
   background: linear-gradient(to right, var(--midGrey) 70%, white 70%);
 }
 .ServicesSection--wrap {
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
 }
 .ServicesSection--info {
   width: 65%;
@@ -107,6 +104,24 @@
 .ServicesSection--banner {
   width: 30%;
   background: url(/images/workout5.png) 0 0 no-repeat;
+  background-size: contain;
+}
+
+.TrainingPods--wrap {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 4rem 0;
+}
+
+.TrainingPods--pod {
+  position: relative;
+  padding: 4rem;
+  width: calc(20% - 2rem);
+  box-shadow: 2px 4px 16px 5px rgba(130, 130, 130, 0.23);
+  min-height: 280px;
+}
+.TrainingPods--pod .BackgroundImage {
   background-size: contain;
 }
 

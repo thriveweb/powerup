@@ -25,6 +25,10 @@ servicesContent: >-
   YOUR TRAINING TO NEW HEIGHTS!
 trainingPods:
   - backgroundImage: /images/uploads/workout1.png
+  - backgroundImage: /images/uploads/workout2.png
+  - backgroundImage: /images/uploads/workout3.png
+  - backgroundImage: /images/uploads/workout4.png
+  - backgroundImage: /images/uploads/workout5.png
 testimonialBanner: /images/uploads/edge-studios-hero-slider-02.jpg
 testimonialSectionTitle: what our clients say
 testimonialImage: /images/uploads/Sylvester-Stallone-workout.jpg
@@ -32,4 +36,3 @@ testimonialThumbnail: /images/uploads/Sylvester-Stallone.jpg
 testimonial: 'Feeling the BURN, this piece of equipment by Synergy Fitness does it all.'
 testimonialFrom: Sylvester Stallone
 ---
-
