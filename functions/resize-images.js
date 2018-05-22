@@ -7,10 +7,12 @@ const sharp = require('sharp')
 const glob = util.promisify(globCb)
 const readFile = util.promisify(fs.readFile)
 
+const { sizes, imgixUrl } = require('../src/util/getImageUrl')
+
 const options = {
   inputDir: './public/images/uploads',
   outputDir: './public/images/uploads/resized',
-  sizes: [10, 300, 600, 1200, 1800],
+  sizes,
   imageFormats: ['jpg', 'jpeg', 'png', 'gif', 'webp']
 }
 
@@ -84,4 +86,8 @@ const resizeImages = async () => {
   }
 }
 
-resizeImages()
+if (imgixUrl) {
+  console.log(`📡  Using imgix to resize images: ${imgixUrl}`)
+} else {
+  resizeImages()
+}
