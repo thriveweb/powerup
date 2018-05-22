@@ -4,7 +4,7 @@ title: Energize Your Life
 buttons:
   - label: Book a class
     link: Book A Class
-classesSectionTitle: Power Up Exercises
+classesSectionTitle: Power Up Classes
 pods:
   - backgroundImage: /images/uploads/workouts.png
     title: 'Fusion '
@@ -41,3 +41,4 @@ quotes:
     testimonialImage: /images/uploads/Sylvester-Stallone-workout.jpg
     testimonialThumbnail: /images/uploads/Sylvester-Stallone.jpg
 ---
+
