@@ -48,7 +48,7 @@ const Home = ({ page, locations, services }) => {
       )}
 
       {page.pods && (
-        <div className='PodsGrid section'>
+        <div className='PodsGrid thick section'>
           <div className='container '>
             <h2 className='ClassesSection--title taCenter'>
               {page.classesSectionTitle}

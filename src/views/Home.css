@@ -69,6 +69,11 @@
   background: linear-gradient(to top, var(--midGrey) 70%, white 70%);
 }
 
+.PodsGrid {
+  background: var(--secondary);
+  color: white;
+}
+
 .PodsGrid--wrap {
   display: flex;
   align-items: stretch;
