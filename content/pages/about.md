@@ -1,6 +1,6 @@
 ---
 title: About
-bannerImage: /images/uploads/active-adult-african-864078.jpg
+bannerImage: /images/uploads/edgestudios-128.jpg
 welcomeImage: /images/uploads/act-body-elegance-33607.jpg
 welcomeTitle: How it works
 welcomeQuote: Get Ready to Energize Your LIFE!
