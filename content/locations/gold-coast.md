@@ -10,26 +10,7 @@ location:
 classInfo: >-
   Irrespective of whether you are seeking endurance, power, speed, weight loss,
   or muscle building performance enhancement you will only need 30 minutes to
-  energize your life. 
-
-
-  The Power Tower has multiple operational modes, including, but not limited
-  to: 
-
-
-  * Total body climbing
-
-  * Lower body climbing/stepping (supported and unsupported)
-
-  * Upper body ‘hang pull’ and ‘push press’
-
-  * Upper body reciprocal and/or single arm ‘hang pull’ and ‘push press’
-
-  * Lower body reciprocal and/or one arm supported chest press and row
-
-  * Reciprocal calf press
-
-  *  Deadlift and pushdown
+  energize your life.
 bookingLink: book-a-class
 twitterURL: 'http://twitter.com'
 facebookURL: 'http://facebook.com'
