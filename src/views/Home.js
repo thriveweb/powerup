@@ -25,7 +25,7 @@ const Home = ({ page, locations, services }) => {
             src={page.welcomeImage}
           />
           <div className='background-video'>
-            <video className='video' preload loop autoPlay muted>
+            <video className='video' preload='true' loop autoPlay muted>
               <source src='/images/welcomevideo-web.mp4' type='video/mp4' />
             </video>
           </div>
