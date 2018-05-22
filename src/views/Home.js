@@ -126,6 +126,7 @@ const Home = ({ page, locations, services }) => {
                     <BackgroundImage
                       className='TestimonialSection--image'
                       src={quote.testimonialImage}
+                      lazy='false'
                     />
                   </div>
                   <div className='TestimonialSection--thumbnailWrap'>
@@ -133,6 +134,7 @@ const Home = ({ page, locations, services }) => {
                       <BackgroundImage
                         className='TestimonialSection--thumbnail'
                         src={quote.testimonialThumbnail}
+                        lazy='false'
                       />
                       <strong>{quote.testimonialFrom}</strong>
                     </div>
