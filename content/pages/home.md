@@ -4,16 +4,16 @@ title: Energize Your Life
 buttons:
   - label: Book a class
     link: Book A Class
-classesSectionTitle: Power Up Exercises
+classesSectionTitle: Power Up Classes
 pods:
-  - backgroundImage: /images/uploads/workouts.png
-    title: 'Fusion '
+  - backgroundImage: /images/uploads/fibo-7.jpg
+    title: 'Power Fusion '
     url: /book-now/
   - backgroundImage: /images/uploads/workouts-2.png
-    title: Cardio
+    title: Cardio Cardio
     url: /book-now/
   - backgroundImage: /images/uploads/workouts-3.png
-    title: Strength
+    title: Total Power
     url: /book-now/
 servicesSectionTitle: Join the Revolution
 servicesSubtitle: TRULY VERSATILE TRAINING
@@ -41,3 +41,4 @@ quotes:
     testimonialImage: /images/uploads/Sylvester-Stallone-workout.jpg
     testimonialThumbnail: /images/uploads/Sylvester-Stallone.jpg
 ---
+

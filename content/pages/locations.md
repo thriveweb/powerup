@@ -1,7 +1,7 @@
 ---
 title: Locations
 subtitle: Choose your location
-bannerImage: /images/uploads/gym4.jpg
+bannerImage: /images/uploads/edgestudios-123.jpg
 message: Go to Locations to edit the content on this page.
 thumbnailLocations:
   - featuredThumbnail: /images/uploads/Gold-Coast.jpg
@@ -24,3 +24,4 @@ thumbnailLocations:
     subTitle: coming soon
     title: London
 ---
+
