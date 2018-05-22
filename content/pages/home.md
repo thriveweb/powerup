@@ -10,7 +10,7 @@ pods:
     title: 'Power Fusion '
     url: /book-now/
   - backgroundImage: /images/uploads/workouts-2.png
-    title: Cardio Cardio
+    title: Cardio Power
     url: /book-now/
   - backgroundImage: /images/uploads/workouts-3.png
     title: Total Power
