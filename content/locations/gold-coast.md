@@ -4,11 +4,9 @@ bannerImage: /images/uploads/Gold-Coast.jpg
 title: Gold Coast
 subTitle: Robina
 location:
-  address: |-
-    4 / 25 Lemana Ln.
-      Burleigh Heads, Gold Coast, Queensland, 4220
-  lat: '-28.104'
-  lng: '153.43600000000004'
+  address: 'Jetts Fitness 5/2 Energy Circuit, Robina 4226'
+  lat: '-28.09215'
+  lng: '153.39456'
 classInfo: >-
   Irrespective of whether you are seeking endurance, power, speed, weight loss,
   or muscle building performance enhancement you will only need 30 minutes to
@@ -19,24 +17,26 @@ classInfo: >-
   to: 
 
 
-  - Total body climbing
+  * Total body climbing
 
-  - Lower body climbing/stepping (supported and unsupported)
+  * Lower body climbing/stepping (supported and unsupported)
 
-  - Upper body ‘hang pull’ and ‘push press’
+  * Upper body ‘hang pull’ and ‘push press’
 
-  - Upper body reciprocal and/or single arm ‘hang pull’ and ‘push press’
+  * Upper body reciprocal and/or single arm ‘hang pull’ and ‘push press’
 
-  - Lower body reciprocal and/or one arm supported chest press and row
+  * Lower body reciprocal and/or one arm supported chest press and row
 
-  - Reciprocal calf press;» Deadlift and pushdown
+  * Reciprocal calf press
+
+  *  Deadlift and pushdown
 bookingLink: book-a-class
 twitterURL: 'http://twitter.com'
 facebookURL: 'http://facebook.com'
 linkedinURL: 'http://linkedin.com'
 instagramURL: 'http://instagram.com'
 phone: '040404040404'
-email: gym@goldcaost.com
+email: info@poweruprevolution.com
 staff:
   - image: /images/uploads/gym.jpg
     name: Amanda Hugo
@@ -44,7 +44,7 @@ staff:
     name: Jane Dona
 bannerSectionImage: /images/uploads/aboutwelcome.png
 bannerSectionTitle: Join the revolution
-bannerSectionSubtitle: experience the power of the tower
+bannerSectionSubtitle: Experience the Power of the Tower
 bannerSectionContent: >-
   See the schedule or select from our package options lorem ipsum dolor sit
   amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -56,3 +56,4 @@ bannerSectionButtons:
     link: Class Packages
 order: '1'
 ---
+
