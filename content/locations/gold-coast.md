@@ -12,11 +12,11 @@ classInfo: >-
   or muscle building performance enhancement you will only need 30 minutes to
   energize your life.
 bookingLink: book-a-class
-twitterURL: 'http://twitter.com'
+twitterURL: ''
 facebookURL: 'http://facebook.com'
-linkedinURL: 'http://linkedin.com'
+linkedinURL: ''
 instagramURL: 'http://instagram.com'
-phone: '040404040404'
+phone: ''
 email: info@poweruprevolution.com
 staff:
   - image: /images/uploads/gym.jpg
