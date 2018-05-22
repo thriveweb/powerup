@@ -70,7 +70,7 @@ class Nav extends React.Component {
               <NavLink to='/contact/' exact>
                 Contact
               </NavLink>
-              <NavLink to='/book-now/' exact className='book-now button'>
+              <NavLink to='/locations/' exact className='book-now button'>
                 Book now
               </NavLink>
             </div>

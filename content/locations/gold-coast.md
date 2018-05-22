@@ -1,6 +1,6 @@
 ---
-featuredThumbnail: /images/uploads/gym2.jpg
-bannerImage: /images/uploads/city.jpg
+featuredThumbnail: /images/uploads/Gold-Coast.jpg
+bannerImage: /images/uploads/Gold-Coast.jpg
 title: Gold Coast
 subTitle: Robina
 location:
@@ -9,7 +9,27 @@ location:
       Burleigh Heads, Gold Coast, Queensland, 4220
   lat: '-28.104'
   lng: '153.43600000000004'
-classInfo: "Irrespective of whether you are seeking endurance, power, speed, weight loss, or muscle building performance enhancement you will only need 30 minutes to energize your life. \n\nThe Power Tower has multiple operational modes, including, but not limited to: \r\n\n\t» Total body climbing;\r\n\n\t» Lower body climbing/stepping (supported and unsupported);\r\n\n\t» Upper body ‘hang pull’ and ‘push press’;\r\n\n\t» Upper body reciprocal and/or single arm ‘hang pull’ and ‘push press’;\r\n\n\t» Lower body reciprocal and/or one arm supported chest press and row;\r\n\n\\    » Reciprocal calf press;\r\n\n\t» Deadlift and pushdown."
+classInfo: >-
+  Irrespective of whether you are seeking endurance, power, speed, weight loss,
+  or muscle building performance enhancement you will only need 30 minutes to
+  energize your life. 
+
+
+  The Power Tower has multiple operational modes, including, but not limited
+  to: 
+
+
+  - Total body climbing
+
+  - Lower body climbing/stepping (supported and unsupported)
+
+  - Upper body ‘hang pull’ and ‘push press’
+
+  - Upper body reciprocal and/or single arm ‘hang pull’ and ‘push press’
+
+  - Lower body reciprocal and/or one arm supported chest press and row
+
+  - Reciprocal calf press;» Deadlift and pushdown
 bookingLink: book-a-class
 twitterURL: 'http://twitter.com'
 facebookURL: 'http://facebook.com'
@@ -36,4 +56,3 @@ bannerSectionButtons:
     link: Class Packages
 order: '1'
 ---
-

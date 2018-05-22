@@ -14,4 +14,10 @@
   display: flex;
   align-items: stretch;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Locations--Grid--Item {
+  width: calc(33.33% - 2rem);
+  margin: 0 1rem 2rem 1rem;
 }

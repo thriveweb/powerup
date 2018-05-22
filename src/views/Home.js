@@ -24,6 +24,12 @@ const Home = ({ page, locations, services }) => {
             opacity='0.5'
             src={page.welcomeImage}
           />
+          <div className='background-video'>
+            <video className='video' preload loop autoPlay muted>
+              <source src='/images/small-video.mp4' type='video/mp4' />
+            </video>
+          </div>
+
           <h1 className='WelcomeImage--title'> {page.title}</h1>
           {page.buttons && (
             <div className='WelcomeImage--links'>
@@ -41,24 +47,6 @@ const Home = ({ page, locations, services }) => {
         </div>
       )}
 
-      {/* {locations && (
-        <div className='HomeLocations section'>
-          <div className='container'>
-            <h2 className='HomeLocations--title taCenter'>Studio locations</h2>
-            <div className='Locations--Grid'>
-              {locations.thumbnailLocations.map((locationItem, index) => (
-                <LocationItem key={index} locationItem={locationItem} />
-              ))}
-            </div>
-            <div className='HomeLocations--link taCenter'>
-              <Link className='button' to='/locations/'>
-                View all
-              </Link>
-            </div>
-          </div>
-        </div>
-      )} */}
-
       {page.pods && (
         <div className='PodsGrid section'>
           <div className='container '>
@@ -68,12 +56,7 @@ const Home = ({ page, locations, services }) => {
             <div className='PodsGrid--wrap'>
               {page.pods.map((pod, index) => (
                 <div key={index + pod.title} className='PodsGrid--pod'>
-                  <BackgroundImage src={pod.backgroundImage} opacity='0.5' />
-                  {/* <h3 className='PodsGrid--title'>{pod.title}</h3>
-                  <div className='PodsGrid--description'>
-                    {' '}
-                    {pod.description}
-                  </div> */}
+                  <BackgroundImage src={pod.backgroundImage} />
                   <Link className='button' to={pod.url}>
                     {pod.title}
                   </Link>
