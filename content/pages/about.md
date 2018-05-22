@@ -14,29 +14,18 @@ welcomeSection: >-
 workoutTitle: Getting ready for your first Power Up experiance
 pods:
   - backgroundImage: /images/uploads/workouts.png
-    description: >-
-      Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
-      interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
-      lectus est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac
-      dui pellentesque, lacinia risus ut, imperdiet eros.
-    title: Fusion
+    description: ''
+    title: Power Fusion
   - backgroundImage: /images/uploads/workouts-2.png
-    description: >-
-      Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
-      interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
-      lectus est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac
-      dui pellentesque, lacinia risus ut, imperdiet eros.
-    title: Cardio
+    description: ''
+    title: Cardio Power
   - backgroundImage: /images/uploads/workouts-3.png
-    description: >-
-      Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
-      interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
-      lectus est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac
-      dui pellentesque, lacinia risus ut, imperdiet eros.
-    title: Strength
+    description: ''
+    title: Total Power
 buttons:
   - label: See FAQ
     link: FAQ's
   - label: Choose your location
     link: Locations
 ---
+
