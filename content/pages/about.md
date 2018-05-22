@@ -13,21 +13,21 @@ welcomeSection: >-
   your standards and get ready to TAKE YOUR TRAINING TO NEW HEIGHTS!
 workoutTitle: Getting ready for your first Power Up experiance
 pods:
-  - backgroundImage: /images/uploads/active-adult-african-864078.jpg
+  - backgroundImage: /images/uploads/workouts.png
     description: >-
       Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
       interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
       lectus est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac
       dui pellentesque, lacinia risus ut, imperdiet eros.
     title: Fusion
-  - backgroundImage: /images/uploads/active-adult-african-864078.jpg
+  - backgroundImage: /images/uploads/workouts-2.png
     description: >-
       Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
       interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
       lectus est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac
       dui pellentesque, lacinia risus ut, imperdiet eros.
     title: Cardio
-  - backgroundImage: /images/uploads/active-adult-african-864078.jpg
+  - backgroundImage: /images/uploads/workouts-3.png
     description: >-
       Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
       interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
