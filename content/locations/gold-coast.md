@@ -32,7 +32,7 @@ bannerSectionContent: >-
   et
 bannerSectionButtons:
   - label: See schedule
-    link: Book A Class
+    link: classes
   - label: Package options
     link: Class Packages
 order: '1'
