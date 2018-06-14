@@ -18,11 +18,11 @@ pods:
 servicesSectionTitle: Join the Revolution
 servicesSubtitle: TRULY VERSATILE TRAINING
 servicesContent: >-
-  Power Up is a revolutionary group fitness class with unprecedented total body
-  functional strength and conditioning workout options that caters for everyone.
-  You will leave drenched in sweat, motivated, and ready to take on anything
-  after our cutting edge classes. Raise your standards and get ready to TAKE
-  YOUR TRAINING TO NEW HEIGHTS!
+  Power Up is a revolutionary small group training program with unprecedented
+  total body functional strength and conditioning workout options that cater for
+  everyone. You will leave drenched in sweat, motivated, and ready to take on
+  anything after our cutting edge classes. Raise your standards and get ready to
+  TAKE YOUR TRAINING TO NEW HEIGHTS and ENERGIZE YOUR LIFE!
 trainingPods:
   - backgroundImage: /images/uploads/workout1.png
   - backgroundImage: /images/uploads/workout2.png
