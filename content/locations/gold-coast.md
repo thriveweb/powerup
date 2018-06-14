@@ -11,7 +11,7 @@ classInfo: >-
   Irrespective of whether you are seeking endurance, power, speed, weight loss,
   or muscle building performance enhancement you will only need 30 minutes to
   energize your life.
-bookingLink: book-a-class
+bookingLink: classes
 twitterURL: ''
 facebookURL: 'http://facebook.com'
 linkedinURL: ''
@@ -37,4 +37,3 @@ bannerSectionButtons:
     link: Class Packages
 order: '1'
 ---
-

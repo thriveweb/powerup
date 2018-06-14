@@ -107,5 +107,14 @@ export default ({ globalSettings, ...props }) => (
         </div>
       </div>
     </footer>
+    <div className='renderlinks'>
+      <NavLink to={`/account/`} exact />
+      <NavLink to={`/checkin/`} exact />
+      <NavLink to={`/classes/`} exact />
+      <NavLink to={`/instructor/`} exact />
+      <NavLink to={`/pricing/`} exact />
+      <NavLink to={`/register/`} exact />
+      <NavLink to={`/schedule/`} exact />
+    </div>
   </main>
 )
