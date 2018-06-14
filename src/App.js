@@ -192,6 +192,90 @@ class App extends Component {
                 </RouteWithFooter>
               )}
             />
+            <Route
+              path='/account/'
+              exact
+              render={props => (
+                <RouteWithFooter>
+                  <Default
+                    page={this.getDocument('pages', 'account')}
+                    {...props}
+                  />
+                </RouteWithFooter>
+              )}
+            />
+            <Route
+              path='/checkin/'
+              exact
+              render={props => (
+                <RouteWithFooter>
+                  <Default
+                    page={this.getDocument('pages', 'checkin')}
+                    {...props}
+                  />
+                </RouteWithFooter>
+              )}
+            />
+            <Route
+              path='/classes/'
+              exact
+              render={props => (
+                <RouteWithFooter>
+                  <Default
+                    page={this.getDocument('pages', 'classes')}
+                    {...props}
+                  />
+                </RouteWithFooter>
+              )}
+            />
+            <Route
+              path='/instructors/'
+              exact
+              render={props => (
+                <RouteWithFooter>
+                  <Default
+                    page={this.getDocument('pages', 'instructors')}
+                    {...props}
+                  />
+                </RouteWithFooter>
+              )}
+            />
+            <Route
+              path='/pricing/'
+              exact
+              render={props => (
+                <RouteWithFooter>
+                  <Default
+                    page={this.getDocument('pages', 'pricing')}
+                    {...props}
+                  />
+                </RouteWithFooter>
+              )}
+            />
+            <Route
+              path='/register/'
+              exact
+              render={props => (
+                <RouteWithFooter>
+                  <Default
+                    page={this.getDocument('pages', 'register')}
+                    {...props}
+                  />
+                </RouteWithFooter>
+              )}
+            />
+            <Route
+              path='/schedual/'
+              exact
+              render={props => (
+                <RouteWithFooter>
+                  <Default
+                    page={this.getDocument('pages', 'schedual')}
+                    {...props}
+                  />
+                </RouteWithFooter>
+              )}
+            />
 
             <Route
               path='/contact/'
