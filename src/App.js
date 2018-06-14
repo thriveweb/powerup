@@ -229,12 +229,12 @@ class App extends Component {
               )}
             />
             <Route
-              path='/instructors/'
+              path='/instructor/'
               exact
               render={props => (
                 <RouteWithFooter>
                   <Default
-                    page={this.getDocument('pages', 'instructors')}
+                    page={this.getDocument('pages', 'instructor')}
                     {...props}
                   />
                 </RouteWithFooter>
@@ -265,12 +265,12 @@ class App extends Component {
               )}
             />
             <Route
-              path='/schedual/'
+              path='/schedule/'
               exact
               render={props => (
                 <RouteWithFooter>
                   <Default
-                    page={this.getDocument('pages', 'schedual')}
+                    page={this.getDocument('pages', 'schedule')}
                     {...props}
                   />
                 </RouteWithFooter>
