@@ -40,5 +40,11 @@ quotes:
     testimonialFrom: Sylvester Stallone
     testimonialImage: /images/uploads/Sylvester-Stallone-workout.jpg
     testimonialThumbnail: /images/uploads/Sylvester-Stallone.jpg
+  - testimonial: >-
+      What have you added NEW this summer that you have added to your workout
+      routine?
+    testimonialFrom: Paige Hathaway
+    testimonialImage: /images/uploads/paige-web.jpg
+    testimonialThumbnail: /images/uploads/paige-we.jpeg
 ---
 
