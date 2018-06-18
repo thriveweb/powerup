@@ -15,13 +15,13 @@ workoutTitle: Getting ready for your first Power Up experiance
 pods:
   - backgroundImage: /images/uploads/fibo-7.jpg
     description: ''
-    title: Power Fusion
+    title: PowerUP Fusion
   - backgroundImage: /images/uploads/workouts-2.png
     description: ''
-    title: Cardio Power
+    title: PowerUP Cardio
   - backgroundImage: /images/uploads/workouts-3.png
     description: ''
-    title: Total Power
+    title: PowerUP Strength
 buttons:
   - label: See FAQ
     link: FAQ's
