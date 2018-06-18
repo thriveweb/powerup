@@ -7,13 +7,13 @@ buttons:
 classesSectionTitle: Power Up Classes
 pods:
   - backgroundImage: /images/uploads/fibo-7.jpg
-    title: 'Power Fusion '
+    title: 'PowerUP Fusion '
     url: /book-now/
   - backgroundImage: /images/uploads/workouts-2.png
-    title: Cardio Power
+    title: PowerUP Cardio
     url: /book-now/
   - backgroundImage: /images/uploads/workouts-3.png
-    title: Total Power
+    title: PowerUP Strength
     url: /book-now/
 servicesSectionTitle: Join the Revolution
 servicesSubtitle: TRULY VERSATILE TRAINING
