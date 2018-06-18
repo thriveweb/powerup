@@ -43,8 +43,12 @@ quotes:
   - testimonial: >-
       What have you added NEW this summer that you have added to your workout
       routine?
-    testimonialFrom: Paige Hathaway
+    testimonialFrom: Paige Hathaway - Fitness and Lifestyle Expert and F45 Global Ambassador
     testimonialImage: /images/uploads/paige-web.jpg
     testimonialThumbnail: /images/uploads/paige-we.jpeg
+  - testimonial: You have outdone yourselves
+    testimonialFrom: Gunnar Peterson - Celebrity Trainer
+    testimonialImage: /images/uploads/gunnar-web.jpg
+    testimonialThumbnail: /images/uploads/gunnarpet.jpg
 ---
 
