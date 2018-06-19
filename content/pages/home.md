@@ -1,5 +1,5 @@
 ---
-welcomeImage: /images/uploads/pup-home-page-1980-x-1080.jpg
+welcomeImage: /images/uploads/0w5a2608.jpg
 title: Energize Your Life
 buttons:
   - label: Book a class
