@@ -226,6 +226,12 @@
   align-items: stretch;
   justify-content: space-around;
 }
+@media screen and (max-width: 1000px) {
+  .TestimonialSection--wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .TestimonialSection--title {
   position: relative;
   color: white;
@@ -239,6 +245,14 @@
 .carousel {
   width: 50%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 1000px) {
+  .TestimonialSection--title,
+  .carousel {
+    width: 90%;
+    text-align: center;
+  }
 }
 
 .TestimonialSection--quote {
@@ -265,9 +279,20 @@
 .TestimonialSection--image {
   position: relative;
 }
+@media screen and (max-width: 500px) {
+  .TestimonialSection--imageWrap,
+  .TestimonialSection--image {
+    display: none;
+  }
+}
 .TestimonialSection--thumbnailWrap {
   position: relative;
   padding: 5rem 4rem;
+}
+@media screen and (max-width: 500px) {
+  .TestimonialSection--thumbnailWrap {
+    padding: 5rem 1rem;
+  }
 }
 .TestimonialSection--from {
   display: flex;

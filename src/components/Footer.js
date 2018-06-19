@@ -8,7 +8,7 @@ import './Footer.css'
 
 export default ({ globalSettings, ...props }) => (
   <main>
-    <div className='section'>
+    <div className='section social-links'>
       <div className='container skinny Flex justifyBetween center'>
         {globalSettings.socialMediaCard.twitterSiteAccount && (
           <Link

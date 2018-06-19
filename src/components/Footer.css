@@ -1,3 +1,10 @@
+.social-links .Flex {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 .Footer {
   padding: 4rem 0 1rem 0;
   background: var(--secondary) url(/images/footer-bolt.svg) left center
@@ -66,6 +73,17 @@
   .Footer .halfs .pods {
     width: 100%;
     margin: 1rem 0 0 0;
+  }
+  .Footer .halfs .pods .NavLink {
+    text-align: center;
+  }
+  .Footer--Copyright.container {
+    padding: 1rem 0 0 0;
+    margin: 0 auto;
+  }
+  .Footer--Copyright.container .NavLink {
+    padding: 1rem 0 0 0;
+    font-size: 1rem;
   }
 }
 
