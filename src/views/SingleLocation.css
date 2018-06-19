@@ -32,6 +32,12 @@
   margin: 5rem 0 1rem 0;
 }
 
+@media screen and (max-width: 750px) {
+  .Social--container {
+    justify-content: center;
+  }
+}
+
 .Social--container img {
   max-width: 15px;
   max-height: 15px;

@@ -2,6 +2,14 @@
   background: linear-gradient(to left, var(--midGrey) 45%, white 45%);
   margin: 4rem 0;
 }
+
+@media screen and (max-width: 750px) {
+  .Contact-Form-Section {
+    background: var(--midGrey);
+    margin: 0 0 4rem 0;
+    padding: 6rem 0 3rem 0 !important;
+  }
+}
 .Contact h3 {
   text-transform: uppercase;
   font-weight: 600;
@@ -12,12 +20,25 @@
   padding: 0 4rem 0 0;
 }
 
+@media screen and (max-width: 750px) {
+  .Contact .one-half {
+    width: 100%;
+    padding: 0;
+  }
+}
+
 .Contact-Form-flex {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
 }
-
+@media screen and (max-width: 750px) {
+  .Contact-Form-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 .Contact-Form--Title {
   font-size: 4rem;
 }
@@ -38,6 +59,11 @@
   text-transform: uppercase;
   font-weight: 600;
   margin: 4rem 0;
+}
+@media screen and (max-width: 750px) {
+  .Contact-link {
+    justify-content: center;
+  }
 }
 .Contact-link:hover {
   color: var(--primary);
