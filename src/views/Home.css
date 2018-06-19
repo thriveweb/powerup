@@ -189,13 +189,20 @@
 
 .TestimonialSection--quote {
   width: 50%;
-  background: white url(/images/quote.svg) 101% 0 no-repeat;
+  background: white;
   background-size: 120px;
   border-radius: 1rem;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
   overflow: hidden;
+  height: 220px;
+}
+.TestimonialSection--quote svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.3;
 }
 .TestimonialSection--imageWrap {
   position: relative;
@@ -217,8 +224,8 @@
 }
 .TestimonialSection--thumbnail {
   position: relative !important;
-  width: 50px;
-  height: 50px;
+  width: 50px !important;
+  height: 50px !important;
   border-radius: 50%;
   margin: 0 2rem 0 0;
 }

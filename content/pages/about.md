@@ -12,6 +12,12 @@ welcomeSection: >-
   motivated, and ready to take on anything after our cutting edge classes. Raise
   your standards and get ready to TAKE YOUR TRAINING TO NEW HEIGHTS!
 workoutTitle: Getting ready for your first Power Up experiance
+trainingPods:
+  - backgroundImage: /images/uploads/workout1.png
+  - backgroundImage: /images/uploads/workout2.png
+  - backgroundImage: /images/uploads/workout3.png
+  - backgroundImage: /images/uploads/workout4.png
+  - backgroundImage: /images/uploads/workout5.png
 pods:
   - backgroundImage: /images/uploads/fibo-7.jpg
     description: ''
@@ -28,4 +34,3 @@ buttons:
   - label: Choose your location
     link: Locations
 ---
-

@@ -31,6 +31,18 @@ export default ({ page, services }) => (
           <BackgroundImage src={page.welcomeImage} contain='contain' lazy />
         </div>
       </div>
+      <div className='container ServicesSection--wrap'>
+        <div className='TrainingPods--wrap'>
+          {page.trainingPods.map((pod, index) => (
+            <div
+              key={index + pod.backgroundImage}
+              className='TrainingPods--pod'
+            >
+              <BackgroundImage src={pod.backgroundImage} contain />
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
 
     <section className='section thin welcome'>
