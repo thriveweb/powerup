@@ -1,14 +1,12 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
-import _sortBy from 'lodash/sortBy'
-import _kebabCase from 'lodash/kebabCase'
 
 import NavLink from './NavLink'
 import './NavPopup.css'
 
 class NavPopup extends React.Component {
   render () {
-    const { active, handleClose, services } = this.props
+    const { active, handleClose } = this.props
     return (
       <div className={`NavPopup ${active && 'active'}`}>
         <button className='NavPopup--CloseButton' onClick={handleClose}>
@@ -19,39 +17,22 @@ class NavPopup extends React.Component {
             <NavLink onClick={handleClose} to='/about/' exact>
               About
             </NavLink>
-            <div className='NavLink--DropDown'>
-              <div className='NavLink NavLink--Parent'>
-                Services <div className='hover'>•</div>
-                <div className='NavLink--Children--Mobile'>
-                  {_sortBy(services, ['order']).map(servicePod => (
-                    <NavLink
-                      onClick={handleClose}
-                      key={_kebabCase(servicePod.title)}
-                      to={`/services/${_kebabCase(servicePod.title)}/`}
-                      exact
-                    >
-                      {servicePod.title}
-                    </NavLink>
-                  ))}
-                </div>
-              </div>
-            </div>
-            <NavLink onClick={handleClose} to='/project/' exact>
-              Projects
+            <NavLink onClick={handleClose} to='/locations/' exact>
+              Locations
             </NavLink>
-            <NavLink onClick={handleClose} to='/blog/' exact>
-              Blog
+            <NavLink onClick={handleClose} to='/class-packages/' exact>
+              Class Packages
             </NavLink>
             <NavLink onClick={handleClose} to='/contact/' exact>
               Contact
             </NavLink>
             <NavLink
               onClick={handleClose}
-              to='/client-area/'
+              to='/schedule/'
               exact
-              className='login'
+              className='book-now button'
             >
-              Login
+              Book now
             </NavLink>
           </div>
         </div>
