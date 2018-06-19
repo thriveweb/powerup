@@ -1,9 +1,15 @@
 ---
 title: About
-bannerImage: /images/uploads/edgestudios-128.jpg
-welcomeImage: /images/uploads/act-body-elegance-33607.jpg
+bannerImage: /images/uploads/0w5a2624sml.jpg
+welcomeImage: /images/uploads/0w5a2814sml.jpg
 welcomeTitle: How it works
 welcomeQuote: Get Ready to Energize Your LIFE!
+trainingPods:
+  - backgroundImage: /images/uploads/workout1.png
+  - backgroundImage: /images/uploads/workout2.png
+  - backgroundImage: /images/uploads/workout3.png
+  - backgroundImage: /images/uploads/workout4.png
+  - backgroundImage: /images/uploads/workout5.png
 welcomeSection: >-
   Power Up is offers and unprecedented total body functional strength and
   conditioning workout options by exclusively using the unique SynergyAIR Power
@@ -12,12 +18,6 @@ welcomeSection: >-
   motivated, and ready to take on anything after our cutting edge classes. Raise
   your standards and get ready to TAKE YOUR TRAINING TO NEW HEIGHTS!
 workoutTitle: Getting ready for your first Power Up experiance
-trainingPods:
-  - backgroundImage: /images/uploads/workout1.png
-  - backgroundImage: /images/uploads/workout2.png
-  - backgroundImage: /images/uploads/workout3.png
-  - backgroundImage: /images/uploads/workout4.png
-  - backgroundImage: /images/uploads/workout5.png
 pods:
   - backgroundImage: /images/uploads/fibo-7.jpg
     description: ''
@@ -34,3 +34,4 @@ buttons:
   - label: Choose your location
     link: Locations
 ---
+
