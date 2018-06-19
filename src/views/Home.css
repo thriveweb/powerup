@@ -50,6 +50,19 @@
   z-index: 2;
 }
 
+@media screen and (max-width: 750px) {
+  .WelcomeImage--title {
+    font-size: 55px;
+    line-height: 52px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .WelcomeImage--title {
+    font-size: 45px;
+    line-height: 52px;
+  }
+}
+
 .WelcomeImage--links {
   position: relative;
   display: flex;
@@ -79,6 +92,11 @@
   align-items: stretch;
   justify-content: space-between;
 }
+@media screen and (max-width: 750px) {
+  .PodsGrid--wrap {
+    flex-direction: column;
+  }
+}
 
 .PodsGrid--pod {
   position: relative;
@@ -87,7 +105,7 @@
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
-  padding: 4rem;
+  padding: 4rem 0;
   width: calc(33.33% - 2rem);
   box-shadow: 0 12px 26px 0 rgba(130, 130, 130, 0.23);
   min-height: 280px;
@@ -95,6 +113,14 @@
 .PodsGrid--pod .button {
   position: relative;
   top: 6rem;
+}
+
+@media screen and (max-width: 750px) {
+  .PodsGrid--pod {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto 4rem auto;
+  }
 }
 
 .PodsGrid--title {
@@ -120,10 +146,20 @@
 .ServicesSection {
   background: linear-gradient(to right, var(--midGrey) 70%, white 70%);
 }
-.ServicesSection--wrap {
+@media screen and (max-width: 750px) {
+  .ServicesSection {
+    background: var(--midGrey);
+  }
 }
+
 .ServicesSection--info {
   width: 65%;
+}
+
+@media screen and (max-width: 750px) {
+  .ServicesSection--info {
+    width: 100%;
+  }
 }
 
 .ServicesSection--title {
@@ -156,6 +192,24 @@
   box-shadow: 2px 4px 16px 5px rgba(130, 130, 130, 0.23);
   min-height: 280px;
 }
+@media screen and (max-width: 750px) {
+  .TrainingPods--pod {
+    min-height: 180px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .TrainingPods--wrap {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .TrainingPods--pod {
+    width: calc(20% - 2rem);
+    min-height: 100px;
+    margin: 1rem;
+  }
+}
+
 .TrainingPods--pod .BackgroundImage {
   background-size: contain;
 }
