@@ -6,7 +6,7 @@ buttons:
     link: Book A Class
 classesSectionTitle: Power Up Classes
 pods:
-  - backgroundImage: /images/uploads/fibo-7.jpg
+  - backgroundImage: /images/uploads/0w5a2608.jpg
     title: 'PowerUP Fusion '
     url: /book-now/
   - backgroundImage: /images/uploads/workouts-2.png
