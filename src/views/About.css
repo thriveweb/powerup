@@ -12,6 +12,12 @@
   position: relative;
 }
 
+@media screen and (max-width: 750px) {
+  .welcome--info,
+  .welcome--image {
+    width: 100%;
+  }
+}
 .welcome-title {
   font-size: 4rem;
   margin: 0 0 2rem 0;
@@ -63,6 +69,14 @@
 .About-PodsGrid--pod {
   width: calc(33.33% - 2rem);
   margin: 0 1rem;
+}
+
+@media screen and (max-width: 750px) {
+  .About-PodsGrid--pod {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 500px;
+  }
 }
 
 .About-PodsGrid--pod .BackgroundImage {
