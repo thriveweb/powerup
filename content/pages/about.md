@@ -19,13 +19,13 @@ welcomeSection: >-
   your standards and get ready to TAKE YOUR TRAINING TO NEW HEIGHTS!
 workoutTitle: Getting ready for your first Power Up experiance
 pods:
-  - backgroundImage: /images/uploads/fibo-7.jpg
+  - backgroundImage: /images/uploads/0w5a2608.11small.jpg
     description: ''
     title: PowerUP Fusion
-  - backgroundImage: /images/uploads/workouts-2.png
+  - backgroundImage: /images/uploads/0w5a2616sml.jpg
     description: ''
     title: PowerUP Cardio
-  - backgroundImage: /images/uploads/workouts-3.png
+  - backgroundImage: /images/uploads/0w5a2624sml.jpg
     description: ''
     title: PowerUP Strength
 buttons:
