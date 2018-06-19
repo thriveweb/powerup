@@ -2,16 +2,31 @@
   background: linear-gradient(to left, var(--midGrey) 40%, white 40%);
   margin: 4rem 0;
 }
+@media screen and (max-width: 750px) {
+  .SingleLocation {
+    background: var(--midGrey);
+    margin: 0 0 2rem 0;
+  }
+}
+
 .SingleLocation .container {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .SingleLocation--content {
   width: calc(50% - 4rem);
   position: relative;
   padding: 4rem;
+}
+
+@media screen and (max-width: 750px) {
+  .SingleLocation--content {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .SingleLocation--content--title {
@@ -23,6 +38,15 @@
   position: relative;
   width: 50%;
   height: 50%;
+}
+
+@media screen and (max-width: 750px) {
+  .SingleLocation--thumbnail {
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
 
 .Social--container {
@@ -50,6 +74,13 @@
   align-items: stretch;
   justify-content: space-between;
 }
+@media screen and (max-width: 750px) {
+  .Links--container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .Links-link {
   display: flex;
   align-items: center;
@@ -57,6 +88,13 @@
   color: var(--secondary);
   text-transform: uppercase;
   font-weight: 600;
+}
+@media screen and (max-width: 750px) {
+  .Links-link {
+    width: 200px;
+    margin: 0 0 3rem 0;
+    justify-content: flex-start;
+  }
 }
 .Links-link:hover {
   color: var(--primary);
@@ -72,6 +110,7 @@
   display: flex;
   align-items: stretch;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .Staff--Menber {
@@ -80,6 +119,16 @@
   height: calc(33.33% - 2rem);
   margin: 0 2rem;
   max-width: 400px;
+}
+
+@media screen and (max-width: 750px) {
+  .Staff--Menber {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 2rem;
+    max-width: 400px;
+  }
 }
 
 .Staff--Menber--name {
@@ -98,11 +147,21 @@
   display: flex;
   align-items: stretch;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .BannerSection--container .one-half {
   width: 50%;
   position: relative;
   padding: 10rem 5rem;
+}
+@media screen and (max-width: 750px) {
+  .BannerSection--container .one-half {
+    width: 100%;
+    text-align: center;
+  }
+  .BannerSection--container .one-half:nth-child(2) {
+    height: 600px;
+  }
 }
 
 .BannerSection--Subtitle {
