@@ -12,7 +12,7 @@ pods:
   - backgroundImage: /images/uploads/0w5a2781.jpg
     title: PowerUP Cardio
     url: /book-now/
-  - backgroundImage: /images/uploads/1.jpg
+  - backgroundImage: /images/uploads/0w5a2624sml.jpg
     title: PowerUP Strength
     url: /book-now/
 servicesSectionTitle: Join the Revolution
