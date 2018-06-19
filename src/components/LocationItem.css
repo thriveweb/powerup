@@ -5,6 +5,18 @@
   background: black;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 750px) {
+  .LocationItem--Item {
+    width: calc(50% - 2rem);
+    margin: 0 1rem 2rem 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .LocationItem--Item {
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+}
 
 .LocationItem--Item--background {
   opacity: 0.5 !important;
