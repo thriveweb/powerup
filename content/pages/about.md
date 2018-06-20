@@ -1,6 +1,6 @@
 ---
 title: About
-bannerImage: /images/uploads/0w5a2774sml.jpg
+bannerImage: /images/uploads/edgestudios-128.jpg
 welcomeImage: /images/uploads/0w5a2814sml.jpg
 welcomeTitle: How it works
 welcomeQuote: Get Ready to Energize Your LIFE!
