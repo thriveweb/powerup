@@ -1,18 +1,18 @@
 ---
-welcomeImage: /images/uploads/0w5a2608.jpg
+welcomeImage: /images/uploads/0w5a2608.11small.jpg
 title: Energize Your Life
 buttons:
   - label: Book a class
     link: book now
 classesSectionTitle: Power Up Classes
 pods:
-  - backgroundImage: /images/uploads/fibo-7.jpg
+  - backgroundImage: /images/uploads/0w5a2608.11small.jpg
     title: 'PowerUP Fusion '
     url: /book-now/
-  - backgroundImage: /images/uploads/workouts-2.png
+  - backgroundImage: /images/uploads/0w5a2616sml.jpg
     title: PowerUP Cardio
     url: /book-now/
-  - backgroundImage: /images/uploads/1.jpg
+  - backgroundImage: /images/uploads/0w5a2624sml.jpg
     title: PowerUP Strength
     url: /book-now/
 servicesSectionTitle: Join the Revolution
@@ -29,13 +29,9 @@ trainingPods:
   - backgroundImage: /images/uploads/workout3.png
   - backgroundImage: /images/uploads/workout4.png
   - backgroundImage: /images/uploads/workout5.png
-testimonialBanner: /images/uploads/edge-studios-hero-slider-02.jpg
+testimonialBanner: /images/uploads/0w5a2613sml.jpg
 testimonialSectionTitle: what our clients say
 quotes:
-  - testimonial: 'Feeling the BURN, this piece of equipment by Synergy Fitness does it all.'
-    testimonialFrom: Sylvester Stallone
-    testimonialImage: /images/uploads/Sylvester-Stallone-workout.jpg
-    testimonialThumbnail: /images/uploads/Sylvester-Stallone.jpg
   - testimonial: 'Feeling the BURN, this piece of equipment by Synergy Fitness does it all.'
     testimonialFrom: Sylvester Stallone
     testimonialImage: /images/uploads/Sylvester-Stallone-workout.jpg

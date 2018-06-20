@@ -1,6 +1,6 @@
 ---
 title: FAQ's
-bannerImage: /images/uploads/aboutbanner.png
+bannerImage: /images/uploads/0w5a2613sml.jpg
 content: '##'
 accordion:
   - accordionContent: >-
@@ -9,10 +9,10 @@ accordion:
       account you can schedule a space on a tower. 
     accordiontitle: HOW DO I SCHEDULE A CLASS?
   - accordionContent: >-
-      Classes may be canceled up to 12 hours prior to the scheduled class and
+      Classes may be canceled up to 24 hours prior to the scheduled class and
       your class credit will be returned to your account. If you cancel within
-      12 hours of your class, your class credit will not be returned to your
-      account. If you have an unlimited monthly and do not cancel more than 12
+      24 hours of your class, your class credit will not be returned to your
+      account. If you have an unlimited monthly and do not cancel more than 24
       hours in advance, you will be charged a late cancellation fee equivalent
       to the single class rate. Please cancel through the Power Up website. At
       this time, we do not accept cancellations via email, Facebook, Instagram,
@@ -47,7 +47,7 @@ accordion:
   - accordionContent: 'Classes are 30 minutes. '
     accordiontitle: HOW LONG ARE THE CLASSES?
   - accordionContent: >-
-      Power Up ages 13-17 may participate in a class but we require a parent or
+      Power Up ages 13-15 may participate in a class but we require a parent or
       legal guardian be present and sign a waiver in the studio prior to their
       first Power Up class.
     accordiontitle: WHAT IS THE MINIMUM AGE REQUIREMENT TO PARTICIPATE IN A CLIMB CLASS?

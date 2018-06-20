@@ -18,14 +18,20 @@ linkedinURL: ''
 instagramURL: 'http://instagram.com'
 phone: ''
 email: info@poweruprevolution.com
+<<<<<<< HEAD
 
 bannerSectionImage: /images/uploads/aboutwelcome.png
+=======
+staff:
+  - image: /images/uploads/gym.jpg
+    name: Amanda Hugo
+  - image: /images/uploads/gym3.jpg
+    name: Jane Dona
+bannerSectionImage: /images/uploads/0w5a2773sml.jpg
+>>>>>>> 1d7c1b19f22cf723ea1a95a1135045508c56a724
 bannerSectionTitle: Join the revolution
 bannerSectionSubtitle: Experience the Power of the Tower
-bannerSectionContent: >-
-  See the schedule or select from our package options lorem ipsum dolor sit
-  amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-  et
+bannerSectionContent: See the schedule or select from our package options below
 bannerSectionButtons:
   - label: See schedule
     link: schedule
@@ -33,3 +39,4 @@ bannerSectionButtons:
     link: Class Packages
 order: '1'
 ---
+
