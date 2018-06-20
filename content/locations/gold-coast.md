@@ -23,13 +23,10 @@ staff:
     name: Amanda Hugo
   - image: /images/uploads/gym3.jpg
     name: Jane Dona
-bannerSectionImage: /images/uploads/aboutwelcome.png
+bannerSectionImage: /images/uploads/0w5a2773sml.jpg
 bannerSectionTitle: Join the revolution
 bannerSectionSubtitle: Experience the Power of the Tower
-bannerSectionContent: >-
-  See the schedule or select from our package options lorem ipsum dolor sit
-  amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-  et
+bannerSectionContent: See the schedule or select from our package options below
 bannerSectionButtons:
   - label: See schedule
     link: schedule
@@ -37,3 +34,4 @@ bannerSectionButtons:
     link: Class Packages
 order: '1'
 ---
+
