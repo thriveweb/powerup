@@ -3,7 +3,7 @@ welcomeImage: /images/uploads/0w5a2608.jpg
 title: Energize Your Life
 buttons:
   - label: Book a class
-    link: Book A Class
+    link: book now
 classesSectionTitle: Power Up Classes
 pods:
   - backgroundImage: /images/uploads/fibo-7.jpg
@@ -51,4 +51,3 @@ quotes:
     testimonialImage: /images/uploads/gunnar-web.jpg
     testimonialThumbnail: /images/uploads/gunnarpet.jpg
 ---
-

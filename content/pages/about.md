@@ -30,7 +30,7 @@ pods:
     title: PowerUP Strength
 buttons:
   - label: See FAQ
-    link: FAQ's
+    link: faq
   - label: Choose your location
     link: Locations
 ---
