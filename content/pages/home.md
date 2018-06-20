@@ -29,7 +29,7 @@ trainingPods:
   - backgroundImage: /images/uploads/workout3.png
   - backgroundImage: /images/uploads/workout4.png
   - backgroundImage: /images/uploads/workout5.png
-testimonialBanner: /images/uploads/0w5a2773sml.jpg
+testimonialBanner: /images/uploads/0w5a2613sml.jpg
 testimonialSectionTitle: what our clients say
 quotes:
   - testimonial: 'Feeling the BURN, this piece of equipment by Synergy Fitness does it all.'
