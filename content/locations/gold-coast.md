@@ -18,11 +18,7 @@ linkedinURL: ''
 instagramURL: 'http://instagram.com'
 phone: ''
 email: info@poweruprevolution.com
-staff:
-  - image: /images/uploads/gym.jpg
-    name: Amanda Hugo
-  - image: /images/uploads/gym3.jpg
-    name: Jane Dona
+
 bannerSectionImage: /images/uploads/aboutwelcome.png
 bannerSectionTitle: Join the revolution
 bannerSectionSubtitle: Experience the Power of the Tower
