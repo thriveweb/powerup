@@ -13,12 +13,12 @@ classInfo: >-
   energize your life.
 bookingLink: schedule
 twitterURL: ''
-facebookURL: 'http://facebook.com'
+facebookURL: 'https://www.facebook.com/poweruprevolution/'
 linkedinURL: ''
 instagramURL: 'http://instagram.com'
 phone: ''
 email: info@poweruprevolution.com
-
+staff: []
 bannerSectionImage: /images/uploads/0w5a2773sml.jpg
 bannerSectionTitle: Join the revolution
 bannerSectionSubtitle: Experience the Power of the Tower
@@ -30,3 +30,4 @@ bannerSectionButtons:
     link: Class Packages
 order: '1'
 ---
+
