@@ -109,24 +109,28 @@ const SingleLocation = ({ singleLocation, ...props }) => {
           />
         </div>
       )}
-      {singleLocation.staff && (
-        <section className='section Staff'>
-          <div className='containee'>
-            <h2 className='taCenter'>meet instructors</h2>
-            <div className='Staff--wraper'>
-              {singleLocation.staff.map((member, index) => (
-                <div key={member.name + index} className='Staff--Menber square'>
-                  <BackgroundImage
-                    className='square-content'
-                    src={member.image}
-                  />
-                  <div className='Staff--Menber--name'>{member.name}</div>
-                </div>
-              ))}
+      {singleLocation.staff &&
+        singleLocation.staff.length && (
+          <section className='section Staff'>
+            <div className='containee'>
+              <h2 className='taCenter'>meet instructors</h2>
+              <div className='Staff--wraper'>
+                {singleLocation.staff.map((member, index) => (
+                  <div
+                    key={member.name + index}
+                    className='Staff--Menber square'
+                  >
+                    <BackgroundImage
+                      className='square-content'
+                      src={member.image}
+                    />
+                    <div className='Staff--Menber--name'>{member.name}</div>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
-      )}
+          </section>
+        )}
       {singleLocation.bannerSectionImage && (
         <section className='section BannerSection'>
           <div className='container BannerSection--container'>
