@@ -11,9 +11,7 @@ socialMediaCard:
 location:
   lat: '-28.09215'
   lng: '153.39456'
-officeAddress: |-
-  Jetts Fitness 5/2 Energy Circuit,
-  Robina, 4226
+officeAddress: ''
 phone: ''
 email: info@poweruprevolution.com
 headerScripts: >-
