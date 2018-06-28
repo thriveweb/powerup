@@ -47,7 +47,7 @@ quotes:
     testimonialImage: /images/uploads/gunnar-web.jpg
     testimonialThumbnail: /images/uploads/gunnarpet.jpg
 meta:
-  description: Test Description
-  title: Energize Your Life
+  description: ''
+  title: ''
 ---
 
