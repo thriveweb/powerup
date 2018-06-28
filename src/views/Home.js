@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Helmet from 'react-helmet'
 import _kebabCase from 'lodash/kebabCase'
 import ReactSwipe from 'react-swipe'
 
@@ -13,10 +12,6 @@ import './Home.css'
 const Home = ({ page, locations, services }) => {
   return (
     <main className='Home'>
-      <Helmet>
-        <title>{page.title}</title>
-      </Helmet>
-
       {page.welcomeImage && (
         <div className='WelcomeImage relative'>
           <BackgroundImage
