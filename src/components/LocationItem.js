@@ -1,14 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import _kebabCase from 'lodash/kebabCase'
+import _endsWith from 'lodash/endsWith'
 
 import BackgroundImage from '../components/BackgroundImage'
 import './LocationItem.css'
 
 const LocationItem = ({ locationItem, useTitle, ...props }) => {
   let link = false
-  if (locationItem.locationLink) link = _kebabCase(locationItem.locationLink)
-  if (useTitle) link = `/locations/${_kebabCase(locationItem.title)}`
+  if (locationItem.locationLink) {
+    link = `/locations/${_kebabCase(locationItem.locationLink)}`
+  }
+  if (useTitle) link = `/locations/${_kebabCase(locationItem.title)}/`
+  if (link) link = _endsWith(link, '/') ? link : link + '/'
+
   return (
     <div className='LocationItem--Item square' data-aos='fade-up'>
       <BackgroundImage
