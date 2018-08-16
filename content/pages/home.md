@@ -46,4 +46,8 @@ quotes:
     testimonialFrom: Gunnar Peterson - Celebrity Trainer
     testimonialImage: /images/uploads/gunnar-web.jpg
     testimonialThumbnail: /images/uploads/gunnarpet.jpg
+meta:
+  description: ''
+  title: ''
 ---
+

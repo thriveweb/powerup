@@ -1,20 +1,35 @@
 siteTitle: Power up
-siteUrl: 'http://poweruprevolution.com/'
+siteUrl: 'http://poweruprevolution.com'
 siteDescription: Power Up
 socialMediaCard:
   facebookURL: 'https://www.facebook.com/poweruprevolution/'
-  image: /images/uploads/card-og.png
-  instagramURL: 'https://www.instagram.com/synergyfitnessequipment'
+  image: /images/uploads/0w5a2608.11small.jpg
+  instagramURL: 'https://www.instagram.com/poweruprevolution'
   linkedinURL: ''
   twitterCreatorAccount: Power up
   twitterSiteAccount: '@Powerup'
 location:
   lat: '-28.09215'
   lng: '153.39456'
-officeAddress: |-
-  Jetts Fitness 5/2 Energy Circuit,
-  Robina, 4226
+officeAddress: ''
 phone: ''
 email: info@poweruprevolution.com
-headerScripts: <!-- Add your analytics scripts / verification meta here -->
+headerScripts: >-
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <script async
+  src="https://www.googletagmanager.com/gtag/js?id=UA-112691145-28"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112691145-28');
+  </script>
+
+  <meta name="msvalidate.01" content="B0112812CA622A13C327AF572E2BA5B5" />
+
+  <meta name="google-site-verification"
+  content="D6XTkXDDivNK1XVHeKeYSeQc8DhBurVTF2XcrDZwZX8" />
 enableServiceWorker: false

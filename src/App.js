@@ -1,13 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Helmet from 'react-helmet'
-// import { Switch } from 'react-router-transition'
-import _kebabCase from 'lodash/kebabCase'
-// import _findIndex from 'lodash/findIndex'
 import _merge from 'lodash/merge'
 
+import { slugify } from './util/url'
 import ScrollToTopOnMount from './components/ScrollToTopOnMount'
-// import AOS from './components/AOS'
 import Meta from './components/Meta'
 import Home from './views/Home'
 import About from './views/About'
@@ -25,6 +22,19 @@ import Spinner from './components/Spinner'
 // import { documentHasTerm } from './util/collection'
 
 import data from './data.json'
+
+const RouteWithMeta = ({ component: Component, ...props }) => (
+  <Route
+    {...props}
+    render={routeProps => (
+      <Fragment>
+        <ScrollToTopOnMount />
+        <Meta {...props} />
+        <Component {...routeProps} {...props} />
+      </Fragment>
+    )}
+  />
+)
 
 class App extends Component {
   state = {
@@ -82,25 +92,18 @@ class App extends Component {
     const locations = this.getDocuments('locations')
     const services = this.getDocuments('services')
 
-    const RouteWithFooter = ({ children, scrollToTop = true, ...props }) => (
-      <div className='RouteWithFooter' {...props}>
-        {children}
-        {scrollToTop && <ScrollToTopOnMount />}
-        <Footer globalSettings={globalSettings} />
-      </div>
-    )
-
     return (
       <Router>
         <div className='React-Wrap'>
           {this.state.loading && <Spinner />}
           {/* <AOS /> */}
           <ServiceWorkerNotifications reloadOnUpdate />
-          <Helmet titleTemplate={`${siteTitle} | %s`} />
+          <Helmet
+            defaultTitle={siteTitle}
+            titleTemplate={`${siteTitle} | %s`}
+          />
           <Meta
-            title={siteTitle}
-            url={siteUrl}
-            description={siteDescription}
+            headerScripts={headerScripts}
             absoluteImageUrl={
               socialMediaCard &&
               socialMediaCard.image &&
@@ -112,8 +115,8 @@ class App extends Component {
             twitterSiteAccount={
               socialMediaCard && socialMediaCard.twitterSiteAccount
             }
-            headerScripts={headerScripts}
           />
+
           <Nav
             locations={locations}
             handleNavPopupOpen={this.handleNavPopupOpen}
@@ -124,222 +127,125 @@ class App extends Component {
             handleClose={this.handleNavPopupClose}
           />
           <Switch>
-            <Route
+            <RouteWithMeta
               path='/'
               exact
-              render={props => (
-                <RouteWithFooter>
-                  <Home
-                    page={this.getDocument('pages', 'home')}
-                    locations={this.getDocument('pages', 'locations')}
-                    services={services}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
+              component={Home}
+              page={this.getDocument('pages', 'home')}
+              locations={this.getDocument('pages', 'locations')}
+              services={services}
             />
-            <Route
+            <RouteWithMeta
               path='/about/'
               exact
-              render={props => (
-                <RouteWithFooter>
-                  <About
-                    page={this.getDocument('pages', 'about')}
-                    services={services}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
+              component={About}
+              page={this.getDocument('pages', 'about')}
+              services={services}
             />
-            <Route
+            <RouteWithMeta
               path='/locations/'
               exact
-              render={props => (
-                <RouteWithFooter>
-                  <Locations
-                    page={this.getDocument('pages', 'locations')}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
+              component={Locations}
+              page={this.getDocument('pages', 'locations')}
             />
-            <Route
-              path='/locations/:slug/'
-              render={props => {
-                const slug = props.match.params.slug
-                const singleLocation = locations.find(
-                  item => _kebabCase(item.title) === slug
-                )
-                return (
-                  <RouteWithFooter>
-                    <SingleLocation
-                      singleLocation={singleLocation}
-                      {...props}
-                    />
-                  </RouteWithFooter>
-                )
-              }}
-            />
-            <Route
+
+            {locations.map((location, index) => {
+              const path = slugify(`/locations/${location.title}`)
+              return (
+                <RouteWithMeta
+                  key={path}
+                  path={path}
+                  exact
+                  component={SingleLocation}
+                  singleLocation={location}
+                />
+              )
+            })}
+
+            <RouteWithMeta
               path='/class-packages/'
               exact
-              render={props => (
-                <RouteWithFooter>
-                  <Default
-                    page={this.getDocument('pages', 'classPackages')}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
+              component={Default}
+              page={this.getDocument('pages', 'classPackages')}
             />
-            <Route
+            <RouteWithMeta
               path='/account/'
               exact
-              render={props => (
-                <RouteWithFooter>
-                  <Default
-                    page={this.getDocument('pages', 'account')}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
+              component={Default}
+              page={this.getDocument('pages', 'account')}
             />
-            <Route
+            <RouteWithMeta
               path='/checkin/'
               exact
-              render={props => (
-                <RouteWithFooter>
-                  <Default
-                    page={this.getDocument('pages', 'checkin')}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
+              component={Default}
+              page={this.getDocument('pages', 'checkin')}
             />
-            <Route
+            <RouteWithMeta
               path='/classes/'
               exact
-              render={props => (
-                <RouteWithFooter>
-                  <Default
-                    page={this.getDocument('pages', 'classes')}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
+              component={Default}
+              page={this.getDocument('pages', 'classes')}
             />
-            <Route
+            <RouteWithMeta
               path='/instructor/'
               exact
-              render={props => (
-                <RouteWithFooter>
-                  <Default
-                    page={this.getDocument('pages', 'instructor')}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
+              component={Default}
+              page={this.getDocument('pages', 'instructor')}
             />
-            <Route
+            <RouteWithMeta
               path='/pricing/'
               exact
-              render={props => (
-                <RouteWithFooter>
-                  <Default
-                    page={this.getDocument('pages', 'pricing')}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
+              component={Default}
+              page={this.getDocument('pages', 'pricing')}
             />
-            <Route
+            <RouteWithMeta
               path='/register/'
               exact
-              render={props => (
-                <RouteWithFooter>
-                  <Default
-                    page={this.getDocument('pages', 'register')}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
+              component={Default}
+              page={this.getDocument('pages', 'register')}
             />
-            <Route
+            <RouteWithMeta
               path='/schedule/'
               exact
-              render={props => (
-                <RouteWithFooter>
-                  <Default
-                    page={this.getDocument('pages', 'schedule')}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
+              component={Default}
+              page={this.getDocument('pages', 'schedule')}
             />
-
-            <Route
+            <RouteWithMeta
               path='/contact/'
               exact
-              render={props => (
-                <RouteWithFooter>
-                  <Contact
-                    page={this.getDocument('pages', 'contact')}
-                    globalSettings={globalSettings}
-                    siteTitle={siteTitle}
-                    locations={locations}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
+              component={Contact}
+              page={this.getDocument('pages', 'contact')}
+              globalSettings={globalSettings}
+              siteTitle={siteTitle}
+              locations={locations}
             />
-            <Route
+            <RouteWithMeta
               path='/book-now/'
               exact
-              render={props => {
-                const Comp = props => <Default {...props} />
-                return (
-                  <RouteWithFooter>
-                    <Comp
-                      page={this.getDocument('pages', 'bookNow')}
-                      {...props}
-                    />
-                  </RouteWithFooter>
-                )
-              }}
+              component={Default}
+              page={this.getDocument('pages', 'bookNow')}
             />
-            <Route
+            <RouteWithMeta
               path='/faq/'
               exact
-              render={props => (
-                <RouteWithFooter>
-                  <Faq page={this.getDocument('pages', 'faq')} {...props} />
-                </RouteWithFooter>
-              )}
+              component={Faq}
+              page={this.getDocument('pages', 'faq')}
             />
-            <Route
+            <RouteWithMeta
               path='/disclaimer/'
               exact
-              render={props => {
-                const Comp = props => <Default {...props} />
-                return (
-                  <RouteWithFooter>
-                    <Comp
-                      page={this.getDocument('pages', 'disclaimer')}
-                      {...props}
-                    />
-                  </RouteWithFooter>
-                )
-              }}
+              component={Default}
+              page={this.getDocument('pages', 'disclaimer')}
             />
-
-            <Route
-              render={() => (
-                <RouteWithFooter>
-                  <NoMatch siteUrl={siteUrl} />
-                </RouteWithFooter>
-              )}
+            <RouteWithMeta
+              path='/disclaimer/'
+              exact
+              component={Default}
+              page={this.getDocument('pages', 'disclaimer')}
             />
+            <Route render={() => <NoMatch siteUrl={siteUrl} />} />
           </Switch>
+          <Footer globalSettings={globalSettings} />
         </div>
       </Router>
     )
