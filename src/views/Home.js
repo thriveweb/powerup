@@ -22,13 +22,16 @@ const Home = ({ page, locations, services }) => {
           <div className='background-video'>
             <video
               className='video'
-              preload='true'
+              preload='auto'
               playsinline
               loop
               autoPlay
               muted
             >
-              <source src='/images/welcomevideo-new.mp4' type='video/mp4' />
+              <source
+                src='/images/welcomevideo-new.mp4?mute=1'
+                type='video/mp4'
+              />
             </video>
           </div>
 
