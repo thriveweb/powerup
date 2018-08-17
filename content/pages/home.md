@@ -30,7 +30,7 @@ trainingPods:
   - backgroundImage: /images/uploads/workout4.png
   - backgroundImage: /images/uploads/workout5.png
 testimonialBanner: /images/uploads/0w5a2613sml.jpg
-testimonialSectionTitle: what our clients say
+testimonialSectionTitle: what our Power Tower clients say
 quotes:
   - testimonial: 'Feeling the BURN, this piece of equipment by Synergy Fitness does it all.'
     testimonialFrom: Sylvester Stallone
