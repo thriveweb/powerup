@@ -192,8 +192,8 @@ content: >-
   on my unlimited auto-debit plan associated with my account. I understand that
   Power Up will initiate transfers/charges pursuant to this authorization not to
   exceed the amount shown on my auto debit contract and/or in connection with
-  cancellation fees according to the Edge Studios cancellation policy. Power Up
-  will initiate charges each month on the date my contract is set to renew.
+  cancellation fees according to the Power Up cancellation policy. Power Up will
+  initiate charges each month on the date my contract is set to renew.
 
 
   Power Up may discontinue processing of recurring charges if the Company is
@@ -207,10 +207,10 @@ content: >-
   electronic mail. I understand that if I am removed from class due to the
   circumstances as described, it may not be possible to place me back into the
   class for which I was originally booked and that I will not be given any
-  priority in waitlisted classes. I also understand that it is my responsibility
-  to keep my card on file current and my billing address and zip code accurate.
-  Power Up cannot be held responsible for errors in processing due to expired or
-  inaccurate information.
+  priority in wait listed classes. I also understand that it is my
+  responsibility to keep my card on file current and my billing address and zip
+  code accurate. Power Up cannot be held responsible for errors in processing
+  due to expired or inaccurate information.
 
 
   WHAT TO EXPECT IN CLASSES AT POWER UP
