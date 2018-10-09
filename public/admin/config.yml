@@ -300,6 +300,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Welcome Image, name: welcomeImage, widget: image}
           - {label: Welcome Title, name: welcomeTitle, widget: string}
           - {label: Welcome Quote, name: welcomeQuote, widget: text}
+          - {label: About Video, name: aboutVideo, widget: text}
           - label: "Training Pods"
             name: "trainingPods"
             widget: "list"

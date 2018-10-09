@@ -18,6 +18,21 @@
     width: 100%;
   }
 }
+
+.About iframe {
+  border-width: 0;
+  width: 100%;
+}
+
+.about--video video {
+  width: 500px !important;
+  height: auto !important;
+}
+
+.vp-player-layout {
+  width: 500px !important;
+}
+
 .welcome-title {
   font-size: 4rem;
   margin: 0 0 2rem 0;
