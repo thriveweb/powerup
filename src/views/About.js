@@ -27,8 +27,16 @@ export default ({ page, services }) => (
             <Content source={page.welcomeSection} />
           </div>
         </div>
-        <div className='welcome--image'>
-          <BackgroundImage src={page.welcomeImage} contain='contain' lazy />
+        <div className='container about--video'>
+          <iframe
+            src={page.aboutVideo}
+            width='640'
+            height='360'
+            frameBorder='0'
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowFullScreen
+          />
         </div>
       </div>
       <div className='container ServicesSection--wrap'>
@@ -74,17 +82,5 @@ export default ({ page, services }) => (
         </div>
       </section>
     )}
-
-    <div className='container about--video'>
-      <iframe
-        src={page.aboutVideo}
-        width='640'
-        height='360'
-        frameBorder='0'
-        webkitallowfullscreen
-        mozallowfullscreen
-        allowFullScreen
-      />
-    </div>
   </main>
 )

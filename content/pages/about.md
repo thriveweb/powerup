@@ -1,7 +1,6 @@
 ---
 title: About
 bannerImage: /images/uploads/edgestudios-128.jpg
-welcomeImage: /images/uploads/0w5a2814sml.jpg
 welcomeTitle: POWER UP
 welcomeQuote: Get Ready to Energize Your LIFE!
 trainingPods:
