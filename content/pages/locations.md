@@ -1,7 +1,7 @@
 ---
 title: Locations
 subtitle: Choose your location
-bannerImage: /images/uploads/edgestudios-123.jpg
+bannerImage: /images/uploads/0w5a2608.11small.jpg
 message: Go to Locations to edit the content on this page.
 thumbnailLocations:
   - featuredThumbnail: /images/uploads/Gold-Coast.jpg
@@ -23,5 +23,9 @@ thumbnailLocations:
   - featuredThumbnail: /images/uploads/London.jpg
     subTitle: coming soon
     title: London
+  - featuredThumbnail: /images/uploads/edge-studios-the-studio-logo.png
+    locationLink: 'https://edgestudiossac.com/'
+    subTitle: 'Sacramento, CA, USA'
+    title: Edge Studios
 ---
 
