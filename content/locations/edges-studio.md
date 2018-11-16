@@ -1,8 +1,8 @@
 ---
 featuredThumbnail: /images/uploads/edge-studios-the-studio-logo.png
 bannerImage: /images/uploads/0w5a2608.11small.jpg
-title: Edges studio
-subTitle: Sacramento, CA, US
+title: Sacramento, Us
+subTitle: Edges Studio, Sacramento, CA, US
 location:
   address: ''
   lat: '38.561457'
