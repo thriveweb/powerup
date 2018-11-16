@@ -9,7 +9,7 @@ thumbnailLocations:
     subTitle: Robina
     title: Gold coast
   - featuredThumbnail: /images/uploads/edge-studios-the-studio-logo.png
-    locationLink: 'https://edgestudiossac.com/'
+    locationLink: edges-studio
     subTitle: 'Sacramento, CA, USA'
     title: Edge Studios
   - featuredThumbnail: /images/uploads/Brisbane.jpg
