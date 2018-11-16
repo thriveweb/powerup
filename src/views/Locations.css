@@ -17,6 +17,10 @@
   flex-wrap: wrap;
 }
 
+.SingleLocation .BackgroundImage {
+  background-size: contain !important;
+}
+
 .Locations--Grid--Item {
   width: calc(33.33% - 2rem);
   margin: 0 1rem 2rem 1rem;
