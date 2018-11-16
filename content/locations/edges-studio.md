@@ -5,8 +5,8 @@ title: Edges studio
 subTitle: Sacramento, CA, US
 location:
   address: ''
-  lat: '-28.09215'
-  lng: '153.39456'
+  lat: '38.561457'
+  lng: '-121.5829968'
 classInfo: >-
   Irrespective of whether you are seeking endurance, power, speed, weight loss,
   or muscle building performance enhancement you will only need 30 minutes to
